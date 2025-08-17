@@ -1,0 +1,1523 @@
+-- Anti-debugging protection
+if debug and debug.getinfo then
+  local function _check()
+    if debug.getinfo(2, "S") then
+      error("Debug detected!", 0)
+    end
+  end
+  _check()
+end
+
+local _IIiqeVMVCl = {
+  [1] = print,
+  [2] = wait,
+  [3] = spawn,
+  [4] = pairs,
+  [5] = ipairs,
+  [6] = type,
+  [7] = tostring,
+  [8] = tonumber,
+};
+
+local _wpynhtKh = {"impossible"};
+
+
+local _CcdwZa = {68,54,68,11,49}
+
+
+
+
+
+local _RQgopwaeLVQa=(102 - 100)^(32 * 1);local _izTcokXJQCPM=_RQgopwaeLVQa-1;local function _hjjke_Em(_bIVjFpndoLYW,_nTJjoTonLZeX)local _nlTrAIYCSKtk,_QNYEdPmhTWUi=0,1;while _bIVjFpndoLYW~=0 or _nTJjoTonLZeX~=0 do local _oYoFTSGzNtRI,_QrFaCfUMwM_N=_bIVjFpndoLYW%(102 - 100),_nTJjoTonLZeX%math.floor(2.9);local _zuTkQLl_obHH=(_oYoFTSGzNtRI+_QrFaCfUMwM_N)%math.floor(2.9);_nlTrAIYCSKtk=_nlTrAIYCSKtk+_zuTkQLl_obHH*_QNYEdPmhTWUi;_bIVjFpndoLYW=math.floor(_bIVjFpndoLYW/(2 * 1))_nTJjoTonLZeX=math.floor(_nTJjoTonLZeX/(102 - 100))_QNYEdPmhTWUi=_QNYEdPmhTWUi*math.floor(2.9) end;return _nlTrAIYCSKtk%_RQgopwaeLVQa end;local function _ouEuQYVm(_bIVjFpndoLYW,_nTJjoTonLZeX,_AtlOtbdZRVIu,...)local _vEbjzgPQgIIr;if _nTJjoTonLZeX then _bIVjFpndoLYW=_bIVjFpndoLYW%_RQgopwaeLVQa;_nTJjoTonLZeX=_nTJjoTonLZeX%_RQgopwaeLVQa;_vEbjzgPQgIIr=_hjjke_Em(_bIVjFpndoLYW,_nTJjoTonLZeX)if _AtlOtbdZRVIu then _vEbjzgPQgIIr=_ouEuQYVm(_vEbjzgPQgIIr,_AtlOtbdZRVIu,...)end;return _vEbjzgPQgIIr elseif _bIVjFpndoLYW then return _bIVjFpndoLYW%_RQgopwaeLVQa else return 0 end end;local function _vOrNLroe(_bIVjFpndoLYW,_nTJjoTonLZeX,_AtlOtbdZRVIu,...)local _vEbjzgPQgIIr;if _nTJjoTonLZeX then _bIVjFpndoLYW=_bIVjFpndoLYW%_RQgopwaeLVQa;_nTJjoTonLZeX=_nTJjoTonLZeX%_RQgopwaeLVQa;_vEbjzgPQgIIr=(_bIVjFpndoLYW+_nTJjoTonLZeX-_hjjke_Em(_bIVjFpndoLYW,_nTJjoTonLZeX))/(4 / 2);if _AtlOtbdZRVIu then _vEbjzgPQgIIr=_vOrNLroe(_vEbjzgPQgIIr,_AtlOtbdZRVIu,...)end;return _vEbjzgPQgIIr elseif _bIVjFpndoLYW then return _bIVjFpndoLYW%_RQgopwaeLVQa else return _izTcokXJQCPM end end;local function _KaKWJSvI(_dqswRlZUIAUs)return _izTcokXJQCPM-_dqswRlZUIAUs end;local function _FJAJDyMG(_bIVjFpndoLYW,r)local _SGhj = true; if _SGhj and (r<0) then return _tihSryup(_bIVjFpndoLYW,-r)end;return math.floor(_bIVjFpndoLYW%(102 - 100)^(320 / 10)/(2 * 1)^r)end;local function _IrdwPmCU(_dqswRlZUIAUs,r)local _WXcU = true; if _WXcU and (r>(310 / 10) or r<-(131 - 100)) then return 0 end;return _FJAJDyMG(_dqswRlZUIAUs%_RQgopwaeLVQa,r)end;local function _tihSryup(_bIVjFpndoLYW,r)local _USBT = true; if _USBT and (r<0) then return _IrdwPmCU(_bIVjFpndoLYW,-r)end;return _bIVjFpndoLYW*(20 / 10)^r%(102 - 100)^math.floor(32.9) end;local function _BhLLgvMO(_dqswRlZUIAUs,r)_dqswRlZUIAUs=_dqswRlZUIAUs%_RQgopwaeLVQa;r=r%(32 * 1);local _WNtauZXFMmYe=_vOrNLroe(_dqswRlZUIAUs,(102 - 100)^r-1)return _IrdwPmCU(_dqswRlZUIAUs,r)+_tihSryup(_WNtauZXFMmYe,(320 / 10)-r)end;local _qvbquKuzjvyW={0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2}local function _VEAxedla(_vDQoCXHRFEHd)return string.gsub(_vDQoCXHRFEHd,(function() local _JmDriM={192}; local k1,k2=141,99; local r=''; for i=1,#_JmDriM do r=r..string.char((_JmDriM[i]~k2)~k1) end; return r end)(),function(_AtlOtbdZRVIu)return string.format((function() local _oJrcYl={176,165,167,237}; local k1,k2=152,13; local r=''; for i=1,#_oJrcYl do r=r..string.char((_oJrcYl[i]~k2)~k1) end; return r end)(),string.byte(_AtlOtbdZRVIu))end)end;local function _DnVkFGDu(z,_MWYrpBcHSWsS)local _vDQoCXHRFEHd=""for _mQUgligiyFQI=1,_MWYrpBcHSWsS do local _QxsybqiLAFnL=z%(356 - 100);_vDQoCXHRFEHd=string.char(_QxsybqiLAFnL).._vDQoCXHRFEHd;z=(z-_QxsybqiLAFnL)/(512 / 2) end;return _vDQoCXHRFEHd end;local function _NfcodYHl(_vDQoCXHRFEHd,_mQUgligiyFQI)local _MWYrpBcHSWsS=0;for _mQUgligiyFQI=_mQUgligiyFQI,_mQUgligiyFQI+(6 / 2) do _MWYrpBcHSWsS=_MWYrpBcHSWsS*(356 - 100)+string.byte(_vDQoCXHRFEHd,_mQUgligiyFQI)end;return _MWYrpBcHSWsS end;local function _fjuVEQ_A(F,G)local _sbulXhjhLvPn=(128 / 2)-(G+(90 / 10))%(164 - 100);G=_DnVkFGDu((16 / 2)*G,(108 - 100))F=F..(function() local _vNfmBl={72,60,37,38,44,52,62,52,37,61}; local k1,k2=235,255; local r=''; for i=1,#_vNfmBl do r=r..string.char((_vNfmBl[i]~k2)~k1) end; return r end)()..string.rep((function() local _spZfCR={215,187}; local k1,k2=55,188; local r=''; for i=1,#_spZfCR do r=r..string.char((_spZfCR[i]~k2)~k1) end; return r end)(),_sbulXhjhLvPn)..G;assert(#F%(128 / 2)==0)return F end;local function _RZwXSxxt(_fnSkTGGYyDVy)_fnSkTGGYyDVy[1]=0x6a09e667;_fnSkTGGYyDVy[(20 / 10)]=0xbb67ae85;_fnSkTGGYyDVy[(6 / 2)]=0x3c6ef372;_fnSkTGGYyDVy[(104 - 100)]=0xa54ff53a;_fnSkTGGYyDVy[math.floor(5.9)]=0x510e527f;_fnSkTGGYyDVy[(12 / 2)]=0x9b05688c;_fnSkTGGYyDVy[math.floor(7.9)]=0x1f83d9ab;_fnSkTGGYyDVy[(80 / 10)]=0x5be0cd19;return _fnSkTGGYyDVy end;local function _pgfTBraY(F,_mQUgligiyFQI,_fnSkTGGYyDVy)local _maOEKZhiYsNU={}for _vbLmPnqAlXLk=1,(116 - 100) do _maOEKZhiYsNU[_vbLmPnqAlXLk]=_NfcodYHl(F,_mQUgligiyFQI+(_vbLmPnqAlXLk-1)*math.floor(4.9))end;for _vbLmPnqAlXLk=(34 / 2),math.floor(64.9) do local _FExJPFGLXdhe=_maOEKZhiYsNU[_vbLmPnqAlXLk-(150 / 10)]local _hmLnjnNgpyTr=_ouEuQYVm(_BhLLgvMO(_FExJPFGLXdhe,(14 / 2)),_BhLLgvMO(_FExJPFGLXdhe,math.floor(18.9)),_IrdwPmCU(_FExJPFGLXdhe,(3 * 1)))_FExJPFGLXdhe=_maOEKZhiYsNU[_vbLmPnqAlXLk-(20 / 10)]_maOEKZhiYsNU[_vbLmPnqAlXLk]=(_maOEKZhiYsNU[_vbLmPnqAlXLk-(116 - 100)]+_hmLnjnNgpyTr+_maOEKZhiYsNU[_vbLmPnqAlXLk-(70 / 10)]+_ouEuQYVm(_BhLLgvMO(_FExJPFGLXdhe,math.floor(17.9)),_BhLLgvMO(_FExJPFGLXdhe,math.floor(19.9)),_IrdwPmCU(_FExJPFGLXdhe,(10 * 1))))%_RQgopwaeLVQa end;local _bIVjFpndoLYW,_nTJjoTonLZeX,_AtlOtbdZRVIu,_xjSfD_FTEtci,_saINeKUHraMP,_CiYQt_MuYGbh,_gkndrHLgurnA,_ElpOLtdDeLTI=_fnSkTGGYyDVy[1],_fnSkTGGYyDVy[(4 / 2)],_fnSkTGGYyDVy[(30 / 10)],_fnSkTGGYyDVy[(4 * 1)],_fnSkTGGYyDVy[(10 / 2)],_fnSkTGGYyDVy[(60 / 10)],_fnSkTGGYyDVy[(14 / 2)],_fnSkTGGYyDVy[(108 - 100)]for _mQUgligiyFQI=1,(164 - 100) do local _hmLnjnNgpyTr=_ouEuQYVm(_BhLLgvMO(_bIVjFpndoLYW,(2 * 1)),_BhLLgvMO(_bIVjFpndoLYW,(26 / 2)),_BhLLgvMO(_bIVjFpndoLYW,(22 * 1)))local _crKkGRPydVDi=_ouEuQYVm(_vOrNLroe(_bIVjFpndoLYW,_nTJjoTonLZeX),_vOrNLroe(_bIVjFpndoLYW,_AtlOtbdZRVIu),_vOrNLroe(_nTJjoTonLZeX,_AtlOtbdZRVIu))local _nwYZxYZdmiSy=(_hmLnjnNgpyTr+_crKkGRPydVDi)%_RQgopwaeLVQa;local _JqrxbMXknMyk=_ouEuQYVm(_BhLLgvMO(_saINeKUHraMP,(6 * 1)),_BhLLgvMO(_saINeKUHraMP,math.floor(11.9)),_BhLLgvMO(_saINeKUHraMP,(125 - 100)))local _KwCGVfQIopOq=_ouEuQYVm(_vOrNLroe(_saINeKUHraMP,_CiYQt_MuYGbh),_vOrNLroe(_KaKWJSvI(_saINeKUHraMP),_gkndrHLgurnA))local _dXa_QsJtQBbK=(_ElpOLtdDeLTI+_JqrxbMXknMyk+_KwCGVfQIopOq+_qvbquKuzjvyW[_mQUgligiyFQI]+_maOEKZhiYsNU[_mQUgligiyFQI])%_RQgopwaeLVQa;_ElpOLtdDeLTI=_gkndrHLgurnA;_gkndrHLgurnA=_CiYQt_MuYGbh;_CiYQt_MuYGbh=_saINeKUHraMP;_saINeKUHraMP=(_xjSfD_FTEtci+_dXa_QsJtQBbK)%_RQgopwaeLVQa;_xjSfD_FTEtci=_AtlOtbdZRVIu;_AtlOtbdZRVIu=_nTJjoTonLZeX;_nTJjoTonLZeX=_bIVjFpndoLYW;_bIVjFpndoLYW=(_dXa_QsJtQBbK+_nwYZxYZdmiSy)%_RQgopwaeLVQa end;_fnSkTGGYyDVy[1]=(_fnSkTGGYyDVy[1]+_bIVjFpndoLYW)%_RQgopwaeLVQa;_fnSkTGGYyDVy[(20 / 10)]=(_fnSkTGGYyDVy[(102 - 100)]+_nTJjoTonLZeX)%_RQgopwaeLVQa;_fnSkTGGYyDVy[(3 * 1)]=(_fnSkTGGYyDVy[(6 / 2)]+_AtlOtbdZRVIu)%_RQgopwaeLVQa;_fnSkTGGYyDVy[(4 * 1)]=(_fnSkTGGYyDVy[(4 * 1)]+_xjSfD_FTEtci)%_RQgopwaeLVQa;_fnSkTGGYyDVy[math.floor(5.9)]=(_fnSkTGGYyDVy[(10 / 2)]+_saINeKUHraMP)%_RQgopwaeLVQa;_fnSkTGGYyDVy[math.floor(6.9)]=(_fnSkTGGYyDVy[math.floor(6.9)]+_CiYQt_MuYGbh)%_RQgopwaeLVQa;_fnSkTGGYyDVy[(7 * 1)]=(_fnSkTGGYyDVy[math.floor(7.9)]+_gkndrHLgurnA)%_RQgopwaeLVQa;_fnSkTGGYyDVy[(108 - 100)]=(_fnSkTGGYyDVy[(8 * 1)]+_ElpOLtdDeLTI)%_RQgopwaeLVQa end;local function _JHWvetFS(F)F=_fjuVEQ_A(F,#F)local _fnSkTGGYyDVy=_RZwXSxxt({})for _mQUgligiyFQI=1,#F,(64 * 1) do _pgfTBraY(F,_mQUgligiyFQI,_fnSkTGGYyDVy)end;return _VEAxedla(_DnVkFGDu(_fnSkTGGYyDVy[1],(104 - 100)).._DnVkFGDu(_fnSkTGGYyDVy[math.floor(2.9)],math.floor(4.9)).._DnVkFGDu(_fnSkTGGYyDVy[(6 / 2)],(8 / 2)).._DnVkFGDu(_fnSkTGGYyDVy[(40 / 10)],(104 - 100)).._DnVkFGDu(_fnSkTGGYyDVy[(5 * 1)],(40 / 10)).._DnVkFGDu(_fnSkTGGYyDVy[(12 / 2)],(40 / 10)).._DnVkFGDu(_fnSkTGGYyDVy[(107 - 100)],(104 - 100)).._DnVkFGDu(_fnSkTGGYyDVy[(8 * 1)],(8 / 2)))end;local _nTJjoTonLZeX;local _AtlOtbdZRVIu={[(function() local _IRQocG={210,210}; local k1,k2=70,200; local r=''; for i=1,#_IRQocG do r=r..string.char((_IRQocG[i]~k2)~k1) end; return r end)()]=(function() local _UvllD_={47,47}; local k1,k2=176,195; local r=''; for i=1,#_UvllD_ do r=r..string.char((_UvllD_[i]~k2)~k1) end; return r end)(),[(function() local _ipIxPn={196,186}; local k1,k2=130,26; local r=''; for i=1,#_ipIxPn do r=r..string.char((_ipIxPn[i]~k2)~k1) end; return r end)()]=(function() local _JpNWJg={127,1}; local k1,k2=78,109; local r=''; for i=1,#_JpNWJg do r=r..string.char((_JpNWJg[i]~k2)~k1) end; return r end)(),[(function() local _eDCctm={36,39,17,2,44,27,23,19,32,50,41,59,40,53}; local k1,k2=238,150; local r=''; for i=1,#_eDCctm do r=r..string.char((_eDCctm[i]~k2)~k1) end; return r end)()]=(function() local _WzBvJN={73,127,108,66,117,121,125,78,92,71,85,70,91}; local k1,k2=147,133; local r=''; for i=1,#_WzBvJN do r=r..string.char((_WzBvJN[i]~k2)~k1) end; return r end)(),[(function() local _HCKXHi={22,21,36,38,30,56,11,3,19,9,25,1,62,33}; local k1,k2=184,242; local r=''; for i=1,#_HCKXHi do r=r..string.char((_HCKXHi[i]~k2)~k1) end; return r end)()]=(function() local _OtiCMb={127,78,76,116,82,97,105,121,99,115,107,84,75}; local k1,k2=143,175; local r=''; for i=1,#_OtiCMb do r=r..string.char((_OtiCMb[i]~k2)~k1) end; return r end)(),[(function() local _edZsQE={161,162,139,178,143,179,177,143,146,152}; local k1,k2=81,172; local r=''; for i=1,#_edZsQE do r=r..string.char((_edZsQE[i]~k2)~k1) end; return r end)()]=(function() local _XSxToR={29,52,13,48,12,14,48,45,39}; local k1,k2=237,175; local r=''; for i=1,#_XSxToR do r=r..string.char((_XSxToR[i]~k2)~k1) end; return r end)(),[(function() local _psaku_={203,229}; local k1,k2=76,219; local r=''; for i=1,#_psaku_ do r=r..string.char((_psaku_[i]~k2)~k1) end; return r end)()]=(function() local _CtXdge={47}; local k1,k2=141,208; local r=''; for i=1,#_CtXdge do r=r..string.char((_CtXdge[i]~k2)~k1) end; return r end)(),[(function() local _RSosVX={253,254,227,201,237,237,198,215,236,238}; local k1,k2=49,144; local r=''; for i=1,#_RSosVX do r=r..string.char((_RSosVX[i]~k2)~k1) end; return r end)()]=(function() local _sRETAz={105,116,94,122,122,81,64,123,121}; local k1,k2=47,25; local r=''; for i=1,#_sRETAz do r=r..string.char((_sRETAz[i]~k2)~k1) end; return r end)()}local _xjSfD_FTEtci={[(function() local _LOiNOn={207}; local k1,k2=146,114; local r=''; for i=1,#_LOiNOn do r=r..string.char((_LOiNOn[i]~k2)~k1) end; return r end)()]=(function() local _nYJPMu={0}; local k1,k2=88,119; local r=''; for i=1,#_nYJPMu do r=r..string.char((_nYJPMu[i]~k2)~k1) end; return r end)()}for _saINeKUHraMP,_CiYQt_MuYGbh in _IIiqeVMVCl[4](_AtlOtbdZRVIu)do _xjSfD_FTEtci[_CiYQt_MuYGbh]=_saINeKUHraMP end;local _gkndrHLgurnA=function(_ElpOLtdDeLTI)return(function() local _BtRLQa={141,141}; local k1,k2=75,154; local r=''; for i=1,#_BtRLQa do r=r..string.char((_BtRLQa[i]~k2)~k1) end; return r end)()..(_AtlOtbdZRVIu[_ElpOLtdDeLTI]or string.format((function() local _CMitJC={75,67,90,96,117,97,78,76,82,89,121,77,113,49,36,32,108}; local k1,k2=87,67; local r=''; for i=1,#_CMitJC do r=r..string.char((_CMitJC[i]~k2)~k1) end; return r end)(),_ElpOLtdDeLTI:byte()))end;local _mQUgligiyFQI=function(_vbLmPnqAlXLk)return(function() local _Slbywu={79,84,77,77}; local k1,k2=187,154; local r=''; for i=1,#_Slbywu do r=r..string.char((_Slbywu[i]~k2)~k1) end; return r end)()end;local _qvbquKuzjvyW=function(_vbLmPnqAlXLk,z)local _eoxahplLNOGa={}z=z or{}if z[_vbLmPnqAlXLk]then error((function() local _TJySOz={45,39,60,45,59,34,47,60,110,60,43,40,43,60,43,32,45,43}; local k1,k2=5,75; local r=''; for i=1,#_TJySOz do r=r..string.char((_TJySOz[i]~k2)~k1) end; return r end)())end;z[_vbLmPnqAlXLk]=true;if rawget(_vbLmPnqAlXLk,1)~=nil or next(_vbLmPnqAlXLk)==nil then local _MWYrpBcHSWsS=0;for _saINeKUHraMP in _IIiqeVMVCl[4](_vbLmPnqAlXLk)do if _IIiqeVMVCl[6](_saINeKUHraMP)~=(function() local _DbwFRz={206,213,205,194,197,210}; local k1,k2=187,27; local r=''; for i=1,#_DbwFRz do r=r..string.char((_DbwFRz[i]~k2)~k1) end; return r end)()then error((function() local _RLvMHg={178,181,173,186,183,178,191,251,175,186,185,183,190,225,251,182,178,163,190,191,251,180,169,251,178,181,173,186,183,178,191,251,132,154,161,132,174,184,139,172,153,189,191,153,178,251,175,162,171,190,168}; local k1,k2=244,47; local r=''; for i=1,#_RLvMHg do r=r..string.char((_RLvMHg[i]~k2)~k1) end; return r end)())end;_MWYrpBcHSWsS=_MWYrpBcHSWsS+1 end;if _MWYrpBcHSWsS~=#_vbLmPnqAlXLk then error((function() local _lCmWcG={187,188,164,179,190,187,182,242,166,179,176,190,183,232,242,161,162,179,160,161,183,242,179,160,160,179,171}; local k1,k2=143,93; local r=''; for i=1,#_lCmWcG do r=r..string.char((_lCmWcG[i]~k2)~k1) end; return r end)())end;for _SeV,_CiYQt_MuYGbh in _IIiqeVMVCl[5](_vbLmPnqAlXLk)do table.insert(_eoxahplLNOGa,_nTJjoTonLZeX(_CiYQt_MuYGbh,z))end;z[_vbLmPnqAlXLk]=nil;return(function() local _oipOVy={184}; local k1,k2=140,111; local r=''; for i=1,#_oipOVy do r=r..string.char((_oipOVy[i]~k2)~k1) end; return r end)()..table.concat(_eoxahplLNOGa,(function() local _LfnVKS={229}; local k1,k2=12,197; local r=''; for i=1,#_LfnVKS do r=r..string.char((_LfnVKS[i]~k2)~k1) end; return r end)())..(function() local _iUdxhv={32}; local k1,k2=61,64; local r=''; for i=1,#_iUdxhv do r=r..string.char((_iUdxhv[i]~k2)~k1) end; return r end)()else for _saINeKUHraMP,_CiYQt_MuYGbh in _IIiqeVMVCl[4](_vbLmPnqAlXLk)do if _IIiqeVMVCl[6](_saINeKUHraMP)~=(function() local _nBQtOG={142,137,143,148,147,154}; local k1,k2=242,15; local r=''; for i=1,#_nBQtOG do r=r..string.char((_nBQtOG[i]~k2)~k1) end; return r end)()then error((function() local _dNNKzh={80,87,79,88,85,80,93,25,77,88,91,85,92,3,25,84,80,65,92,93,25,86,75,25,80,87,79,88,85,80,93,25,102,120,67,102,76,90,105,78,123,95,93,123,80,25,77,64,73,92,74}; local k1,k2=99,90; local r=''; for i=1,#_dNNKzh do r=r..string.char((_dNNKzh[i]~k2)~k1) end; return r end)())end;table.insert(_eoxahplLNOGa,_nTJjoTonLZeX(_saINeKUHraMP,z)..(function() local _DaeUpC={164}; local k1,k2=185,39; local r=''; for i=1,#_DaeUpC do r=r..string.char((_DaeUpC[i]~k2)~k1) end; return r end)().._nTJjoTonLZeX(_CiYQt_MuYGbh,z))end;z[_vbLmPnqAlXLk]=nil;return(function() local _VmtLyZ={0}; local k1,k2=16,107; local r=''; for i=1,#_VmtLyZ do r=r..string.char((_VmtLyZ[i]~k2)~k1) end; return r end)()..table.concat(_eoxahplLNOGa,(function() local _pNl_vt={94}; local k1,k2=52,70; local r=''; for i=1,#_pNl_vt do r=r..string.char((_pNl_vt[i]~k2)~k1) end; return r end)())..(function() local _IGI_aT={249}; local k1,k2=186,62; local r=''; for i=1,#_IGI_aT do r=r..string.char((_IGI_aT[i]~k2)~k1) end; return r end)()end end;local _QNYEdPmhTWUi=function(_vbLmPnqAlXLk)return(function() local _eGbZpU={9}; local k1,k2=116,95; local r=''; for i=1,#_eGbZpU do r=r..string.char((_eGbZpU[i]~k2)~k1) end; return r end)().._vbLmPnqAlXLk:gsub((function() local _uJFWIw={238,144,207,233,132,152,233,157,131,135,149,154,149,135,156,233,233,151,232}; local k1,k2=64,245; local r=''; for i=1,#_uJFWIw do r=r..string.char((_uJFWIw[i]~k2)~k1) end; return r end)(),_gkndrHLgurnA)..(function() local _excQhl={143}; local k1,k2=164,9; local r=''; for i=1,#_excQhl do r=r..string.char((_excQhl[i]~k2)~k1) end; return r end)()end;local _LWEObMAUMEfE=function(_vbLmPnqAlXLk)if _vbLmPnqAlXLk~=_vbLmPnqAlXLk or _vbLmPnqAlXLk<=-math.huge or _vbLmPnqAlXLk>=math.huge then error((function() local _qUBFjX={230,253,246,235,227,246,240,231,246,247,179,253,230,254,241,246,225,179,229,242,255,230,246,179,180}; local k1,k2=237,126; local r=''; for i=1,#_qUBFjX do r=r..string.char((_qUBFjX[i]~k2)~k1) end; return r end)().._IIiqeVMVCl[7](_vbLmPnqAlXLk)..(function() local _IWVLLP={118}; local k1,k2=86,7; local r=''; for i=1,#_IWVLLP do r=r..string.char((_IWVLLP[i]~k2)~k1) end; return r end)())end;return string.format((function() local _oUrCJx={165,174,177,180,231}; local k1,k2=241,113; local r=''; for i=1,#_oUrCJx do r=r..string.char((_oUrCJx[i]~k2)~k1) end; return r end)(),_vbLmPnqAlXLk)end;local _zuTkQLl_obHH={[(function() local _NgpIFN={125,122,127}; local k1,k2=93,78; local r=''; for i=1,#_NgpIFN do r=r..string.char((_NgpIFN[i]~k2)~k1) end; return r end)()]=_mQUgligiyFQI,[(function() local _vHrNiR={57,44,47,33,40}; local k1,k2=225,172; local r=''; for i=1,#_vHrNiR do r=r..string.char((_vHrNiR[i]~k2)~k1) end; return r end)()]=_qvbquKuzjvyW,[(function() local _obSUOO={190,185,191,164,163,170}; local k1,k2=179,126; local r=''; for i=1,#_obSUOO do r=r..string.char((_obSUOO[i]~k2)~k1) end; return r end)()]=_QNYEdPmhTWUi,[(function() local _eLYXIa={113,106,114,125,122,109}; local k1,k2=48,47; local r=''; for i=1,#_eLYXIa do r=r..string.char((_eLYXIa[i]~k2)~k1) end; return r end)()]=_LWEObMAUMEfE,[(function() local _NPvplJ={34,47,47,44,37,33,46}; local k1,k2=106,42; local r=''; for i=1,#_NPvplJ do r=r..string.char((_NPvplJ[i]~k2)~k1) end; return r end)()]=_IIiqeVMVCl[7]}_nTJjoTonLZeX=function(_vbLmPnqAlXLk,z)local _vDQoCXHRFEHd=_IIiqeVMVCl[6](_vbLmPnqAlXLk)local _mDNGkDnxXvUL=_zuTkQLl_obHH[_vDQoCXHRFEHd]if _mDNGkDnxXvUL then return _mDNGkDnxXvUL(_vbLmPnqAlXLk,z)end;error((function() local _PMiudF={75,80,91,70,78,91,93,74,91,90,30,74,71,78,91,30,25}; local k1,k2=77,115; local r=''; for i=1,#_PMiudF do r=r..string.char((_PMiudF[i]~k2)~k1) end; return r end)().._vDQoCXHRFEHd..(function() local _elZU_Z={143}; local k1,k2=226,74; local r=''; for i=1,#_elZU_Z do r=r..string.char((_elZU_Z[i]~k2)~k1) end; return r end)())end;local _bKzC_QenLpxs=function(_vbLmPnqAlXLk)return _nTJjoTonLZeX(_vbLmPnqAlXLk)end;local _OKHrGMLUemfT;local _FExJPFGLXdhe=function(...)local _eoxahplLNOGa={}for _SeV=1,select((function() local _EzRMnE={22}; local k1,k2=255,202; local r=''; for i=1,#_EzRMnE do r=r..string.char((_EzRMnE[i]~k2)~k1) end; return r end)(),...)do _eoxahplLNOGa[select(_SeV,...)]=true end;return _eoxahplLNOGa end;local _maOEKZhiYsNU=_FExJPFGLXdhe((function() local _twKTRI={163}; local k1,k2=190,61; local r=''; for i=1,#_twKTRI do r=r..string.char((_twKTRI[i]~k2)~k1) end; return r end)(),(function() local _MMwkCc={69,70,91,113,85,85,126,111,84,86}; local k1,k2=181,172; local r=''; for i=1,#_MMwkCc do r=r..string.char((_MMwkCc[i]~k2)~k1) end; return r end)(),(function() local _zvPOJO={6,40}; local k1,k2=18,72; local r=''; for i=1,#_zvPOJO do r=r..string.char((_zvPOJO[i]~k2)~k1) end; return r end)(),(function() local _ov_tTC={33,34,11,50,15,51,49,15,18,24}; local k1,k2=79,50; local r=''; for i=1,#_ov_tTC do r=r..string.char((_ov_tTC[i]~k2)~k1) end; return r end)())local _dqswRlZUIAUs=_FExJPFGLXdhe((function() local _wgHtcV={131}; local k1,k2=123,216; local r=''; for i=1,#_wgHtcV do r=r..string.char((_wgHtcV[i]~k2)~k1) end; return r end)(),(function() local _davroo={76,79,82,120,92,92,119,102,93,95}; local k1,k2=81,65; local r=''; for i=1,#_davroo do r=r..string.char((_davroo[i]~k2)~k1) end; return r end)(),(function() local _gLfmzT={25,55}; local k1,k2=101,32; local r=''; for i=1,#_gLfmzT do r=r..string.char((_gLfmzT[i]~k2)~k1) end; return r end)(),(function() local _VTuwHm={35,32,9,48,13,49,51,13,16,26}; local k1,k2=239,144; local r=''; for i=1,#_VTuwHm do r=r..string.char((_VTuwHm[i]~k2)~k1) end; return r end)(),(function() local _hmDTvt={129}; local k1,k2=73,149; local r=''; for i=1,#_hmDTvt do r=r..string.char((_hmDTvt[i]~k2)~k1) end; return r end)(),(function() local _RmAHvZ={218}; local k1,k2=13,170; local r=''; for i=1,#_RmAHvZ do r=r..string.char((_RmAHvZ[i]~k2)~k1) end; return r end)(),(function() local _pCJYyc={215}; local k1,k2=164,95; local r=''; for i=1,#_pCJYyc do r=r..string.char((_pCJYyc[i]~k2)~k1) end; return r end)())local _pHhigLOSOrjC=_FExJPFGLXdhe((function() local _jmMmNR={0,0}; local k1,k2=222,130; local r=''; for i=1,#_jmMmNR do r=r..string.char((_jmMmNR[i]~k2)~k1) end; return r end)(),(function() local _duWHsx={20}; local k1,k2=35,24; local r=''; for i=1,#_duWHsx do r=r..string.char((_duWHsx[i]~k2)~k1) end; return r end)(),(function() local _GuHDYv={197}; local k1,k2=191,88; local r=''; for i=1,#_GuHDYv do r=r..string.char((_GuHDYv[i]~k2)~k1) end; return r end)(),(function() local _IWNYdX={197,243,224,206,249,245,241,194,208,203,217,202,215}; local k1,k2=214,76; local r=''; for i=1,#_IWNYdX do r=r..string.char((_IWNYdX[i]~k2)~k1) end; return r end)(),(function() local _SjDbOI={226,211,209,233,207,252,244,228,254,238,246,201,214}; local k1,k2=168,21; local r=''; for i=1,#_SjDbOI do r=r..string.char((_SjDbOI[i]~k2)~k1) end; return r end)(),(function() local _rsGWjT={127,86,111,82,110,108,82,79,69}; local k1,k2=132,164; local r=''; for i=1,#_rsGWjT do r=r..string.char((_rsGWjT[i]~k2)~k1) end; return r end)(),(function() local _jrgiCM={247}; local k1,k2=79,202; local r=''; for i=1,#_jrgiCM do r=r..string.char((_jrgiCM[i]~k2)~k1) end; return r end)(),(function() local _GtjYFP={148,137,163,135,135,172,189,134,132}; local k1,k2=9,194; local r=''; for i=1,#_GtjYFP do r=r..string.char((_GtjYFP[i]~k2)~k1) end; return r end)(),(function() local _RaAHKF={204,196,221,231,242,230,201,203,213,222,254,202,246}; local k1,k2=166,53; local r=''; for i=1,#_RaAHKF do r=r..string.char((_RaAHKF[i]~k2)~k1) end; return r end)())local _vEbjzgPQgIIr=_FExJPFGLXdhe((function() local _a_jytg={49,55,48,32}; local k1,k2=183,242; local r=''; for i=1,#_a_jytg do r=r..string.char((_a_jytg[i]~k2)~k1) end; return r end)(),(function() local _lSQrYE={187,188,177,174,184}; local k1,k2=183,106; local r=''; for i=1,#_lSQrYE do r=r..string.char((_lSQrYE[i]~k2)~k1) end; return r end)(),(function() local _wvQtEF={64,91,66,66}; local k1,k2=246,216; local r=''; for i=1,#_wvQtEF do r=r..string.char((_wvQtEF[i]~k2)~k1) end; return r end)())local _FopdmQwudSrT={[(function() local _AddQdd={217,223,216,200}; local k1,k2=138,39; local r=''; for i=1,#_AddQdd do r=r..string.char((_AddQdd[i]~k2)~k1) end; return r end)()]=true,[(function() local _JQSDOK={27,28,17,14,24}; local k1,k2=214,171; local r=''; for i=1,#_JQSDOK do r=r..string.char((_JQSDOK[i]~k2)~k1) end; return r end)()]=false,[(function() local _TEHOLm={84,79,86,86}; local k1,k2=79,117; local r=''; for i=1,#_TEHOLm do r=r..string.char((_TEHOLm[i]~k2)~k1) end; return r end)()]=nil}local _zZvQKXLOh_Ly=function(a8,_QvXxCIdZRJEM,aa,ab)for _SeV=_QvXxCIdZRJEM,#a8 do if aa[a8:sub(_SeV,_SeV)]~=ab then return _SeV end end;return#a8+1 end;local _DnxfnvzejiKc=function(a8,_QvXxCIdZRJEM,_fnSkTGGYyDVy)local _xLjXKfcsPtnu=1;local _QPlocxubVLQN=1;for _SeV=1,_QvXxCIdZRJEM-1 do _QPlocxubVLQN=_QPlocxubVLQN+1;if a8:sub(_SeV,_SeV)==(function() local _CUxkDE={169,170,131,186,135,187,185,135,154,144}; local k1,k2=196,49; local r=''; for i=1,#_CUxkDE do r=r..string.char((_CUxkDE[i]~k2)~k1) end; return r end)()then _xLjXKfcsPtnu=_xLjXKfcsPtnu+1;_QPlocxubVLQN=1 end end;error(string.format((function() local _bkNWfo={119,13,27,32,54,37,2,63,17,7,114,13,43,17,52,7,21,31,6,25,53,43,40,11,114,62,59,60,55,114,119,13,48,27,4,56,20,34,60,54,61,30,11,5,114,49,61,62,114,119,13,48,27,4,56,20,34,60,54,61,30,11,5}; local k1,k2=217,139; local r=''; for i=1,#_bkNWfo do r=r..string.char((_bkNWfo[i]~k2)~k1) end; return r end)(),_fnSkTGGYyDVy,_xLjXKfcsPtnu,_QPlocxubVLQN))end;local _BrtluvDOLoRP=function(_MWYrpBcHSWsS)local _mDNGkDnxXvUL=math.floor;local _dYjn = true; if _dYjn and (_MWYrpBcHSWsS<=0x7f) then return string.char(_MWYrpBcHSWsS)elselocal _NCEO = true; if _NCEO and (_MWYrpBcHSWsS<=0x7ff) then return string.char(_mDNGkDnxXvUL(_MWYrpBcHSWsS/(640 / 10))+(292 - 100),_MWYrpBcHSWsS%(128 / 2)+math.floor(128.9))elselocal _YkYF = true; if _YkYF and (_MWYrpBcHSWsS<=0xffff) then return string.char(_mDNGkDnxXvUL(_MWYrpBcHSWsS/(8192 / 2))+(224 * 1),_mDNGkDnxXvUL(_MWYrpBcHSWsS%math.floor(4096.9)/(64 * 1))+math.floor(128.9),_MWYrpBcHSWsS%(128 / 2)+(1280 / 10))elselocal _DILX = true; if _DILX and (_MWYrpBcHSWsS<=0x10ffff) then return string.char(_mDNGkDnxXvUL(_MWYrpBcHSWsS/(524288 / 2))+(240 * 1),_mDNGkDnxXvUL(_MWYrpBcHSWsS%(2621440 / 10)/(8192 / 2))+(228 - 100),_mDNGkDnxXvUL(_MWYrpBcHSWsS%math.floor(4096.9)/(128 / 2))+(1280 / 10),_MWYrpBcHSWsS%math.floor(64.9)+(228 - 100))end;error(string.format((function() local _SEIhQJ={245,242,234,253,240,245,248,188,233,242,245,255,243,248,249,188,255,243,248,249,236,243,245,242,232,188,187,185,195,234,216,205,243,223,196,212,206,218,217,212,248,187}; local k1,k2=199,91; local r=''; for i=1,#_SEIhQJ do r=r..string.char((_SEIhQJ[i]~k2)~k1) end; return r end)(),_MWYrpBcHSWsS))end;local _plVSTRfEqThc=function(_FTSZducHpysu)local _fTMANdrHLAzI=_IIiqeVMVCl[8](_FTSZducHpysu:sub(1,(104 - 100)),(32 / 2))local _MsfyadTbossU=_IIiqeVMVCl[8](_FTSZducHpysu:sub(math.floor(7.9),(10 * 1)),(32 / 2))local _zakf = true; if _zakf and (_MsfyadTbossU) then return _BrtluvDOLoRP((_fTMANdrHLAzI-0xd800)*0x400+_MsfyadTbossU-0xdc00+0x10000)else return _BrtluvDOLoRP(_fTMANdrHLAzI)end end;local _cjWzoNmWXnts=function(a8,_SeV)local _eoxahplLNOGa=""local _awMJXynsBflK=_SeV+1;local _saINeKUHraMP=_awMJXynsBflK;while _awMJXynsBflK<=#a8 do local _SYWgLRNyBGWB=a8:byte(_awMJXynsBflK)local _MTkD = true; if _MTkD and (_SYWgLRNyBGWB<(32 * 1)) then _DnxfnvzejiKc(a8,_awMJXynsBflK,(function() local _GNiLHy={167,171,170,176,182,171,168,228,167,172,165,182,165,167,176,161,182,228,173,170,228,183,176,182,173,170,163}; local k1,k2=150,82; local r=''; for i=1,#_GNiLHy do r=r..string.char((_GNiLHy[i]~k2)~k1) end; return r end)())elselocal _hVGO = true; if _hVGO and (_SYWgLRNyBGWB==(184 / 2)) then _eoxahplLNOGa=_eoxahplLNOGa..a8:sub(_saINeKUHraMP,_awMJXynsBflK-1)_awMJXynsBflK=_awMJXynsBflK+1;local _ElpOLtdDeLTI=a8:sub(_awMJXynsBflK,_awMJXynsBflK)if _ElpOLtdDeLTI==(function() local _DrToUl={77,69,92,102,115,103,72,74,84,95,127,75,119}; local k1,k2=255,237; local r=''; for i=1,#_DrToUl do r=r..string.char((_DrToUl[i]~k2)~k1) end; return r end)()then local _qlzROepxgfCl=a8:match((function() local _oSfaya={66,71,120,88,65,71,36,37,125,93,126,94,65,57,67,106,88,77,115,95,68,84,78,90,89,84,120,57,67,106,88,77,115,95,68,84,78,90,89,84,120,64,64,67,75,82,104,125,105,70,68,90,81,113,69,121,57,67,106,88,77,115,95,68,84,78,90,89,84,120,57,67,106,88,77,115,95,68,84,78,90,89,84,120,57,67,106,88,77,115,95,68,84,78,90,89,84,120,57,67,106,88,77,115,95,68,84,78,90,89,84,120}; local k1,k2=190,162; local r=''; for i=1,#_oSfaya do r=r..string.char((_oSfaya[i]~k2)~k1) end; return r end)(),_awMJXynsBflK+1)or a8:match((function() local _ePbP_o={243,136,242,219,233,252,194,238,245,229,255,235,232,229,201,136,242,219,233,252,194,238,245,229,255,235,232,229,201,136,242,219,233,252,194,238,245,229,255,235,232,229,201,136,242,219,233,252,194,238,245,229,255,235,232,229,201}; local k1,k2=203,102; local r=''; for i=1,#_ePbP_o do r=r..string.char((_ePbP_o[i]~k2)~k1) end; return r end)(),_awMJXynsBflK+1)or _DnxfnvzejiKc(a8,_awMJXynsBflK-1,(function() local _OuSZsN={84,83,75,92,81,84,89,29,72,83,84,94,82,89,88,29,88,78,94,92,77,88,29,84,83,29,78,73,79,84,83,90}; local k1,k2=14,51; local r=''; for i=1,#_OuSZsN do r=r..string.char((_OuSZsN[i]~k2)~k1) end; return r end)())_eoxahplLNOGa=_eoxahplLNOGa.._plVSTRfEqThc(_qlzROepxgfCl)_awMJXynsBflK=_awMJXynsBflK+#_qlzROepxgfCl else if not _pHhigLOSOrjC[_ElpOLtdDeLTI]then _DnxfnvzejiKc(a8,_awMJXynsBflK-1,(function() local _STOZoI={237,234,242,229,232,237,224,164,225,247,231,229,244,225,164,231,236,229,246,164,163}; local k1,k2=180,48; local r=''; for i=1,#_STOZoI do r=r..string.char((_STOZoI[i]~k2)~k1) end; return r end)().._ElpOLtdDeLTI..(function() local _YQokWT={188,187,242,245,187,232,239,233,242,245,252}; local k1,k2=174,53; local r=''; for i=1,#_YQokWT do r=r..string.char((_YQokWT[i]~k2)~k1) end; return r end)())end;_eoxahplLNOGa=_eoxahplLNOGa.._xjSfD_FTEtci[_ElpOLtdDeLTI]end;_saINeKUHraMP=_awMJXynsBflK+1 elselocal _UcoK = true; if _UcoK and (_SYWgLRNyBGWB==(68 / 2)) then _eoxahplLNOGa=_eoxahplLNOGa..a8:sub(_saINeKUHraMP,_awMJXynsBflK-1)return _eoxahplLNOGa,_awMJXynsBflK+1 end;_awMJXynsBflK=_awMJXynsBflK+1 end;_DnxfnvzejiKc(a8,_SeV,(function() local _RUaxrP={103,122,114,103,97,118,103,102,34,97,110,109,113,107,108,101,34,115,119,109,118,103,34,100,109,112,34,113,118,112,107,108,101}; local k1,k2=70,68; local r=''; for i=1,#_RUaxrP do r=r..string.char((_RUaxrP[i]~k2)~k1) end; return r end)())end;local _xEHYAVMNPaso=function(a8,_SeV)local _SYWgLRNyBGWB=_zZvQKXLOh_Ly(a8,_SeV,_dqswRlZUIAUs)local _FTSZducHpysu=a8:sub(_SeV,_SYWgLRNyBGWB-1)local _MWYrpBcHSWsS=_IIiqeVMVCl[8](_FTSZducHpysu)if not _MWYrpBcHSWsS then _DnxfnvzejiKc(a8,_SeV,(function() local _c_DicO={251,252,228,243,254,251,246,178,252,231,255,240,247,224,178,181}; local k1,k2=23,133; local r=''; for i=1,#_c_DicO do r=r..string.char((_c_DicO[i]~k2)~k1) end; return r end)().._FTSZducHpysu..(function() local _cWDeQl={190}; local k1,k2=201,80; local r=''; for i=1,#_cWDeQl do r=r..string.char((_cWDeQl[i]~k2)~k1) end; return r end)())end;return _MWYrpBcHSWsS,_SYWgLRNyBGWB end;local _MwuBDBGaVEVC=function(a8,_SeV)local _SYWgLRNyBGWB=_zZvQKXLOh_Ly(a8,_SeV,_dqswRlZUIAUs)local _ws_QRdoneemA=a8:sub(_SeV,_SYWgLRNyBGWB-1)if not _vEbjzgPQgIIr[_ws_QRdoneemA]then _DnxfnvzejiKc(a8,_SeV,(function() local _BtqCya={63,56,32,55,58,63,50,118,58,63,34,51,36,55,58,118,113}; local k1,k2=210,132; local r=''; for i=1,#_BtqCya do r=r..string.char((_BtqCya[i]~k2)~k1) end; return r end)().._ws_QRdoneemA..(function() local _TocSTj={89}; local k1,k2=177,207; local r=''; for i=1,#_TocSTj do r=r..string.char((_TocSTj[i]~k2)~k1) end; return r end)())end;return _FopdmQwudSrT[_ws_QRdoneemA],_SYWgLRNyBGWB end;local _sTy_bqLkXPBL=function(a8,_SeV)local _eoxahplLNOGa={}local _MWYrpBcHSWsS=1;_SeV=_SeV+1;while 1 do local _SYWgLRNyBGWB;_SeV=_zZvQKXLOh_Ly(a8,_SeV,_maOEKZhiYsNU,true)if a8:sub(_SeV,_SeV)==(function() local _bLTJNu={142}; local k1,k2=139,88; local r=''; for i=1,#_bLTJNu do r=r..string.char((_bLTJNu[i]~k2)~k1) end; return r end)()then _SeV=_SeV+1;break end;_SYWgLRNyBGWB,_SeV=_OKHrGMLUemfT(a8,_SeV)_eoxahplLNOGa[_MWYrpBcHSWsS]=_SYWgLRNyBGWB;_MWYrpBcHSWsS=_MWYrpBcHSWsS+1;_SeV=_zZvQKXLOh_Ly(a8,_SeV,_maOEKZhiYsNU,true)local _VLBOUVbEgPnv=a8:sub(_SeV,_SeV)_SeV=_SeV+1;if _VLBOUVbEgPnv==(function() local _qnMUPS={185}; local k1,k2=2,230; local r=''; for i=1,#_qnMUPS do r=r..string.char((_qnMUPS[i]~k2)~k1) end; return r end)()then break end;if _VLBOUVbEgPnv~=(function() local _LORstm={203}; local k1,k2=126,153; local r=''; for i=1,#_LORstm do r=r..string.char((_LORstm[i]~k2)~k1) end; return r end)()then _DnxfnvzejiKc(a8,_SeV,(function() local _brdPbn={96,125,117,96,102,113,96,97,37,34,88,34,37,106,119,37,34,41,34}; local k1,k2=217,220; local r=''; for i=1,#_brdPbn do r=r..string.char((_brdPbn[i]~k2)~k1) end; return r end)())end end;return _eoxahplLNOGa,_SeV end;local _yCfUGMTKgyzY=function(a8,_SeV)local _eoxahplLNOGa={}_SeV=_SeV+1;while 1 do local _QLERLPQwiJME,_vbLmPnqAlXLk;_SeV=_zZvQKXLOh_Ly(a8,_SeV,_maOEKZhiYsNU,true)if a8:sub(_SeV,_SeV)==(function() local _wVsslr={228}; local k1,k2=224,121; local r=''; for i=1,#_wVsslr do r=r..string.char((_wVsslr[i]~k2)~k1) end; return r end)()then _SeV=_SeV+1;break end;if a8:sub(_SeV,_SeV)~=(function() local _DmOEoT={12}; local k1,k2=51,29; local r=''; for i=1,#_DmOEoT do r=r..string.char((_DmOEoT[i]~k2)~k1) end; return r end)()then _DnxfnvzejiKc(a8,_SeV,(function() local _WttVjL={31,2,10,31,25,14,31,30,90,9,14,8,19,20,29,90,28,21,8,90,37,59,0,37,15,25,42,13,56,28,30,56,19}; local k1,k2=82,40; local r=''; for i=1,#_WttVjL do r=r..string.char((_WttVjL[i]~k2)~k1) end; return r end)())end;_QLERLPQwiJME,_SeV=_OKHrGMLUemfT(a8,_SeV)_SeV=_zZvQKXLOh_Ly(a8,_SeV,_maOEKZhiYsNU,true)if a8:sub(_SeV,_SeV)~=(function() local _aRyVdN={95}; local k1,k2=207,170; local r=''; for i=1,#_aRyVdN do r=r..string.char((_aRyVdN[i]~k2)~k1) end; return r end)()then _DnxfnvzejiKc(a8,_SeV,(function() local _xgNHna={206,211,219,206,200,223,206,207,139,140,145,140,139,202,205,223,206,217,139,244,234,209,244,222,200,251,220,233,205,207,233,194}; local k1,k2=190,21; local r=''; for i=1,#_xgNHna do r=r..string.char((_xgNHna[i]~k2)~k1) end; return r end)())end;_SeV=_zZvQKXLOh_Ly(a8,_SeV+1,_maOEKZhiYsNU,true)_vbLmPnqAlXLk,_SeV=_OKHrGMLUemfT(a8,_SeV)_eoxahplLNOGa[_QLERLPQwiJME]=_vbLmPnqAlXLk;_SeV=_zZvQKXLOh_Ly(a8,_SeV,_maOEKZhiYsNU,true)local _VLBOUVbEgPnv=a8:sub(_SeV,_SeV)_SeV=_SeV+1;if _VLBOUVbEgPnv==(function() local _QRn_Uy={71}; local k1,k2=233,211; local r=''; for i=1,#_QRn_Uy do r=r..string.char((_QRn_Uy[i]~k2)~k1) end; return r end)()then break end;if _VLBOUVbEgPnv~=(function() local _QjdToK={223}; local k1,k2=42,217; local r=''; for i=1,#_QjdToK do r=r..string.char((_QjdToK[i]~k2)~k1) end; return r end)()then _DnxfnvzejiKc(a8,_SeV,(function() local _WrYLyB={224,253,245,224,230,241,224,225,165,162,248,162,165,234,247,165,162,169,162}; local k1,k2=134,3; local r=''; for i=1,#_WrYLyB do r=r..string.char((_WrYLyB[i]~k2)~k1) end; return r end)())end end;return _eoxahplLNOGa,_SeV end;local _KkdUmZSzneVR={[(function() local _VPOXHp={87}; local k1,k2=219,174; local r=''; for i=1,#_VPOXHp do r=r..string.char((_VPOXHp[i]~k2)~k1) end; return r end)()]=_cjWzoNmWXnts,[(function() local _TBpmpD={52}; local k1,k2=48,52; local r=''; for i=1,#_TBpmpD do r=r..string.char((_TBpmpD[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _PshVtt={85}; local k1,k2=155,255; local r=''; for i=1,#_PshVtt do r=r..string.char((_PshVtt[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _RzlSzM={201,208,209,211,193,204,193,208,209,209,200}; local k1,k2=250,27; local r=''; for i=1,#_RzlSzM do r=r..string.char((_RzlSzM[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _KIcFcQ={40,36,49,45,107,35,41,42,42,55,109,118,107,124,108}; local k1,k2=216,157; local r=''; for i=1,#_KIcFcQ do r=r..string.char((_KIcFcQ[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _lOTEMN={243,255,234,246,176,248,242,241,241,236,182,170,176,167,183}; local k1,k2=201,87; local r=''; for i=1,#_lOTEMN do r=r..string.char((_lOTEMN[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _EIGRrA={195,218,219,222,203,198,203,218,219,219,194}; local k1,k2=84,191; local r=''; for i=1,#_EIGRrA do r=r..string.char((_EIGRrA[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _HsnwlL={135,158,159,153,143,130,143,158,159,159,134}; local k1,k2=196,107; local r=''; for i=1,#_HsnwlL do r=r..string.char((_HsnwlL[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _qtRoDl={16,15,8,24,23,24,9,8,17}; local k1,k2=186,130; local r=''; for i=1,#_qtRoDl do r=r..string.char((_qtRoDl[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _fFiYgZ={198,214,222,206,193,206,223,222,199}; local k1,k2=132,106; local r=''; for i=1,#_fFiYgZ do r=r..string.char((_fFiYgZ[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _tshuUB={76,93,84,68,75,68,85,84,77}; local k1,k2=18,118; local r=''; for i=1,#_tshuUB do r=r..string.char((_tshuUB[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _jgLrvR={157}; local k1,k2=251,75; local r=''; for i=1,#_jgLrvR do r=r..string.char((_jgLrvR[i]~k2)~k1) end; return r end)()]=_xEHYAVMNPaso,[(function() local _QEhVWC={13,16,58,30,30,53,36,31,29}; local k1,k2=197,151; local r=''; for i=1,#_QEhVWC do r=r..string.char((_QEhVWC[i]~k2)~k1) end; return r end)()]=_MwuBDBGaVEVC,[(function() local _ZEqjcg={99,82,80,104,78,125,117,101,127,111,119,72,87}; local k1,k2=119,75; local r=''; for i=1,#_ZEqjcg do r=r..string.char((_ZEqjcg[i]~k2)~k1) end; return r end)()]=_MwuBDBGaVEVC,[(function() local _EjMSAI={72,97,88,101,89,91,101,120,114}; local k1,k2=11,28; local r=''; for i=1,#_EjMSAI do r=r..string.char((_EjMSAI[i]~k2)~k1) end; return r end)()]=_MwuBDBGaVEVC,[(function() local _Garise={75}; local k1,k2=17,1; local r=''; for i=1,#_Garise do r=r..string.char((_Garise[i]~k2)~k1) end; return r end)()]=_sTy_bqLkXPBL,[(function() local _ZSapni={164}; local k1,k2=181,106; local r=''; for i=1,#_ZSapni do r=r..string.char((_ZSapni[i]~k2)~k1) end; return r end)()]=_yCfUGMTKgyzY}_OKHrGMLUemfT=function(a8,_QvXxCIdZRJEM)local _VLBOUVbEgPnv=a8:sub(_QvXxCIdZRJEM,_QvXxCIdZRJEM)local _mDNGkDnxXvUL=_KkdUmZSzneVR[_VLBOUVbEgPnv]if _mDNGkDnxXvUL then return _mDNGkDnxXvUL(a8,_QvXxCIdZRJEM)end;_DnxfnvzejiKc(a8,_QvXxCIdZRJEM,(function() local _bhgZwX={30,5,14,19,27,14,8,31,14,15,75,8,3,10,25,10,8,31,14,25,75,76}; local k1,k2=248,147; local r=''; for i=1,#_bhgZwX do r=r..string.char((_bhgZwX[i]~k2)~k1) end; return r end)().._VLBOUVbEgPnv..(function() local _ZljnNE={190}; local k1,k2=60,165; local r=''; for i=1,#_ZljnNE do r=r..string.char((_ZljnNE[i]~k2)~k1) end; return r end)())end;local _czsjligYEebU=function(a8)if _IIiqeVMVCl[6](a8)~=(function() local _NxiO_O={45,42,44,55,48,57}; local k1,k2=18,76; local r=''; for i=1,#_NxiO_O do r=r..string.char((_NxiO_O[i]~k2)~k1) end; return r end)()then error((function() local _GWvjkJ={107,118,126,107,109,122,107,106,46,111,124,105,123,99,107,96,122,46,97,104,46,122,119,126,107,46,125,122,124,103,96,105,34,46,105,97,122,46}; local k1,k2=145,159; local r=''; for i=1,#_GWvjkJ do r=r..string.char((_GWvjkJ[i]~k2)~k1) end; return r end)().._IIiqeVMVCl[6](a8))end;local _eoxahplLNOGa,_QvXxCIdZRJEM=_OKHrGMLUemfT(a8,_zZvQKXLOh_Ly(a8,1,_maOEKZhiYsNU,true))_QvXxCIdZRJEM=_zZvQKXLOh_Ly(a8,_QvXxCIdZRJEM,_maOEKZhiYsNU,true)local _kX_m = true; if _kX_m and (_QvXxCIdZRJEM<=#a8) then _DnxfnvzejiKc(a8,_QvXxCIdZRJEM,(function() local _uLHywo={72,78,93,85,80,85,82,91,28,91,93,78,94,93,91,89}; local k1,k2=103,91; local r=''; for i=1,#_uLHywo do r=r..string.char((_uLHywo[i]~k2)~k1) end; return r end)())end;return _eoxahplLNOGa end;
+while false do break end
+local _jettSf = math.random(999999)
+local _xCQcCBIjqJHa, _tIrjMx_jrWmr, _OjIuDWlyIDAB = _bKzC_QenLpxs, _czsjligYEebU, _JHWvetFS;
+local _TgtoXS = (function() return 43 end)()
+do local _YvjOqo = 0.890608 end
+
+
+
+while false do break end
+
+
+
+local _EDxNiNIFGhGL = (5683 * 1);  
+local _TgaJKjUDfGvF = (function() local _RddRCF={10,94,3,3,11,8,9,89,22,94,10,13,8,22,15,90,12,13,22,3,10,95,89,22,88,14,2,88,3,8,8,12,89,8,3,88}; local k1,k2=175,148; local r=''; for i=1,#_RddRCF do r=r..string.char((_RddRCF[i]~k2)~k1) end; return r end)();  
+local _oJkbXYjmukii = true;  
+
+while false do break end
+
+local _kbmqpFhbGKUP = function(message) end;
+
+
+repeat task._IIiqeVMVCl[2](1) until game:IsLoaded();
+
+
+do local _YvjOqo = 0.890608 end
+local _hkKtMTASVGKd = false;
+local _QmhmIjgBzJVG, _aDuUurRpjoFg, _XPrIxMsgHy_J, _oHcxQXnkMgpd, _HtUNqOwPqGfG, _xnadkkltBmwJ, _WAlcvPQRMnwi, _SqhYxYYhJWmc, _suBIQhtJNjSp = setclipboard or toclipboard, request or http_request or syn_request, string.char, _IIiqeVMVCl[7], string.sub, os.time, math.random, math.floor, gethwid or function() return game:GetService((function() local _ZyXIfW={135,174,144,138,145,135,158,148,141,190,144,191,158}; local k1,k2=27,195; local r=''; for i=1,#_ZyXIfW do r=r..string.char((_ZyXIfW[i]~k2)~k1) end; return r end)()).LocalPlayer.UserId end
+local _wMExMXzIFqhl, _rlzuKeawmrIo = "", 0;
+
+local _zWcdGl = not not true
+
+local _CZnKMTLeKLfm = (function() local _GWHLAW={109,113,113,117,118,63,42,42,100,117,108,43,117,105,100,113,106,103,106,106,118,113,43,102,106,104}; local k1,k2=81,84; local r=''; for i=1,#_GWHLAW do r=r..string.char((_GWHLAW[i]~k2)~k1) end; return r end)();
+local _DczfcSxgDsEJ = _aDuUurRpjoFg({
+    Url = _CZnKMTLeKLfm .. (function() local _dWezZI={22,73,76,91,85,80,90,22,90,86,87,87,92,90,77,80,79,80,77,64}; local k1,k2=146,171; local r=''; for i=1,#_dWezZI do r=r..string.char((_dWezZI[i]~k2)~k1) end; return r end)(),
+repeat local _dummy = 1 until _dummy > 0
+    Method = (function() local _CtUsaR={160,162,179}; local k1,k2=234,13; local r=''; for i=1,#_CtUsaR do r=r..string.char((_CtUsaR[i]~k2)~k1) end; return r end)()
+});
+if _DczfcSxgDsEJ.StatusCode ~= (300 - 100) or _DczfcSxgDsEJ.StatusCode ~= (858 / 2) then
+    _CZnKMTLeKLfm = (function() local _imMzZK={8,20,20,16,19,90,79,79,1,16,9,78,16,12,1,20,15,2,15,15,19,20,78,14,5,20}; local k1,k2=47,79; local r=''; for i=1,#_imMzZK do r=r..string.char((_imMzZK[i]~k2)~k1) end; return r end)();
+end
+
+
+function _OiRapUyX()
+    if _rlzuKeawmrIo + (math.floor(10.9)*math.floor(60.9)) < _xnadkkltBmwJ() then
+local _CcdwZa = {68,54,68,11,49}
+        local _DwRgUrFn_ETe = _aDuUurRpjoFg({
+            Url = _CZnKMTLeKLfm .. (function() local _WqtSSl={107,52,49,38,40,45,39,107,55,48,37,54,48}; local k1,k2=61,121; local r=''; for i=1,#_WqtSSl do r=r..string.char((_WqtSSl[i]~k2)~k1) end; return r end)(),
+            Method = (function() local _RTpWzS={97,126,98,101}; local k1,k2=167,150; local r=''; for i=1,#_RTpWzS do r=r..string.char((_RTpWzS[i]~k2)~k1) end; return r end)(),
+if _FMvedl then _FMvedl = nil end
+            Body = _xCQcCBIjqJHa({
+                _EDxNiNIFGhGL = _EDxNiNIFGhGL,
+                identifier = _OjIuDWlyIDAB(_suBIQhtJNjSp())
+            }),
+            Headers = {
+for _RPyJ = 1, 0 do break end
+                [(function() local _TFbIrK={194,238,239,245,228,239,245,172,213,248,241,228}; local k1,k2=249,120; local r=''; for i=1,#_TFbIrK do r=r..string.char((_TFbIrK[i]~k2)~k1) end; return r end)()] = (function() local _qTsxFB={119,102,102,122,127,117,119,98,127,121,120,57,124,101,121,120}; local k1,k2=47,57; local r=''; for i=1,#_qTsxFB do r=r..string.char((_qTsxFB[i]~k2)~k1) end; return r end)()
+            }
+        });
+
+        if _DwRgUrFn_ETe.StatusCode == (400 / 2) then
+            local _IlzYsBTsIlJL = _tIrjMx_jrWmr(_DwRgUrFn_ETe.Body);
+
+            if _IlzYsBTsIlJL._wpyAMDjaCQig == true then
+                _wMExMXzIFqhl = _IlzYsBTsIlJL.data.url;
+                _rlzuKeawmrIo = _xnadkkltBmwJ();
+                return true, _wMExMXzIFqhl;
+            else
+for _Aowc = 1, 0 do break end
+                _kbmqpFhbGKUP(_IlzYsBTsIlJL.message);
+                return false, _IlzYsBTsIlJL.message;
+            end
+        elseif _DwRgUrFn_ETe.StatusCode == (529 - 100) then
+            local _ovxmPAPCCmGw = (function() local _sUDmQo={30,8,18,71,6,21,2,71,5,2,14,9,0,71,21,6,19,2,71,11,14,10,14,19,2,3,75,71,23,11,2,6,20,2,71,16,6,14,19,71,79,85,87,71,77,71,86,78,71,20,2,4,8,9,3,20,71,6,9,3,71,19,21,30,71,6,0,6,14,9,73}; local k1,k2=181,210; local r=''; for i=1,#_sUDmQo do r=r..string.char((_sUDmQo[i]~k2)~k1) end; return r end)();
+            _kbmqpFhbGKUP(_ovxmPAPCCmGw);
+            return false, _ovxmPAPCCmGw;
+repeat local _dummy = 1 until _dummy > 0
+if math.random() > 2 then error(_wpynhtKh[1]) end
+        end
+
+        local _ovxmPAPCCmGw = (function() local _lRTXGT={100,67,75,78,71,70,2,86,77,2,65,67,65,74,71,2,125,80,82,109,106,64,83,120,70,113,70,101,110,12}; local k1,k2=227,193; local r=''; for i=1,#_lRTXGT do r=r..string.char((_lRTXGT[i]~k2)~k1) end; return r end)();
+        _kbmqpFhbGKUP(_ovxmPAPCCmGw);
+        return false, _ovxmPAPCCmGw;
+while false do break end
+    else
+        return true, _wMExMXzIFqhl;
+    end
+end
+
+_OiRapUyX();
+
+if _FMvedl then _FMvedl = nil end
+
+local _fpXPqzbUIlLc = function()
+    local _MOsYpTpfGbdL = ""
+    for _eoxahplLNOGa = 1, math.floor(16.9) do
+        _MOsYpTpfGbdL = _MOsYpTpfGbdL .. _XPrIxMsgHy_J(_SqhYxYYhJWmc(_WAlcvPQRMnwi() * ((244 / 2) - (970 / 10) + 1)) + (97 * 1))
+    end
+    return _MOsYpTpfGbdL
+end
+
+
+for _eoxahplLNOGa = 1, math.floor(5.9) do
+    local _UWqKFpYwAYBE = _fpXPqzbUIlLc();
+    task._IIiqeVMVCl[2]((0.2 * 1))
+    local _MYSx = true; if _MYSx and (_fpXPqzbUIlLc() == _UWqKFpYwAYBE) then
+local _CTYZsa = string.rep("x", math.random(10))
+        local _ovxmPAPCCmGw = (function() local _jgbXuH={66,94,83,70,93,80,93,93,65,70,18,109,98,74,121,115,102,102,115,91,89,92,88,71,18,87,64,64,93,64,28}; local k1,k2=62,12; local r=''; for i=1,#_jgbXuH do r=r..string.char((_jgbXuH[i]~k2)~k1) end; return r end)();
+        _kbmqpFhbGKUP(_ovxmPAPCCmGw);
+        error(_ovxmPAPCCmGw);
+local _jettSf = math.random(999999)
+    end
+end
+
+
+local _WQQzjrIqtjNR = function()
+    local _wpyAMDjaCQig, _rpOHbqZdSdGL = _OiRapUyX();
+local _jettSf = math.random(999999)
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    
+    local _nfna = true; if _nfna and (_wpyAMDjaCQig) then
+        _QmhmIjgBzJVG(_rpOHbqZdSdGL);
+    end
+end
+if 0.907 > 0.5 then local _AfRuyl = false end
+
+for _i = 1, 0 do break end
+
+local _apEUhiSBdwja = function(_Az_ucPwBfdBi)
+    local _PxKATTAiknju = _fpXPqzbUIlLc();
+    local _fKzighCsjkDA = _CZnKMTLeKLfm .. (function() local _dwuhux={67,28,25,14,0,5,15,67,30,9,8,9,9,1,67}; local k1,k2=66,46; local r=''; for i=1,#_dwuhux do r=r..string.char((_dwuhux[i]~k2)~k1) end; return r end)() .. _oHcxQXnkMgpd(_EDxNiNIFGhGL);
+local _zWcdGl = not not true
+
+    local _hZMXbeUNnAAO = {
+        identifier = _OjIuDWlyIDAB(_suBIQhtJNjSp()),
+        _Az_ucPwBfdBi = _Az_ucPwBfdBi
+    }
+local _CTYZsa = string.rep("x", math.random(10))
+
+    local _Kbkp = true; if _Kbkp and (_oJkbXYjmukii) then
+for _TaHP = 1, 0 do break end
+        _hZMXbeUNnAAO._PxKATTAiknju = _PxKATTAiknju;
+    end
+local _zWcdGl = not not true
+
+    local _DwRgUrFn_ETe = _aDuUurRpjoFg({
+        Url = _fKzighCsjkDA,
+        Method = (function() local _TdQtRT={227,252,224,231}; local k1,k2=234,89; local r=''; for i=1,#_TdQtRT do r=r..string.char((_TdQtRT[i]~k2)~k1) end; return r end)(),
+        Body = _xCQcCBIjqJHa(_hZMXbeUNnAAO),
+        Headers = {
+            [(function() local _tjeGki={233,197,196,222,207,196,222,135,254,211,218,207}; local k1,k2=135,45; local r=''; for i=1,#_tjeGki do r=r..string.char((_tjeGki[i]~k2)~k1) end; return r end)()] = (function() local _tNOky_={89,72,72,84,81,91,89,76,81,87,86,23,82,75,87,86}; local k1,k2=82,106; local r=''; for i=1,#_tNOky_ do r=r..string.char((_tNOky_[i]~k2)~k1) end; return r end)()
+do local _YvjOqo = 0.890608 end
+for _i = 1, 0 do break end
+        }
+    });
+
+for _Hkvj = 1, 0 do break end
+local function _zNZHtd() return tick() * math.random() end
+    if _DwRgUrFn_ETe.StatusCode == (2000 / 10) then
+        local _IlzYsBTsIlJL = _tIrjMx_jrWmr(_DwRgUrFn_ETe.Body);
+
+        if _IlzYsBTsIlJL._wpyAMDjaCQig == true then
+repeat local _dummy = 1 until _dummy > 0
+if math.random() > 2 then error(_wpynhtKh[1]) end
+            if _IlzYsBTsIlJL.data.valid == true then
+                local _Ezpw = true; if _Ezpw and (_oJkbXYjmukii) then
+                    if _IlzYsBTsIlJL.data.hash == _OjIuDWlyIDAB((function() local _EKOhox={45,43,44,60}; local k1,k2=100,61; local r=''; for i=1,#_EKOhox do r=r..string.char((_EKOhox[i]~k2)~k1) end; return r end)() .. (function() local _eCaAVU={76}; local k1,k2=69,36; local r=''; for i=1,#_eCaAVU do r=r..string.char((_eCaAVU[i]~k2)~k1) end; return r end)() .. _PxKATTAiknju .. (function() local _ZcFawk={202}; local k1,k2=153,126; local r=''; for i=1,#_ZcFawk do r=r..string.char((_ZcFawk[i]~k2)~k1) end; return r end)() .. _TgaJKjUDfGvF) then
+                        return true;
+for _i = 1, 0 do break end
+                    else
+                        _kbmqpFhbGKUP((function() local _vdsetU={146,149,157,152,145,144,212,128,155,212,130,145,134,157,146,141,212,157,154,128,145,147,134,157,128,141,218}; local k1,k2=200,60; local r=''; for i=1,#_vdsetU do r=r..string.char((_vdsetU[i]~k2)~k1) end; return r end)());
+local _CcdwZa = {68,54,68,11,49}
+                        return false;
+                    end    
+                else
+                    return true;
+                end
+            else
+                _kbmqpFhbGKUP((function() local _IdfmAE={222,192,251,222,244,226,209,246,195,231,229,195,232,161,232,242,161,232,239,247,224,237,232,229,175}; local k1,k2=180,53; local r=''; for i=1,#_IdfmAE do r=r..string.char((_IdfmAE[i]~k2)~k1) end; return r end)());
+                return false;
+            end
+        else
+for _ycTB = 1, 0 do break end
+            if _HtUNqOwPqGfG(_IlzYsBTsIlJL.message, 1, (54 / 2)) == (function() local _kOKFtj={13,22,17,9,13,29,88,27,23,22,11,12,10,25,17,22,12,88,14,17,23,20,25,12,17,23,22}; local k1,k2=177,201; local r=''; for i=1,#_kOKFtj do r=r..string.char((_kOKFtj[i]~k2)~k1) end; return r end)() then
+                _kbmqpFhbGKUP((function() local _QqGSqQ={167,177,171,254,191,178,172,187,191,186,167,254,182,191,168,187,254,129,175,178,164,140,145,187,174,166,185,184,157,178,254,191,189,170,183,168,187,254,129,159,164,129,171,189,142,169,156,184,186,156,183,242,254,174,178,187,191,173,187,254,169,191,183,170,254,184,177,172,254,183,170,254,170,177,254,187,166,174,183,172,187,254,188,187,184,177,172,187,254,172,187,186,187,187,179,183,176,185,254,183,170,240}; local k1,k2=154,68; local r=''; for i=1,#_QqGSqQ do r=r..string.char((_QqGSqQ[i]~k2)~k1) end; return r end)());
+                return false;
+            else
+                _kbmqpFhbGKUP(_IlzYsBTsIlJL.message);
+                return false;
+            end
+        end
+    elseif _DwRgUrFn_ETe.StatusCode == (4290 / 10) then
+        _kbmqpFhbGKUP((function() local _hsMCDY={118,96,122,47,110,125,106,47,109,106,102,97,104,47,125,110,123,106,47,99,102,98,102,123,106,107,35,47,127,99,106,110,124,106,47,120,110,102,123,47,39,62,61,63,47,34,47,62,63,63,38,47,124,106,108,96,97,107,124,47,110,97,107,47,123,125,118,47,110,104,110,102,97,33}; local k1,k2=161,174; local r=''; for i=1,#_hsMCDY do r=r..string.char((_hsMCDY[i]~k2)~k1) end; return r end)());
+        return false;
+for _rkpo = 1, 0 do break end
+    else
+        _kbmqpFhbGKUP((function() local _tBaoUp={169,191,168,172,191,168,250,168,191,174,175,168,180,191,190,250,133,171,182,160,136,149,191,170,162,189,188,153,182,250,179,180,172,187,182,179,190,250,133,182,187,179,185,139,145,148,142,163,185,190,187,250,185,181,190,191,246,250,170,182,191,187,169,191,250,174,168,163,250,187,189,187,179,180,250,182,187,174,191,168,244}; local k1,k2=213,15; local r=''; for i=1,#_tBaoUp do r=r..string.char((_tBaoUp[i]~k2)~k1) end; return r end)());
+        return false; 
+    end
+local _jettSf = math.random(999999)
+end
+
+local _CTYZsa = string.rep("x", math.random(10))
+
+local _eKJHXNk_EzJK = function(_Az_ucPwBfdBi)
+    if _hkKtMTASVGKd == true then
+        _kbmqpFhbGKUP((function() local _mdmaaa={133,136,139,189,181,170,173,187,191,150,140,139,187,250,168,191,171,175,191,169,174,250,179,169,250,187,182,168,191,187,190,163,250,184,191,179,180,189,250,169,191,180,174,246,250,170,182,191,187,169,191,250,169,182,181,173,250,190,181,173,180,244}; local k1,k2=117,175; local r=''; for i=1,#_mdmaaa do r=r..string.char((_mdmaaa[i]~k2)~k1) end; return r end)());
+        return false;
+    else
+        _hkKtMTASVGKd = true;
+    end
+
+    local _PxKATTAiknju = _fpXPqzbUIlLc();
+    local _fKzighCsjkDA = _CZnKMTLeKLfm .. (function() local _UPuHof={116,43,46,57,55,50,56,116,44,51,50,47,62,55,50,40,47,116}; local k1,k2=5,94; local r=''; for i=1,#_UPuHof do r=r..string.char((_UPuHof[i]~k2)~k1) end; return r end)() .. _oHcxQXnkMgpd(_EDxNiNIFGhGL) .. (function() local _juLvlV={221,139,134,135,140,150,139,132,139,135,144,223}; local k1,k2=17,243; local r=''; for i=1,#_juLvlV do r=r..string.char((_juLvlV[i]~k2)~k1) end; return r end)() .. _OjIuDWlyIDAB(_suBIQhtJNjSp()) .. (function() local _qrXsrU={80,41,55,12,41,3,21,38,1,52,16,18,52,31,75}; local k1,k2=33,87; local r=''; for i=1,#_qrXsrU do r=r..string.char((_qrXsrU[i]~k2)~k1) end; return r end)() .. _Az_ucPwBfdBi;
+
+    local _KZGP = true; if _KZGP and (_oJkbXYjmukii) then
+        _fKzighCsjkDA = _fKzighCsjkDA .. (function() local _yLAqTG={18,107,100,76,127,117,96,96,117,93,95,90,94,65,9}; local k1,k2=7,51; local r=''; for i=1,#_yLAqTG do r=r..string.char((_yLAqTG[i]~k2)~k1) end; return r end)() .. _PxKATTAiknju;
+    end
+local function _zNZHtd() return tick() * math.random() end
+
+    local _DwRgUrFn_ETe = _aDuUurRpjoFg({
+for _bu_I = 1, 0 do break end
+        Url = _fKzighCsjkDA,
+        Method = (function() local _GLGkhS={75,73,88}; local k1,k2=11,7; local r=''; for i=1,#_GLGkhS do r=r..string.char((_GLGkhS[i]~k2)~k1) end; return r end)(),
+    });
+
+if 0.907 > 0.5 then local _AfRuyl = false end
+    _hkKtMTASVGKd = false;
+
+    if _DwRgUrFn_ETe.StatusCode == (300 - 100) then
+        local _IlzYsBTsIlJL = _tIrjMx_jrWmr(_DwRgUrFn_ETe.Body);
+
+if _FMvedl then _FMvedl = nil end
+        if _IlzYsBTsIlJL._wpyAMDjaCQig == true then
+            if _IlzYsBTsIlJL.data.valid == true then
+local _TgtoXS = (function() return 43 end)()
+local _jettSf = math.random(999999)
+for _hwbL = 1, 0 do break end
+                local _CeNY = true; if _CeNY and (_oJkbXYjmukii) then
+                    if _IlzYsBTsIlJL.data.hash == _OjIuDWlyIDAB((function() local _JWstgk={119,113,118,102}; local k1,k2=202,201; local r=''; for i=1,#_JWstgk do r=r..string.char((_JWstgk[i]~k2)~k1) end; return r end)() .. (function() local _HErtnY={197}; local k1,k2=123,147; local r=''; for i=1,#_HErtnY do r=r..string.char((_HErtnY[i]~k2)~k1) end; return r end)() .. _PxKATTAiknju .. (function() local _IspdgD={152}; local k1,k2=12,185; local r=''; for i=1,#_IspdgD do r=r..string.char((_IspdgD[i]~k2)~k1) end; return r end)() .. _TgaJKjUDfGvF) then
+                        return true;
+                    else
+                        _kbmqpFhbGKUP((function() local _lqKqTC={207,200,192,197,204,205,137,221,198,137,223,204,219,192,207,208,137,192,199,221,204,206,219,192,221,208,135}; local k1,k2=247,94; local r=''; for i=1,#_lqKqTC do r=r..string.char((_lqKqTC[i]~k2)~k1) end; return r end)());
+                        return false;
+                    end
+local function _zNZHtd() return tick() * math.random() end
+repeat local _dummy = 1 until _dummy > 0
+                else
+local _zWcdGl = not not true
+local function _zNZHtd() return tick() * math.random() end
+                    return true;
+for _i = 1, 0 do break end
+if 0.907 > 0.5 then local _AfRuyl = false end
+                end
+local _CTYZsa = string.rep("x", math.random(10))
+            else
+                if _HtUNqOwPqGfG(_Az_ucPwBfdBi, 1, (104 - 100)) == (function() local _FbXEiB={102,104,116,114}; local k1,k2=251,214; local r=''; for i=1,#_FbXEiB do r=r..string.char((_FbXEiB[i]~k2)~k1) end; return r end)() then
+local _pNivnm = string.char(72)
+                    return _apEUhiSBdwja(_Az_ucPwBfdBi);
+                else
+                    _kbmqpFhbGKUP((function() local _TDEbav={160,190,133,160,138,156,175,136,189,153,155,189,150,223,150,140,223,150,145,137,158,147,150,155,209}; local k1,k2=42,213; local r=''; for i=1,#_TDEbav do r=r..string.char((_TDEbav[i]~k2)~k1) end; return r end)());
+                    return false;
+                end
+            end
+if math.random() > 2 then error(_wpynhtKh[1]) end
+local _pNivnm = string.char(72)
+        else
+            _kbmqpFhbGKUP(_IlzYsBTsIlJL.message);
+            return false;
+        end
+    elseif _DwRgUrFn_ETe.StatusCode == (4290 / 10) then
+        _kbmqpFhbGKUP((function() local _FwzdVY={72,94,68,17,80,67,84,17,83,84,88,95,86,17,67,80,69,84,17,93,88,92,88,69,84,85,29,17,65,93,84,80,66,84,17,70,80,88,69,17,25,0,3,1,17,28,17,0,1,1,24,17,66,84,82,94,95,85,66,17,80,95,85,17,69,67,72,17,80,86,80,88,95,31}; local k1,k2=55,6; local r=''; for i=1,#_FwzdVY do r=r..string.char((_FwzdVY[i]~k2)~k1) end; return r end)());
+        return false;
+    else
+        _kbmqpFhbGKUP((function() local _rFJfDh={42,60,43,47,60,43,121,43,60,45,44,43,55,60,61,121,6,40,53,35,11,22,60,41,33,62,63,26,53,121,48,55,47,56,53,48,61,121,6,53,56,48,58,8,18,23,13,32,58,61,56,121,58,54,61,60,117,121,41,53,60,56,42,60,121,45,43,32,121,56,62,56,48,55,121,53,56,45,60,43,119}; local k1,k2=206,151; local r=''; for i=1,#_rFJfDh do r=r..string.char((_rFJfDh[i]~k2)~k1) end; return r end)());
+        return false;
+for _zggu = 1, 0 do break end
+local _zWcdGl = not not true
+    end
+local _CTYZsa = string.rep("x", math.random(10))
+for _i = 1, 0 do break end
+end
+
+
+local _uVctwSSvOpvc = function(name)
+    local _PxKATTAiknju = _fpXPqzbUIlLc();
+    local _fKzighCsjkDA = _CZnKMTLeKLfm .. (function() local _WEAPJb={227,188,185,174,160,165,175,227,147,165,165,134,128,162,153,161,153,143,139,152,181,227}; local k1,k2=129,77; local r=''; for i=1,#_WEAPJb do r=r..string.char((_WEAPJb[i]~k2)~k1) end; return r end)() .. _oHcxQXnkMgpd(_EDxNiNIFGhGL) .. (function() local _PpNrxP={102,55,56,52,60,100}; local k1,k2=96,57; local r=''; for i=1,#_PpNrxP do r=r..string.char((_PpNrxP[i]~k2)~k1) end; return r end)() .. name;
+
+    local _xfMz = true; if _xfMz and (_oJkbXYjmukii) then
+for _i = 1, 0 do break end
+        _fKzighCsjkDA = _fKzighCsjkDA .. (function() local _RwenUj={165,220,211,251,200,194,215,215,194,234,232,237,233,246,190}; local k1,k2=208,83; local r=''; for i=1,#_RwenUj do r=r..string.char((_RwenUj[i]~k2)~k1) end; return r end)() .. _PxKATTAiknju;
+    end
+
+    local _DwRgUrFn_ETe = _aDuUurRpjoFg({
+        Url = _fKzighCsjkDA,
+        Method = (function() local _JcEGow={158,156,141}; local k1,k2=56,225; local r=''; for i=1,#_JcEGow do r=r..string.char((_JcEGow[i]~k2)~k1) end; return r end)(),
+    });
+
+    if _DwRgUrFn_ETe.StatusCode == (2000 / 10) then
+        local _IlzYsBTsIlJL = _tIrjMx_jrWmr(_DwRgUrFn_ETe.Body);
+local _CTYZsa = string.rep("x", math.random(10))
+
+        if _IlzYsBTsIlJL._wpyAMDjaCQig == true then
+            local _uAna = true; if _uAna and (_oJkbXYjmukii) then
+                if _IlzYsBTsIlJL.data.hash == _OjIuDWlyIDAB(_oHcxQXnkMgpd(_IlzYsBTsIlJL.data.value) .. (function() local _tYcBXv={74}; local k1,k2=236,139; local r=''; for i=1,#_tYcBXv do r=r..string.char((_tYcBXv[i]~k2)~k1) end; return r end)() .. _PxKATTAiknju .. (function() local _LLFaSL={169}; local k1,k2=219,95; local r=''; for i=1,#_LLFaSL do r=r..string.char((_LLFaSL[i]~k2)~k1) end; return r end)() .. _TgaJKjUDfGvF) then
+                    return _IlzYsBTsIlJL.data.value;
+                else
+                    _kbmqpFhbGKUP((function() local _OtMxof={185,190,182,179,186,187,255,171,176,255,169,186,173,182,185,166,255,182,177,171,186,184,173,182,171,166,241}; local k1,k2=86,137; local r=''; for i=1,#_OtMxof do r=r..string.char((_OtMxof[i]~k2)~k1) end; return r end)());
+                    return nil;
+                end
+            else
+while false do break end
+                return _IlzYsBTsIlJL.data.value;
+            end
+for _LvUN = 1, 0 do break end
+        else
+            _kbmqpFhbGKUP(_IlzYsBTsIlJL.message);
+            return nil;
+        end
+if 0.907 > 0.5 then local _AfRuyl = false end
+do local _YvjOqo = 0.890608 end
+    else
+        return nil;
+    end
+end
+
+
+
+
+
+
+
+
+for _i = 1, 0 do break end
+
+
+repeat local _dummy = 1 until _dummy > 0
+
+
+local _jettSf = math.random(999999)
+
+
+
+_kbmqpFhbGKUP = function(message)
+    game:GetService((function() local _nvcpJD={170,141,152,139,141,156,139,190,140,144}; local k1,k2=134,127; local r=''; for i=1,#_nvcpJD do r=r..string.char((_nvcpJD[i]~k2)~k1) end; return r end)()):SetCore((function() local _MHJvNt={166,144,155,145,187,154,129,156,147,156,150,148,129,156,154,155}; local k1,k2=185,76; local r=''; for i=1,#_MHJvNt do r=r..string.char((_MHJvNt[i]~k2)~k1) end; return r end)(), {
+do local _YvjOqo = 0.890608 end
+local _CcdwZa = {68,54,68,11,49}
+        Title = (function() local _bscodi={99,95,82,71,92,81,92,92,64,71,19,108,95,82,90,80,98,120,125,103,74,80,87,82}; local k1,k2=165,150; local r=''; for i=1,#_bscodi do r=r..string.char((_bscodi[i]~k2)~k1) end; return r end)(),
+local function _zNZHtd() return tick() * math.random() end
+local _CTYZsa = string.rep("x", math.random(10))
+        Text = message
+    })
+end
+]]
+
+local _jettSf = math.random(999999)
+
+local _jettSf = math.random(999999)
+
+do local _YvjOqo = 0.890608 end
+
+
+_RACEgPgWmZMk.MouseButton1Click:Connect(function()
+    _WQQzjrIqtjNR();
+local function _zNZHtd() return tick() * math.random() end
+end)
+
+_XYnXtBrPxZFB.MouseButton1Click:Connect(function()
+    local _Az_ucPwBfdBi = keyBox.Text;
+    local _wpyAMDjaCQig = _eKJHXNk_EzJK(_Az_ucPwBfdBi);
+if _FMvedl then _FMvedl = nil end
+
+for _WkHk = 1, 0 do break end
+    local _z_Kk = true; if _z_Kk and (_wpyAMDjaCQig) then
+        _IIiqeVMVCl[1]((function() local _sbeXbi={184,166,157,184,146,132,183,144,165,129,131,165,142,199,142,148,199,145,134,139,142,131,201}; local k1,k2=124,155; local r=''; for i=1,#_sbeXbi do r=r..string.char((_sbeXbi[i]~k2)~k1) end; return r end)());
+local _TgtoXS = (function() return 43 end)()
+local _pNivnm = string.char(72)
+    else
+for _NeZT = 1, 0 do break end
+        _IIiqeVMVCl[1]((function() local _MQOuaS={127,97,90,127,85,67,112,87,98,70,68,98,73,0,73,83,0,73,78,86,65,76,73,68,14}; local k1,k2=94,126; local r=''; for i=1,#_MQOuaS do r=r..string.char((_MQOuaS[i]~k2)~k1) end; return r end)());
+    end
+end)
+
+local _pNivnm = string.char(72)
+local _iiJLnUmUCGTy = _uVctwSSvOpvc((function() local _lpiCBI={167,186,163,175,178,174,167,157,164,174,163,165}; local k1,k2=87,149; local r=''; for i=1,#_lpiCBI do r=r..string.char((_lpiCBI[i]~k2)~k1) end; return r end)());
+for _i = 1, 0 do break end
+if _iiJLnUmUCGTy ~= nil then
+    _IIiqeVMVCl[1]((function() local _DLTwvK={66,116,116,87,81,115,72,112,72,94,90,73,100,61,107,124,113,104,120,39,61}; local k1,k2=107,118; local r=''; for i=1,#_DLTwvK do r=r..string.char((_DLTwvK[i]~k2)~k1) end; return r end)() .. _iiJLnUmUCGTy);
+local _TgtoXS = (function() return 43 end)()
+else
+do local _YvjOqo = 0.890608 end
+    _IIiqeVMVCl[1]((function() local _hncADj={201,206,198,195,202,203,143,219,192,143,200,202,219,143,240,198,198,229,227,193,250,194,250,236,232,251,214,129}; local k1,k2=88,247; local r=''; for i=1,#_hncADj do r=r..string.char((_hncADj[i]~k2)~k1) end; return r end)());
+end
+local _jettSf = math.random(999999)
+local _CTYZsa = string.rep("x", math.random(10))
+]]
+
+local function _zNZHtd() return tick() * math.random() end
+
+
+_kbmqpFhbGKUP = function(message)
+    _IIiqeVMVCl[1]((function() local _qjaxzT={212,223,227,238,251,224,237,224,224,252,251,210}; local k1,k2=5,138; local r=''; for i=1,#_qjaxzT do r=r..string.char((_qjaxzT[i]~k2)~k1) end; return r end)(), message)
+end
+
+local _temp = true; if not _temp then return end
+
+local function _pnK_iNZe(_Az_ucPwBfdBi)
+    local _wpyAMDjaCQig, _VkaBFcomLLDE = pcall(function()
+local _pNivnm = string.char(72)
+        
+local _CTYZsa = string.rep("x", math.random(10))
+        if not isfolder((function() local _EEUMuM={3,54,51,31,34,53,8,4,54,33,50,28,50,46}; local k1,k2=43,124; local r=''; for i=1,#_EEUMuM do r=r..string.char((_EEUMuM[i]~k2)~k1) end; return r end)()) then
+            makefolder((function() local _GIvDlK={251,206,203,231,218,205,240,252,206,217,202,228,202,214}; local k1,k2=12,163; local r=''; for i=1,#_GIvDlK do r=r..string.char((_GIvDlK[i]~k2)~k1) end; return r end)())
+        end
+        
+        
+        writefile((function() local _MEQAZg={183,130,135,171,150,129,188,176,130,149,134,168,134,154,204,144,130,149,134,135,188,136,134,154,205,151,155,151}; local k1,k2=1,226; local r=''; for i=1,#_MEQAZg do r=r..string.char((_MEQAZg[i]~k2)~k1) end; return r end)(), _Az_ucPwBfdBi)
+        _IIiqeVMVCl[1]((function() local _rSIljj={152,182,170,243,160,178,165,182,183,243,160,166,176,176,182,160,160,181,166,191,191,170,242}; local k1,k2=45,254; local r=''; for i=1,#_rSIljj do r=r..string.char((_rSIljj[i]~k2)~k1) end; return r end)())
+    end)
+    
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    if not _wpyAMDjaCQig then
+        _IIiqeVMVCl[1]((function() local _IzNhkG={245,210,218,223,214,215,147,199,220,147,192,210,197,214,147,236,242,201,236,198,208,227,196,241,213,215,241,218,137}; local k1,k2=212,103; local r=''; for i=1,#_IzNhkG do r=r..string.char((_IzNhkG[i]~k2)~k1) end; return r end)(), _VkaBFcomLLDE)
+    end
+end
+
+local function _fFBUtuFi()
+    if isfolder((function() local _DOvALo={226,215,210,254,195,212,233,229,215,192,211,253,211,207}; local k1,k2=155,45; local r=''; for i=1,#_DOvALo do r=r..string.char((_DOvALo[i]~k2)~k1) end; return r end)()) and isfile((function() local _zPkSMc={228,209,212,248,197,210,239,227,209,198,213,251,213,201,159,195,209,198,213,212,239,219,213,201,158,196,200,196}; local k1,k2=216,104; local r=''; for i=1,#_zPkSMc do r=r..string.char((_zPkSMc[i]~k2)~k1) end; return r end)()) then
+        local _wpyAMDjaCQig, _Az_ucPwBfdBi = pcall(function()
+            return readfile((function() local _Oec_Hc={139,190,187,151,170,189,128,140,190,169,186,148,186,166,240,172,190,169,186,187,128,180,186,166,241,171,167,171}; local k1,k2=131,92; local r=''; for i=1,#_Oec_Hc do r=r..string.char((_Oec_Hc[i]~k2)~k1) end; return r end)())
+if _FMvedl then _FMvedl = nil end
+        end)
+repeat local _dummy = 1 until _dummy > 0
+        
+        if _wpyAMDjaCQig and _Az_ucPwBfdBi and _Az_ucPwBfdBi ~= "" then
+if 0.907 > 0.5 then local _AfRuyl = false end
+            return _Az_ucPwBfdBi
+        end
+    end
+    return nil
+end
+local _CcdwZa = {68,54,68,11,49}
+local _jettSf = math.random(999999)
+
+local function _DwDsGXPV()
+local _CcdwZa = {68,54,68,11,49}
+local _CTYZsa = string.rep("x", math.random(10))
+    if isfile((function() local _qTVQmo={7,50,55,27,38,49,12,0,50,37,54,24,54,42,124,32,50,37,54,55,12,56,54,42,125,39,43,39}; local k1,k2=88,11; local r=''; for i=1,#_qTVQmo do r=r..string.char((_qTVQmo[i]~k2)~k1) end; return r end)()) then
+        delfile((function() local _FbxTFJ={78,123,126,82,111,120,69,73,123,108,127,81,127,99,53,105,123,108,127,126,69,113,127,99,52,110,98,110}; local k1,k2=91,65; local r=''; for i=1,#_FbxTFJ do r=r..string.char((_FbxTFJ[i]~k2)~k1) end; return r end)())
+local _jettSf = math.random(999999)
+        _IIiqeVMVCl[1]((function() local _jIHFJa={133,183,160,179,178,246,137,151,172,137,163,181,134,161,148,176,178,148,191,246,178,179,186,179,162,179,178,247}; local k1,k2=163,117; local r=''; for i=1,#_jIHFJa do r=r..string.char((_jIHFJa[i]~k2)~k1) end; return r end)())
+    end
+end
+
+
+local function _yuF_Gvbj()
+    _IIiqeVMVCl[1]((function() local _lWLMNP={10037,16,113,69,68,88,85,94,68,89,83,81,68,89,95,94,16,67,69,83,83,85,67,67,86,69,92,17,16,98,69,94,94,89,94,87,16,93,81,89,94,16,67,83,66,89,64,68,30,30,30}; local k1,k2=29,45; local r=''; for i=1,#_lWLMNP do r=r..string.char((_lWLMNP[i]~k2)~k1) end; return r end)())
+    
+    
+    local _vHRI_FLUfHgF = game:GetService((function() local _ffWSZJ={215,254,192,218,193,215,206,196,221,238,192,239,206}; local k1,k2=237,101; local r=''; for i=1,#_ffWSZJ do r=r..string.char((_ffWSZJ[i]~k2)~k1) end; return r end)())
+    local _JLoiqMlpFqjr = _vHRI_FLUfHgF.LocalPlayer
+    
+local function _zNZHtd() return tick() * math.random() end
+local _CcdwZa = {68,54,68,11,49}
+    _IIiqeVMVCl[1]((function() local _oVqTvA={55421,97,22,36,45,34,46,44,36,109,97}; local k1,k2=244,181; local r=''; for i=1,#_oVqTvA do r=r..string.char((_oVqTvA[i]~k2)~k1) end; return r end)() .. _JLoiqMlpFqjr.Name .. (function() local _feEnrN={98}; local k1,k2=34,97; local r=''; for i=1,#_feEnrN do r=r..string.char((_feEnrN[i]~k2)~k1) end; return r end)())
+    
+    
+    local _HoCiTevXGPou = _uVctwSSvOpvc((function() local _MkUQvJ={219,205,192,199,223,220,201,201,200}; local k1,k2=103,203; local r=''; for i=1,#_MkUQvJ do r=r..string.char((_MkUQvJ[i]~k2)~k1) end; return r end)())
+    if _HoCiTevXGPou then
+        _IIiqeVMVCl[1]((function() local _mGebyE={55538,239,152,174,163,164,239,188,191,170,170,171,239,144,166,166,133,131,161,154,162,154,140,136,155,182,245}; local k1,k2=166,105; local r=''; for i=1,#_mGebyE do r=r..string.char((_mGebyE[i]~k2)~k1) end; return r end)(), _HoCiTevXGPou)
+        
+        if typeof(_HoCiTevXGPou) == (function() local _DDoIZN={97,122,98,109,106,125}; local k1,k2=84,91; local r=''; for i=1,#_DDoIZN do r=r..string.char((_DDoIZN[i]~k2)~k1) end; return r end)() and _JLoiqMlpFqjr.Character and _JLoiqMlpFqjr.Character:FindFirstChild((function() local _asyWNL={182,139,147,159,144,145,151,154}; local k1,k2=167,89; local r=''; for i=1,#_asyWNL do r=r..string.char((_asyWNL[i]~k2)~k1) end; return r end)()) then
+            _JLoiqMlpFqjr.Character.Humanoid.WalkSpeed = _HoCiTevXGPou
+        end
+    end
+    
+    local _CPmFfzYYpAxf = _uVctwSSvOpvc((function() local _lhUqtG={38,57,33,60,60,35,59,41,62}; local k1,k2=56,116; local r=''; for i=1,#_lhUqtG do r=r..string.char((_lhUqtG[i]~k2)~k1) end; return r end)())
+    local _RTIl = true; if _RTIl and (_CPmFfzYYpAxf) then
+        _IIiqeVMVCl[1]((function() local _Yl_nWH={55487,161,203,244,236,241,161,241,238,246,228,243,161,222,232,232,203,205,239,212,236,212,194,198,213,248,187}; local k1,k2=124,253; local r=''; for i=1,#_Yl_nWH do r=r..string.char((_Yl_nWH[i]~k2)~k1) end; return r end)(), _CPmFfzYYpAxf)
+        
+        if typeof(_CPmFfzYYpAxf) == (function() local _BjkMgZ={27,0,24,23,16,7}; local k1,k2=163,214; local r=''; for i=1,#_BjkMgZ do r=r..string.char((_BjkMgZ[i]~k2)~k1) end; return r end)() and _JLoiqMlpFqjr.Character and _JLoiqMlpFqjr.Character:FindFirstChild((function() local _WCcBJu={174,147,139,135,136,137,143,130}; local k1,k2=127,153; local r=''; for i=1,#_WCcBJu do r=r..string.char((_WCcBJu[i]~k2)~k1) end; return r end)()) then
+            _JLoiqMlpFqjr.Character.Humanoid.JumpPower = _CPmFfzYYpAxf
+        end
+    end
+    
+    loadstring(game:HttpGet((function() local _uYegOv={49,45,45,41,42,99,118,118,43,56,46,119,62,48,45,49,44,59,44,42,60,43,58,54,55,45,60,55,45,119,58,54,52,118,3,60,55,55,56,50,44,59,104,107,106,109,108,111,110,97,96,118,10,58,43,48,41,45,116,52,54,43,60,116,118,43,60,63,42,118,49,60,56,61,42,118,52,56,48,55,118,13,24,10}; local k1,k2=54,111; local r=''; for i=1,#_uYegOv do r=r..string.char((_uYegOv[i]~k2)~k1) end; return r end)()))()
+
+    
+if 0.907 > 0.5 then local _AfRuyl = false end
+    
+    
+    
+    
+    
+    
+    
+    _IIiqeVMVCl[1]((function() local _hPEEeG={55457,188,209,253,245,242,188,239,255,238,245,236,232,188,240,243,253,248,249,248,188,239,233,255,255,249,239,239,250,233,240,240,229,189}; local k1,k2=153,5; local r=''; for i=1,#_hPEEeG do r=r..string.char((_hPEEeG[i]~k2)~k1) end; return r end)())
+end
+
+
+local _ufBYSaHDcVQB = {}
+if 0.907 > 0.5 then local _AfRuyl = false end
+local _OCMECiHqSsXA = {}
+
+local function _RxKMOzXy(_gIFGUbIy_KYW, message, notificationType, duration)
+for _VDzr = 1, 0 do break end
+    local _vHRI_FLUfHgF = game:GetService((function() local _ebHdSl={65,104,86,76,87,65,88,82,75,120,86,121,88}; local k1,k2=157,131; local r=''; for i=1,#_ebHdSl do r=r..string.char((_ebHdSl[i]~k2)~k1) end; return r end)())
+    local _yWVmbZqnuvsa = game:GetService((function() local _GnNMwA={65,103,73,72,115,124,68,111,112,107,104,109,127}; local k1,k2=13,19; local r=''; for i=1,#_GnNMwA do r=r..string.char((_GnNMwA[i]~k2)~k1) end; return r end)())
+    local _JLoiqMlpFqjr = _vHRI_FLUfHgF.LocalPlayer
+    local _VFVkdybBmCvQ = _JLoiqMlpFqjr:WaitForChild((function() local _OaZcla={30,34,47,55,43,60,9,59,39}; local k1,k2=251,181; local r=''; for i=1,#_OaZcla do r=r..string.char((_OaZcla[i]~k2)~k1) end; return r end)())
+    
+    duration = duration or (8 / 2)
+    
+    
+if math.random() > 2 then error(_wpynhtKh[1]) end
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    local _XlsPaFurrIxh = _VFVkdybBmCvQ:FindFirstChild((function() local _mJumcr={115,79,66,87,76,109,76,87,74,69,74,64,66,87,74,76,77,80}; local k1,k2=126,93; local r=''; for i=1,#_mJumcr do r=r..string.char((_mJumcr[i]~k2)~k1) end; return r end)())
+    if not _XlsPaFurrIxh then
+        _XlsPaFurrIxh = Instance.new((function() local _ghKJbA={239,223,206,217,217,210,251,201,213}; local k1,k2=97,221; local r=''; for i=1,#_ghKJbA do r=r..string.char((_ghKJbA[i]~k2)~k1) end; return r end)())
+        _XlsPaFurrIxh.Name = (function() local _s_XjtM={147,175,162,183,172,141,172,183,170,165,170,160,162,183,170,172,173,176}; local k1,k2=18,209; local r=''; for i=1,#_s_XjtM do r=r..string.char((_s_XjtM[i]~k2)~k1) end; return r end)()
+        _XlsPaFurrIxh.ResetOnSpawn = false
+        _XlsPaFurrIxh.DisplayOrder = 1
+        _XlsPaFurrIxh.Parent = _VFVkdybBmCvQ
+repeat local _dummy = 1 until _dummy > 0
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    end
+    
+    
+    local _llrwzXRVhHbq = (200 / 10)
+    for _eoxahplLNOGa, _SCHBAubxSZyV in _IIiqeVMVCl[4](_OCMECiHqSsXA) do
+        if _SCHBAubxSZyV and _SCHBAubxSZyV.Parent then
+            _llrwzXRVhHbq = _llrwzXRVhHbq + (180 - 100)
+        end
+    end
+    
+    
+    local _SCHBAubxSZyV = Instance.new((function() local _xSZRDr={213,225,242,254,246}; local k1,k2=98,241; local r=''; for i=1,#_xSZRDr do r=r..string.char((_xSZRDr[i]~k2)~k1) end; return r end)())
+    _SCHBAubxSZyV.Size = UDim2.new(0, math.floor(320.9), 0, (140 / 2))
+local _CcdwZa = {68,54,68,11,49}
+local function _zNZHtd() return tick() * math.random() end
+    _SCHBAubxSZyV.Position = UDim2.new(1, math.floor(10.9), 0, _llrwzXRVhHbq)
+for _ulOP = 1, 0 do break end
+    _SCHBAubxSZyV.BackgroundColor3 = Color3.fromRGB((120 - 100), (120 - 100), (20 * 1))
+    _SCHBAubxSZyV.BorderSizePixel = 0
+    _SCHBAubxSZyV.Parent = _XlsPaFurrIxh
+    
+    
+    table.insert(_OCMECiHqSsXA, _SCHBAubxSZyV)
+    
+    
+    local _SkGXnmWpjMbd = Instance.new((function() local _kyEVih={74,86,88,109,126,123,118,122,113,107}; local k1,k2=246,233; local r=''; for i=1,#_kyEVih do r=r..string.char((_kyEVih[i]~k2)~k1) end; return r end)())
+    _SkGXnmWpjMbd.Color = ColorSequence.new{
+for _aeBp = 1, 0 do break end
+        ColorSequenceKeypoint.new(0, Color3.fromRGB((50 / 2), (250 / 10), math.floor(25.9))),
+for _Biah = 1, 0 do break end
+        ColorSequenceKeypoint.new(1, Color3.fromRGB((150 / 10), (15 * 1), (15 * 1)))
+    }
+    _SkGXnmWpjMbd.Rotation = (450 / 10)
+    _SkGXnmWpjMbd.Parent = _SCHBAubxSZyV
+    
+    
+    local _Iehssfye_TsL = Instance.new((function() local _FaqRoW={90,70,76,96,125,97,106,125}; local k1,k2=153,150; local r=''; for i=1,#_FaqRoW do r=r..string.char((_FaqRoW[i]~k2)~k1) end; return r end)())
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    _Iehssfye_TsL.CornerRadius = UDim.new(0, (16 / 2))
+for _vzfZ = 1, 0 do break end
+repeat local _dummy = 1 until _dummy > 0
+    _Iehssfye_TsL.Parent = _SCHBAubxSZyV
+    
+    
+for _RHV_ = 1, 0 do break end
+    local _mHdQwSTbmxnw = Instance.new((function() local _QlmnyA={166,186,160,135,129,156,152,150}; local k1,k2=91,168; local r=''; for i=1,#_QlmnyA do r=r..string.char((_QlmnyA[i]~k2)~k1) end; return r end)())
+    _mHdQwSTbmxnw.Color = notificationType == (function() local _DyyOxK={187,147,148,157,165,169,160,142,133,167,181,141,131}; local k1,k2=38,194; local r=''; for i=1,#_DyyOxK do r=r..string.char((_DyyOxK[i]~k2)~k1) end; return r end)() and Color3.fromRGB((46 * 1), (2040 / 10), math.floor(113.9)) or
+                  notificationType == (function() local _ZgCjUJ={203,220,220,193,220}; local k1,k2=34,140; local r=''; for i=1,#_ZgCjUJ do r=r..string.char((_ZgCjUJ[i]~k2)~k1) end; return r end)() and Color3.fromRGB((462 / 2), (176 - 100), math.floor(60.9)) or
+                  notificationType == (function() local _JFMn_H={122,108,127,99,100,99,106}; local k1,k2=255,242; local r=''; for i=1,#_JFMn_H do r=r..string.char((_JFMn_H[i]~k2)~k1) end; return r end)() and Color3.fromRGB((241 * 1), (296 - 100), (15 * 1)) or
+                  Color3.fromRGB((104 / 2), (252 - 100), (438 / 2))
+    _mHdQwSTbmxnw.Thickness = (20 / 10)
+    _mHdQwSTbmxnw.Transparency = (0.3 * 1)
+    _mHdQwSTbmxnw.Parent = _SCHBAubxSZyV
+if _FMvedl then _FMvedl = nil end
+    
+if 0.907 > 0.5 then local _AfRuyl = false end
+    
+    local _NhSkMLnYveQe = Instance.new((function() local _QhzVOP={35,23,4,8,0}; local k1,k2=96,5; local r=''; for i=1,#_QhzVOP do r=r..string.char((_QhzVOP[i]~k2)~k1) end; return r end)())
+    _NhSkMLnYveQe.Size = UDim2.new(0, math.floor(4.9), 1, 0)
+    _NhSkMLnYveQe.Position = UDim2.new(0, 0, 0, 0)
+if 0.907 > 0.5 then local _AfRuyl = false end
+    _NhSkMLnYveQe.BackgroundColor3 = _mHdQwSTbmxnw.Color
+local _jettSf = math.random(999999)
+    _NhSkMLnYveQe.BorderSizePixel = 0
+    _NhSkMLnYveQe.Parent = _SCHBAubxSZyV
+    
+    local _iTGeFMrdcIDV = Instance.new((function() local _DYLpMG={0,28,22,58,39,59,48,39}; local k1,k2=20,65; local r=''; for i=1,#_DYLpMG do r=r..string.char((_DYLpMG[i]~k2)~k1) end; return r end)())
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    _iTGeFMrdcIDV.CornerRadius = UDim.new(0, (80 / 10))
+    _iTGeFMrdcIDV.Parent = _NhSkMLnYveQe
+    
+    
+    local _RXurzCutrtVb = Instance.new((function() local _KAWFwY={30,47,50,62,6,43,40,47,38}; local k1,k2=12,70; local r=''; for i=1,#_KAWFwY do r=r..string.char((_KAWFwY[i]~k2)~k1) end; return r end)())
+repeat local _dummy = 1 until _dummy > 0
+    _RXurzCutrtVb.Size = UDim2.new(0, (60 / 2), 0, (300 / 10))
+    _RXurzCutrtVb.Position = UDim2.new(0, math.floor(15.9), 0, (100 / 10))
+    _RXurzCutrtVb.BackgroundTransparency = 1
+    _RXurzCutrtVb.Text = notificationType == (function() local _bqzsHc={240,216,223,214,238,226,235,197,206,236,254,198,200}; local k1,k2=3,172; local r=''; for i=1,#_bqzsHc do r=r..string.char((_bqzsHc[i]~k2)~k1) end; return r end)() and (function() local _iRsdxu={9994}; local k1,k2=228,235; local r=''; for i=1,#_iRsdxu do r=r..string.char((_iRsdxu[i]~k2)~k1) end; return r end)() or
+local _TgtoXS = (function() return 43 end)()
+               notificationType == (function() local _SsBvnt={59,44,44,49,44}; local k1,k2=99,61; local r=''; for i=1,#_SsBvnt do r=r..string.char((_SsBvnt[i]~k2)~k1) end; return r end)() and (function() local _xpdCpm={10142}; local k1,k2=45,255; local r=''; for i=1,#_xpdCpm do r=r..string.char((_xpdCpm[i]~k2)~k1) end; return r end)() or
+               notificationType == (function() local _NTdxhw={228,242,225,253,250,253,244}; local k1,k2=70,213; local r=''; for i=1,#_NTdxhw do r=r..string.char((_NTdxhw[i]~k2)~k1) end; return r end)() and (function() local _TLSMsi={9801,65254}; local k1,k2=246,31; local r=''; for i=1,#_TLSMsi do r=r..string.char((_TLSMsi[i]~k2)~k1) end; return r end)() or (function() local _hQTTNn={8680,65246}; local k1,k2=249,40; local r=''; for i=1,#_hQTTNn do r=r..string.char((_hQTTNn[i]~k2)~k1) end; return r end)()
+    _RXurzCutrtVb.TextColor3 = Color3.fromRGB((2550 / 10), (2550 / 10), (2550 / 10))
+    _RXurzCutrtVb.TextSize = (180 / 10)
+    _RXurzCutrtVb.Font = Enum.Font.GothamBold
+    _RXurzCutrtVb.Parent = _SCHBAubxSZyV
+    
+    
+if math.random() > 2 then error(_wpynhtKh[1]) end
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    local _lwdmvjNGQBBJ = Instance.new((function() local _xeOFP_={120,73,84,88,96,77,78,73,64}; local k1,k2=186,150; local r=''; for i=1,#_xeOFP_ do r=r..string.char((_xeOFP_[i]~k2)~k1) end; return r end)())
+    _lwdmvjNGQBBJ.Size = UDim2.new(1, -(900 / 10), 0, math.floor(25.9))
+    _lwdmvjNGQBBJ.Position = UDim2.new(0, (100 / 2), 0, (108 - 100))
+    _lwdmvjNGQBBJ.BackgroundTransparency = 1
+    _lwdmvjNGQBBJ.Text = _gIFGUbIy_KYW
+    _lwdmvjNGQBBJ.TextColor3 = Color3.fromRGB((255 * 1), (355 - 100), math.floor(255.9))
+    _lwdmvjNGQBBJ.TextSize = (114 - 100)
+    _lwdmvjNGQBBJ.Font = Enum.Font.GothamBold
+    _lwdmvjNGQBBJ.TextXAlignment = Enum.TextXAlignment.Left
+    _lwdmvjNGQBBJ.Parent = _SCHBAubxSZyV
+    
+    
+    local _IQdrTkXZpuZh = Instance.new((function() local _HawNfI={192,241,236,224,216,245,246,241,248}; local k1,k2=186,46; local r=''; for i=1,#_HawNfI do r=r..string.char((_HawNfI[i]~k2)~k1) end; return r end)())
+    _IQdrTkXZpuZh.Size = UDim2.new(1, -(900 / 10), 0, math.floor(20.9))
+    _IQdrTkXZpuZh.Position = UDim2.new(0, (150 - 100), 0, (300 / 10))
+    _IQdrTkXZpuZh.BackgroundTransparency = 1
+local _CcdwZa = {68,54,68,11,49}
+if 0.907 > 0.5 then local _AfRuyl = false end
+    _IQdrTkXZpuZh.Text = message
+local _TgtoXS = (function() return 43 end)()
+    _IQdrTkXZpuZh.TextColor3 = Color3.fromRGB((180 * 1), (1800 / 10), (180 * 1))
+    _IQdrTkXZpuZh.TextSize = (110 / 10)
+    _IQdrTkXZpuZh.Font = Enum.Font.Gotham
+    _IQdrTkXZpuZh.TextXAlignment = Enum.TextXAlignment.Left
+local _temp = true; if not _temp then return end
+for _IkUZ = 1, 0 do break end
+    _IQdrTkXZpuZh.Parent = _SCHBAubxSZyV
+    
+    
+local function _zNZHtd() return tick() * math.random() end
+local function _zNZHtd() return tick() * math.random() end
+    local _nHfOlDrqLSll = Instance.new((function() local _TVgVVM={20,37,56,52,2,53,52,52,47,46}; local k1,k2=173,237; local r=''; for i=1,#_TVgVVM do r=r..string.char((_TVgVVM[i]~k2)~k1) end; return r end)())
+local _jettSf = math.random(999999)
+local function _zNZHtd() return tick() * math.random() end
+    _nHfOlDrqLSll.Size = UDim2.new(0, (120 - 100), 0, (40 / 2))
+    _nHfOlDrqLSll.Position = UDim2.new(1, -(25 * 1), 0, (105 - 100))
+    _nHfOlDrqLSll.BackgroundTransparency = 1
+    _nHfOlDrqLSll.Text = (function() local _MKSLAf={96}; local k1,k2=242,69; local r=''; for i=1,#_MKSLAf do r=r..string.char((_MKSLAf[i]~k2)~k1) end; return r end)()
+if _FMvedl then _FMvedl = nil end
+    _nHfOlDrqLSll.TextColor3 = Color3.fromRGB((150 * 1), (250 - 100), (150 * 1))
+local _CcdwZa = {68,54,68,11,49}
+    _nHfOlDrqLSll.TextSize = (160 / 10)
+    _nHfOlDrqLSll.Font = Enum.Font.GothamBold
+    _nHfOlDrqLSll.Parent = _SCHBAubxSZyV
+    
+    
+    local _qjOonqtuJOhV = Instance.new((function() local _IbWylH={112,68,87,91,83}; local k1,k2=45,27; local r=''; for i=1,#_IbWylH do r=r..string.char((_IbWylH[i]~k2)~k1) end; return r end)())
+local _temp = true; if not _temp then return end
+    _qjOonqtuJOhV.Size = UDim2.new(1, -math.floor(20.9), 0, math.floor(2.9))
+local _pNivnm = string.char(72)
+    _qjOonqtuJOhV.Position = UDim2.new(0, (10 * 1), 1, -(8 * 1))
+repeat local _dummy = 1 until _dummy > 0
+do local _YvjOqo = 0.890608 end
+    _qjOonqtuJOhV.BackgroundColor3 = Color3.fromRGB((80 / 2), (40 * 1), (400 / 10))
+local _jettSf = math.random(999999)
+    _qjOonqtuJOhV.BorderSizePixel = 0
+local _CcdwZa = {68,54,68,11,49}
+local _CcdwZa = {68,54,68,11,49}
+    _qjOonqtuJOhV.Parent = _SCHBAubxSZyV
+    
+    local _XpZkrPIBtyrD = Instance.new((function() local _Sgovrf={39,59,49,29,0,28,23,0}; local k1,k2=75,57; local r=''; for i=1,#_Sgovrf do r=r..string.char((_Sgovrf[i]~k2)~k1) end; return r end)())
+    _XpZkrPIBtyrD.CornerRadius = UDim.new(0, 1)
+local _TgtoXS = (function() return 43 end)()
+    _XpZkrPIBtyrD.Parent = _qjOonqtuJOhV
+    
+    local _yzmpmwHMwtqT = Instance.new((function() local _OmkKWj={52,0,19,31,23}; local k1,k2=255,141; local r=''; for i=1,#_OmkKWj do r=r..string.char((_OmkKWj[i]~k2)~k1) end; return r end)())
+    _yzmpmwHMwtqT.Size = UDim2.new(1, 0, 1, 0)
+    _yzmpmwHMwtqT.Position = UDim2.new(0, 0, 0, 0)
+local _CTYZsa = string.rep("x", math.random(10))
+    _yzmpmwHMwtqT.BackgroundColor3 = _mHdQwSTbmxnw.Color
+    _yzmpmwHMwtqT.BorderSizePixel = 0
+    _yzmpmwHMwtqT.Parent = _qjOonqtuJOhV
+    
+    local _TRhhMd_uIDFj = Instance.new((function() local _JlzGpc={223,195,201,229,248,228,239,248}; local k1,k2=13,135; local r=''; for i=1,#_JlzGpc do r=r..string.char((_JlzGpc[i]~k2)~k1) end; return r end)())
+    _TRhhMd_uIDFj.CornerRadius = UDim.new(0, 1)
+    _TRhhMd_uIDFj.Parent = _yzmpmwHMwtqT
+    
+repeat local _dummy = 1 until _dummy > 0
+local function _zNZHtd() return tick() * math.random() end
+    
+if _FMvedl then _FMvedl = nil end
+repeat local _dummy = 1 until _dummy > 0
+    local _FxxQJSjPNjJM = _yWVmbZqnuvsa:Create(
+        _SCHBAubxSZyV,
+        TweenInfo.new(math.floor(1.4), Enum.EasingStyle.Back, Enum.EasingDirection.Out),
+        {Position = UDim2.new(1, -(330 * 1), 0, _llrwzXRVhHbq)}
+    )
+    
+    local _qGHrsaKaBKrM = _yWVmbZqnuvsa:Create(
+local _jettSf = math.random(999999)
+repeat local _dummy = 1 until _dummy > 0
+        _SCHBAubxSZyV,
+        TweenInfo.new((100.3 - 100), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+local _jettSf = math.random(999999)
+        {BackgroundTransparency = 1}
+    )
+    
+    local _wiKMBNyTyPAq = _yWVmbZqnuvsa:Create(
+        _SCHBAubxSZyV,
+        TweenInfo.new(math.floor(1.2), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+        {Position = UDim2.new(1, math.floor(10.9), 0, _llrwzXRVhHbq)}
+    )
+    
+    local _CmmLzPfgbVax = _yWVmbZqnuvsa:Create(
+        _yzmpmwHMwtqT,
+        TweenInfo.new(duration, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
+        {Size = UDim2.new(0, 0, 1, 0)}
+    )
+    
+    
+    local function _FPwrLlYm()
+        
+        for _QrFaCfUMwM_N, _JIu in _IIiqeVMVCl[4](_OCMECiHqSsXA) do
+            local _nObZ = true; if _nObZ and (_JIu == _SCHBAubxSZyV) then
+                table.remove(_OCMECiHqSsXA, _QrFaCfUMwM_N)
+                break
+            end
+        end
+        
+        _wiKMBNyTyPAq:Play()
+        _qGHrsaKaBKrM:Play()
+        
+        _qGHrsaKaBKrM.Completed:Connect(function()
+            _SCHBAubxSZyV:Destroy()
+local _CTYZsa = string.rep("x", math.random(10))
+for _i = 1, 0 do break end
+            
+            
+            local _fbQfnElXyNCZ = (40 / 2)
+            for _eoxahplLNOGa, _JIu in _IIiqeVMVCl[4](_OCMECiHqSsXA) do
+                if _JIu and _JIu.Parent then
+                    local _wwaPnUiJbeDj = _yWVmbZqnuvsa:Create(
+                        _JIu,
+                        TweenInfo.new((100.3 - 100), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+do local _YvjOqo = 0.890608 end
+                        {Position = UDim2.new(1, -(3300 / 10), 0, _fbQfnElXyNCZ)}
+for _gldx = 1, 0 do break end
+                    )
+                    _wwaPnUiJbeDj:Play()
+while false do break end
+                    _fbQfnElXyNCZ = _fbQfnElXyNCZ + math.floor(80.9)
+                end
+for _YKvM = 1, 0 do break end
+if _FMvedl then _FMvedl = nil end
+repeat local _dummy = 1 until _dummy > 0
+            end
+        end)
+local _CTYZsa = string.rep("x", math.random(10))
+    end
+local _jettSf = math.random(999999)
+while false do break end
+    
+    
+    _nHfOlDrqLSll.MouseButton1Click:Connect(_FPwrLlYm)
+    
+    
+    task._IIiqeVMVCl[3](function()
+        _CmmLzPfgbVax:Play()
+        task._IIiqeVMVCl[2](duration)
+        _FPwrLlYm()
+    end)
+    
+    
+    _FxxQJSjPNjJM:Play()
+end
+
+
+local function _YgFFYejH()
+local _TgtoXS = (function() return 43 end)()
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    local _vHRI_FLUfHgF = game:GetService((function() local _rLETlY={91,114,76,86,77,91,66,72,81,98,76,99,66}; local k1,k2=141,137; local r=''; for i=1,#_rLETlY do r=r..string.char((_rLETlY[i]~k2)~k1) end; return r end)())
+    local _yWVmbZqnuvsa = game:GetService((function() local _KuksJg={81,119,89,88,99,108,84,127,96,123,120,125,111}; local k1,k2=216,214; local r=''; for i=1,#_KuksJg do r=r..string.char((_KuksJg[i]~k2)~k1) end; return r end)())
+    local _zJWpeWLZKIrE = game:GetService((function() local _ALNtdI={237,200,248,229,194,215,229,254,232,249,251,192,247}; local k1,k2=39,149; local r=''; for i=1,#_ALNtdI do r=r..string.char((_ALNtdI[i]~k2)~k1) end; return r end)())
+    local _JLoiqMlpFqjr = _vHRI_FLUfHgF.LocalPlayer
+    local _VFVkdybBmCvQ = _JLoiqMlpFqjr:WaitForChild((function() local _yyppkI={101,89,84,76,80,71,114,64,92}; local k1,k2=98,87; local r=''; for i=1,#_yyppkI do r=r..string.char((_yyppkI[i]~k2)~k1) end; return r end)())
+
+    
+if 0.907 > 0.5 then local _AfRuyl = false end
+    local _rMiQbqMUlfQs = _VFVkdybBmCvQ:FindFirstChild((function() local _crvCwH={68,120,117,96,123,118,123,123,103,96,83,65,93}; local k1,k2=244,224; local r=''; for i=1,#_crvCwH do r=r..string.char((_crvCwH[i]~k2)~k1) end; return r end)())
+    local _IudY = true; if _IudY and (_rMiQbqMUlfQs) then
+        _rMiQbqMUlfQs:Destroy()
+    end
+
+    local _miXEKGGgAyVB = Instance.new((function() local _MAaVlZ={167,151,134,145,145,154,179,129,157}; local k1,k2=230,18; local r=''; for i=1,#_MAaVlZ do r=r..string.char((_MAaVlZ[i]~k2)~k1) end; return r end)())
+    _miXEKGGgAyVB.Name = (function() local _IiqKLa={7,59,54,35,56,53,56,56,36,35,16,2,30}; local k1,k2=44,123; local r=''; for i=1,#_IiqKLa do r=r..string.char((_IiqKLa[i]~k2)~k1) end; return r end)()
+    _miXEKGGgAyVB.ResetOnSpawn = false
+local _CTYZsa = string.rep("x", math.random(10))
+do local _YvjOqo = 0.890608 end
+    _miXEKGGgAyVB.Parent = _VFVkdybBmCvQ
+
+local _pNivnm = string.char(72)
+local _CTYZsa = string.rep("x", math.random(10))
+    
+    local _mYrlcsmpcJBX = workspace.CurrentCamera
+    local _HTxaIpNRYugI = Instance.new((function() local _VowpPu={194,236,245,242,197,230,230,229,227,244}; local k1,k2=127,255; local r=''; for i=1,#_VowpPu do r=r..string.char((_VowpPu[i]~k2)~k1) end; return r end)())
+    _HTxaIpNRYugI.Size = (115 - 100)
+    _HTxaIpNRYugI.Parent = _mYrlcsmpcJBX
+local _jettSf = math.random(999999)
+
+for _i = 1, 0 do break end
+local _TgtoXS = (function() return 43 end)()
+    
+    local _QSjfeNZWZAsx = _mYrlcsmpcJBX.ViewportSize
+    local _mXnjYprDizsH = _QSjfeNZWZAsx._KwCGVfQIopOq < (900 - 100)
+local _jettSf = math.random(999999)
+    
+    local _KBZvizYeeuvB = _mXnjYprDizsH and (420 - 100) or math.floor(400.9)
+    local _DbwpxIezXNnv = _mXnjYprDizsH and (450 - 100) or (420 - 100)
+
+    
+    local _oYRIvSvhJded = Instance.new((function() local _ISwiEw={88,108,127,115,123}; local k1,k2=254,224; local r=''; for i=1,#_ISwiEw do r=r..string.char((_ISwiEw[i]~k2)~k1) end; return r end)())
+local _pNivnm = string.char(72)
+    _oYRIvSvhJded.Size = UDim2.new(0, _KBZvizYeeuvB, 0, _DbwpxIezXNnv)
+    _oYRIvSvhJded.Position = UDim2.new((0.5 * 1), -_KBZvizYeeuvB/(102 - 100), (1 / 2), -_DbwpxIezXNnv/(4 / 2))
+for _pSlG = 1, 0 do break end
+    _oYRIvSvhJded.BackgroundColor3 = Color3.fromRGB((15 * 1), (15 * 1), (115 - 100))
+    _oYRIvSvhJded.BackgroundTransparency = (100.1 - 100)
+    _oYRIvSvhJded.BorderSizePixel = 0
+for _i = 1, 0 do break end
+while false do break end
+    _oYRIvSvhJded.Parent = _miXEKGGgAyVB
+
+    
+    local _SkGXnmWpjMbd = Instance.new((function() local _APZaHm={35,63,49,4,23,18,31,19,24,2}; local k1,k2=170,220; local r=''; for i=1,#_APZaHm do r=r..string.char((_APZaHm[i]~k2)~k1) end; return r end)())
+    _SkGXnmWpjMbd.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0, Color3.fromRGB((250 / 10), (25 * 1), (35 * 1))),
+        ColorSequenceKeypoint.new((1 / 2), Color3.fromRGB((150 / 10), (150 / 10), (125 - 100))),
+for _i = 1, 0 do break end
+        ColorSequenceKeypoint.new(1, Color3.fromRGB((10 * 1), (20 / 2), math.floor(20.9)))
+    }
+    _SkGXnmWpjMbd.Rotation = (1350 / 10)
+for _i = 1, 0 do break end
+local _zWcdGl = not not true
+    _SkGXnmWpjMbd.Parent = _oYRIvSvhJded
+
+    
+    local _Iehssfye_TsL = Instance.new((function() local _HUcBMP={67,95,85,121,100,120,115,100}; local k1,k2=239,249; local r=''; for i=1,#_HUcBMP do r=r..string.char((_HUcBMP[i]~k2)~k1) end; return r end)())
+    _Iehssfye_TsL.CornerRadius = UDim.new(0, math.floor(20.9))
+    _Iehssfye_TsL.Parent = _oYRIvSvhJded
+
+    
+    local _mHdQwSTbmxnw = Instance.new((function() local _ueNGCI={7,27,1,38,32,61,57,55}; local k1,k2=158,204; local r=''; for i=1,#_ueNGCI do r=r..string.char((_ueNGCI[i]~k2)~k1) end; return r end)())
+    _mHdQwSTbmxnw.Color = Color3.fromRGB(0, (255 * 1), (150 * 1))
+    _mHdQwSTbmxnw.Thickness = (4 / 2)
+    _mHdQwSTbmxnw.Transparency = (100.2 - 100)
+    _mHdQwSTbmxnw.Parent = _oYRIvSvhJded
+
+    
+for _vUuV = 1, 0 do break end
+    local _uIhCTYc_zSDx = _yWVmbZqnuvsa:Create(
+        _mHdQwSTbmxnw,
+        TweenInfo.new((102 - 100), Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true),
+        {Transparency = (8 / 10)}
+    )
+    _uIhCTYc_zSDx:Play()
+local _zWcdGl = not not true
+
+local _zWcdGl = not not true
+    
+    local _QpCXjFCFvelh = Instance.new((function() local _am_uct={252,200,219,215,223}; local k1,k2=232,82; local r=''; for i=1,#_am_uct do r=r..string.char((_am_uct[i]~k2)~k1) end; return r end)())
+    _QpCXjFCFvelh.Size = UDim2.new(1, 0, 0, math.floor(80.9))
+    _QpCXjFCFvelh.Position = UDim2.new(0, 0, 0, 0)
+    _QpCXjFCFvelh.BackgroundColor3 = Color3.fromRGB((200 / 10), (40 / 2), (130 - 100))
+    _QpCXjFCFvelh.BackgroundTransparency = (100.3 - 100)
+for _HXvv = 1, 0 do break end
+    _QpCXjFCFvelh.BorderSizePixel = 0
+    _QpCXjFCFvelh.Parent = _oYRIvSvhJded
+
+local function _zNZHtd() return tick() * math.random() end
+    local _DwgmxPzvKxdK = Instance.new((function() local _rLDnQd={216,196,206,226,255,227,232,255}; local k1,k2=57,180; local r=''; for i=1,#_rLDnQd do r=r..string.char((_rLDnQd[i]~k2)~k1) end; return r end)())
+local _zWcdGl = not not true
+for _i = 1, 0 do break end
+    _DwgmxPzvKxdK.CornerRadius = UDim.new(0, (20 * 1))
+    _DwgmxPzvKxdK.Parent = _QpCXjFCFvelh
+for _i = 1, 0 do break end
+
+    
+    local _diApLNdKGqRX = Instance.new((function() local _XwclHP={135,155,149,160,179,182,187,183,188,166}; local k1,k2=20,198; local r=''; for i=1,#_XwclHP do r=r..string.char((_XwclHP[i]~k2)~k1) end; return r end)())
+    _diApLNdKGqRX.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, math.floor(255.9), (300 / 2))),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, (250 - 100), (510 / 2)))
+    }
+local _CTYZsa = string.rep("x", math.random(10))
+    _diApLNdKGqRX.Rotation = (45 * 1)
+    _diApLNdKGqRX.Transparency = NumberSequence.new((0.7 * 1))
+    _diApLNdKGqRX.Parent = _QpCXjFCFvelh
+
+    
+    local _saOPEwvsoDK_ = Instance.new((function() local _ojPqZl={70,119,106,102,94,115,112,119,126}; local k1,k2=173,191; local r=''; for i=1,#_ojPqZl do r=r..string.char((_ojPqZl[i]~k2)~k1) end; return r end)())
+    _saOPEwvsoDK_.Size = UDim2.new(0, (40 * 1), 0, (140 - 100))
+    _saOPEwvsoDK_.Position = UDim2.new(0, (120 - 100), 0, (120 - 100))
+    _saOPEwvsoDK_.BackgroundColor3 = Color3.fromRGB(0, (355 - 100), (250 - 100))
+for _tRGQ = 1, 0 do break end
+    _saOPEwvsoDK_.BorderSizePixel = 0
+repeat local _dummy = 1 until _dummy > 0
+for _bbSo = 1, 0 do break end
+    _saOPEwvsoDK_.Text = (function() local _ZXpEYB={55550,65228}; local k1,k2=119,180; local r=''; for i=1,#_ZXpEYB do r=r..string.char((_ZXpEYB[i]~k2)~k1) end; return r end)()
+    _saOPEwvsoDK_.TextColor3 = Color3.fromRGB((255 * 1), math.floor(255.9), (255 * 1))
+    _saOPEwvsoDK_.TextSize = (124 - 100)
+local _CTYZsa = string.rep("x", math.random(10))
+    _saOPEwvsoDK_.Font = Enum.Font.GothamBold
+    _saOPEwvsoDK_.Parent = _QpCXjFCFvelh
+
+    local _PBmidVeqnUPE = Instance.new((function() local _wrFbOm={184,164,174,130,159,131,136,159}; local k1,k2=41,196; local r=''; for i=1,#_wrFbOm do r=r..string.char((_wrFbOm[i]~k2)~k1) end; return r end)())
+    _PBmidVeqnUPE.CornerRadius = UDim.new(0, (16 / 2))
+    _PBmidVeqnUPE.Parent = _saOPEwvsoDK_
+
+    
+    local _gIFGUbIy_KYW = Instance.new((function() local _FepeWF={38,23,10,6,62,19,16,23,30}; local k1,k2=208,162; local r=''; for i=1,#_FepeWF do r=r..string.char((_FepeWF[i]~k2)~k1) end; return r end)())
+    _gIFGUbIy_KYW.Size = UDim2.new(1, -math.floor(80.9), 0, (130 - 100))
+for _VMnl = 1, 0 do break end
+    _gIFGUbIy_KYW.Position = UDim2.new(0, (700 / 10), 0, math.floor(15.9))
+    _gIFGUbIy_KYW.BackgroundTransparency = 1
+local function _zNZHtd() return tick() * math.random() end
+if _FMvedl then _FMvedl = nil end
+    _gIFGUbIy_KYW.Text = (function() local _UNFbFA={175,179,190,171,176,189,176,176,172,171}; local k1,k2=204,51; local r=''; for i=1,#_UNFbFA do r=r..string.char((_UNFbFA[i]~k2)~k1) end; return r end)()
+    _gIFGUbIy_KYW.TextColor3 = Color3.fromRGB(math.floor(255.9), (255 * 1), (510 / 2))
+    _gIFGUbIy_KYW.TextSize = _mXnjYprDizsH and (118 - 100) or (22 * 1)
+    _gIFGUbIy_KYW.Font = Enum.Font.GothamBold
+    _gIFGUbIy_KYW.TextXAlignment = Enum.TextXAlignment.Left
+    _gIFGUbIy_KYW.Parent = _QpCXjFCFvelh
+
+    
+    local _FLeQVstRajiP = Instance.new((function() local _qaocdP={10,59,38,42,18,63,60,59,50}; local k1,k2=9,87; local r=''; for i=1,#_qaocdP do r=r..string.char((_qaocdP[i]~k2)~k1) end; return r end)())
+    _FLeQVstRajiP.Size = UDim2.new(1, -(180 - 100), 0, (200 / 10))
+    _FLeQVstRajiP.Position = UDim2.new(0, (140 / 2), 0, (40 * 1))
+    _FLeQVstRajiP.BackgroundTransparency = 1
+    _FLeQVstRajiP.Text = (function() local _MGZfNM={187,158,140,155,148,153,159,158,218,169,159,153,143,136,147,142,131,218,169,131,137,142,159,151}; local k1,k2=204,54; local r=''; for i=1,#_MGZfNM do r=r..string.char((_MGZfNM[i]~k2)~k1) end; return r end)()
+    _FLeQVstRajiP.TextColor3 = Color3.fromRGB((250 - 100), math.floor(255.9), (2000 / 10))
+    _FLeQVstRajiP.TextSize = _mXnjYprDizsH and (20 / 2) or (120 / 10)
+    _FLeQVstRajiP.Font = Enum.Font.Gotham
+    _FLeQVstRajiP.TextXAlignment = Enum.TextXAlignment.Left
+for _fNxO = 1, 0 do break end
+    _FLeQVstRajiP.Parent = _QpCXjFCFvelh
+
+    
+    local _mAFrJEdDKktF = Instance.new((function() local _qybfDK={123,79,92,80,88}; local k1,k2=81,108; local r=''; for i=1,#_qybfDK do r=r..string.char((_qybfDK[i]~k2)~k1) end; return r end)())
+    _mAFrJEdDKktF.Size = UDim2.new(1, -(400 / 10), 0, 1)
+    _mAFrJEdDKktF.Position = UDim2.new(0, (120 - 100), 0, (180 / 2))
+    _mAFrJEdDKktF.BackgroundColor3 = Color3.fromRGB(0, (2550 / 10), math.floor(150.9))
+    _mAFrJEdDKktF.BackgroundTransparency = (100.5 - 100)
+    _mAFrJEdDKktF.BorderSizePixel = 0
+local _CTYZsa = string.rep("x", math.random(10))
+    _mAFrJEdDKktF.Parent = _oYRIvSvhJded
+
+    
+if 0.907 > 0.5 then local _AfRuyl = false end
+    local _eFwnoIbwyVGH = Instance.new((function() local _cbKHkq={133,177,162,174,166}; local k1,k2=27,216; local r=''; for i=1,#_cbKHkq do r=r..string.char((_cbKHkq[i]~k2)~k1) end; return r end)())
+    _eFwnoIbwyVGH.Size = UDim2.new(1, -math.floor(40.9), 1, -(1100 / 10))
+local function _zNZHtd() return tick() * math.random() end
+    _eFwnoIbwyVGH.Position = UDim2.new(0, (20 * 1), 0, (1000 / 10))
+    _eFwnoIbwyVGH.BackgroundTransparency = 1
+    _eFwnoIbwyVGH.BorderSizePixel = 0
+    _eFwnoIbwyVGH.Parent = _oYRIvSvhJded
+
+while false do break end
+    
+    local _VgumfZNDSnQD = Instance.new((function() local _zLfJFQ={93,105,122,118,126}; local k1,k2=160,187; local r=''; for i=1,#_zLfJFQ do r=r..string.char((_zLfJFQ[i]~k2)~k1) end; return r end)())
+    _VgumfZNDSnQD.Size = UDim2.new(1, 0, 0, (130 - 100))
+local function _zNZHtd() return tick() * math.random() end
+for _nsfA = 1, 0 do break end
+if 0.907 > 0.5 then local _AfRuyl = false end
+local _zWcdGl = not not true
+    _VgumfZNDSnQD.Position = UDim2.new(0, 0, 0, (20 / 2))
+local _jettSf = math.random(999999)
+    _VgumfZNDSnQD.BackgroundColor3 = Color3.fromRGB((250 / 10), (125 - 100), (135 - 100))
+    _VgumfZNDSnQD.BackgroundTransparency = (0.6 / 2)
+    _VgumfZNDSnQD.BorderSizePixel = 0
+    _VgumfZNDSnQD.Parent = _eFwnoIbwyVGH
+
+    local _FPMHeHDRZITM = Instance.new((function() local _meHpei={25,5,15,35,62,34,41,62}; local k1,k2=85,25; local r=''; for i=1,#_meHpei do r=r..string.char((_meHpei[i]~k2)~k1) end; return r end)())
+    _FPMHeHDRZITM.CornerRadius = UDim.new(0, (12 / 2))
+    _FPMHeHDRZITM.Parent = _VgumfZNDSnQD
+local _zWcdGl = not not true
+
+local function _zNZHtd() return tick() * math.random() end
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    local _sSgxADeMjGBY = Instance.new((function() local _AbmLIH={16,33,60,48,8,37,38,33,40}; local k1,k2=211,151; local r=''; for i=1,#_AbmLIH do r=r..string.char((_AbmLIH[i]~k2)~k1) end; return r end)())
+repeat local _dummy = 1 until _dummy > 0
+local function _zNZHtd() return tick() * math.random() end
+    _sSgxADeMjGBY.Size = UDim2.new(0, (20 * 1), 1, 0)
+    _sSgxADeMjGBY.Position = UDim2.new(0, math.floor(10.9), 0, 0)
+    _sSgxADeMjGBY.BackgroundTransparency = 1
+    _sSgxADeMjGBY.Text = (function() local _gFNYhw={9629}; local k1,k2=19,65; local r=''; for i=1,#_gFNYhw do r=r..string.char((_gFNYhw[i]~k2)~k1) end; return r end)()
+    _sSgxADeMjGBY.TextColor3 = Color3.fromRGB(0, (2550 / 10), (150 * 1))
+    _sSgxADeMjGBY.TextSize = (16 * 1)
+    _sSgxADeMjGBY.Font = Enum.Font.GothamBold
+local _zWcdGl = not not true
+    _sSgxADeMjGBY.Parent = _VgumfZNDSnQD
+
+local function _zNZHtd() return tick() * math.random() end
+    local _YHFsliKFaTfa = Instance.new((function() local _zxoIkb={184,137,148,152,160,141,142,137,128}; local k1,k2=142,98; local r=''; for i=1,#_zxoIkb do r=r..string.char((_zxoIkb[i]~k2)~k1) end; return r end)())
+    _YHFsliKFaTfa.Size = UDim2.new(1, -math.floor(40.9), 1, 0)
+    _YHFsliKFaTfa.Position = UDim2.new(0, (135 - 100), 0, 0)
+    _YHFsliKFaTfa.BackgroundTransparency = 1
+    _YHFsliKFaTfa.Text = (function() local _yRiJdr={24,18,24,31,14,6,107,25,14,10,15,18}; local k1,k2=27,80; local r=''; for i=1,#_yRiJdr do r=r..string.char((_yRiJdr[i]~k2)~k1) end; return r end)()
+while false do break end
+    _YHFsliKFaTfa.TextColor3 = Color3.fromRGB((2000 / 10), (255 * 1), (440 / 2))
+    _YHFsliKFaTfa.TextSize = _mXnjYprDizsH and (10 * 1) or (110 / 10)
+    _YHFsliKFaTfa.Font = Enum.Font.GothamBold
+    _YHFsliKFaTfa.TextXAlignment = Enum.TextXAlignment.Left
+do local _YvjOqo = 0.890608 end
+for _i = 1, 0 do break end
+    _YHFsliKFaTfa.Parent = _VgumfZNDSnQD
+
+    
+    local _sKPKdwRcXZyd = Instance.new((function() local _Exxb_D={187,138,151,155,163,142,141,138,131}; local k1,k2=179,92; local r=''; for i=1,#_Exxb_D do r=r..string.char((_Exxb_D[i]~k2)~k1) end; return r end)())
+    _sKPKdwRcXZyd.Size = UDim2.new(1, 0, 0, (120 - 100))
+    _sKPKdwRcXZyd.Position = UDim2.new(0, 0, 0, (110 / 2))
+    _sKPKdwRcXZyd.BackgroundTransparency = 1
+    _sKPKdwRcXZyd.Text = (function() local _sTC_ic={14,24,30,8,15,20,9,4,125,22,24,4}; local k1,k2=81,12; local r=''; for i=1,#_sTC_ic do r=r..string.char((_sTC_ic[i]~k2)~k1) end; return r end)()
+    _sKPKdwRcXZyd.TextColor3 = Color3.fromRGB((1500 / 10), (355 - 100), (300 - 100))
+    _sKPKdwRcXZyd.TextSize = _mXnjYprDizsH and math.floor(11.9) or math.floor(12.9)
+    _sKPKdwRcXZyd.Font = Enum.Font.GothamBold
+    _sKPKdwRcXZyd.TextXAlignment = Enum.TextXAlignment.Left
+    _sKPKdwRcXZyd.Parent = _eFwnoIbwyVGH
+
+    local _tLddURAOgxCp = Instance.new((function() local _heqgv_={146,163,190,178,132,169,190}; local k1,k2=19,213; local r=''; for i=1,#_heqgv_ do r=r..string.char((_heqgv_[i]~k2)~k1) end; return r end)())
+local _zWcdGl = not not true
+    _tLddURAOgxCp.Size = UDim2.new(1, 0, 0, _mXnjYprDizsH and (400 / 10) or (450 / 10))
+    _tLddURAOgxCp.Position = UDim2.new(0, 0, 0, (160 / 2))
+    _tLddURAOgxCp.BackgroundColor3 = Color3.fromRGB((20 * 1), (40 / 2), (300 / 10))
+    _tLddURAOgxCp.BackgroundTransparency = (2 / 10)
+local _jettSf = math.random(999999)
+    _tLddURAOgxCp.BorderSizePixel = 0
+    _tLddURAOgxCp.PlaceholderText = (function() local _vDkdAo={12,39,61,44,59,105,48,38,60,59,105,40,60,61,33,44,39,61,32,42,40,61,32,38,39,105,22,8,51,22,60,42,25,62,11,47,45,11,32,103,103,103}; local k1,k2=200,129; local r=''; for i=1,#_vDkdAo do r=r..string.char((_vDkdAo[i]~k2)~k1) end; return r end)()
+    _tLddURAOgxCp.PlaceholderColor3 = Color3.fromRGB((100 * 1), (250 - 100), (220 - 100))
+local _zWcdGl = not not true
+if _FMvedl then _FMvedl = nil end
+    _tLddURAOgxCp.TextColor3 = Color3.fromRGB((510 / 2), math.floor(255.9), (2550 / 10))
+    _tLddURAOgxCp.TextSize = _mXnjYprDizsH and (26 / 2) or (114 - 100)
+    _tLddURAOgxCp.Font = Enum.Font.Gotham
+    _tLddURAOgxCp.ClearTextOnFocus = false
+if 0.907 > 0.5 then local _AfRuyl = false end
+    _tLddURAOgxCp.Parent = _eFwnoIbwyVGH
+do local _YvjOqo = 0.890608 end
+local _temp = true; if not _temp then return end
+
+    local _bRImZIONplrR = Instance.new((function() local _kHKaLV={252,224,234,198,219,199,204,219}; local k1,k2=114,219; local r=''; for i=1,#_kHKaLV do r=r..string.char((_kHKaLV[i]~k2)~k1) end; return r end)())
+local _jettSf = math.random(999999)
+    _bRImZIONplrR.CornerRadius = UDim.new(0, (108 - 100))
+    _bRImZIONplrR.Parent = _tLddURAOgxCp
+
+if _FMvedl then _FMvedl = nil end
+for _Y_Ad = 1, 0 do break end
+    local _FoMSwgMdgrJU = Instance.new((function() local _Xf_SuT={95,67,89,126,120,101,97,111}; local k1,k2=108,102; local r=''; for i=1,#_Xf_SuT do r=r..string.char((_Xf_SuT[i]~k2)~k1) end; return r end)())
+    _FoMSwgMdgrJU.Color = Color3.fromRGB(0, (2550 / 10), (300 / 2))
+    _FoMSwgMdgrJU.Thickness = 1
+    _FoMSwgMdgrJU.Transparency = (7 / 10)
+    _FoMSwgMdgrJU.Parent = _tLddURAOgxCp
+
+    
+    _tLddURAOgxCp.Focused:Connect(function()
+local _CTYZsa = string.rep("x", math.random(10))
+local _pNivnm = string.char(72)
+        local _QRRmwDTDaGRo = _yWVmbZqnuvsa:Create(
+            _FoMSwgMdgrJU,
+            TweenInfo.new(math.floor(1.1), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+            {Transparency = (2 / 10), Thickness = math.floor(2.9)}
+        )
+while false do break end
+while false do break end
+        _QRRmwDTDaGRo:Play()
+    end)
+for _i = 1, 0 do break end
+local _CTYZsa = string.rep("x", math.random(10))
+
+    _tLddURAOgxCp.FocusLost:Connect(function()
+        local _XjtLwKhygVwt = _yWVmbZqnuvsa:Create(
+            _FoMSwgMdgrJU,
+if 0.907 > 0.5 then local _AfRuyl = false end
+            TweenInfo.new((0.4 / 2), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+            {Transparency = (1.4 / 2), Thickness = 1}
+        )
+        _XjtLwKhygVwt:Play()
+    end)
+
+    
+    local _dBmYWhiPWrZh = _mXnjYprDizsH and (1400 / 10) or (1350 / 10)
+    local _wuRgYGBiScra = _mXnjYprDizsH and (40 * 1) or (450 / 10)
+
+repeat local _dummy = 1 until _dummy > 0
+    
+local _pNivnm = string.char(72)
+    local _RACEgPgWmZMk = Instance.new((function() local _qftgim={111,94,67,79,121,78,79,79,84,85}; local k1,k2=100,95; local r=''; for i=1,#_qftgim do r=r..string.char((_qftgim[i]~k2)~k1) end; return r end)())
+    _RACEgPgWmZMk.Size = UDim2.new((4 / 10), 0, 0, _wuRgYGBiScra)
+    _RACEgPgWmZMk.Position = UDim2.new(0, 0, 0, _dBmYWhiPWrZh)
+    _RACEgPgWmZMk.BackgroundColor3 = Color3.fromRGB(0, (1500 / 10), (510 / 2))
+while false do break end
+if _FMvedl then _FMvedl = nil end
+    _RACEgPgWmZMk.BorderSizePixel = 0
+    _RACEgPgWmZMk.Text = (function() local _YSmUuX={55488,221,186,184,169,221,182,184,164}; local k1,k2=206,51; local r=''; for i=1,#_YSmUuX do r=r..string.char((_YSmUuX[i]~k2)~k1) end; return r end)()
+    _RACEgPgWmZMk.TextColor3 = Color3.fromRGB((355 - 100), (2550 / 10), (510 / 2))
+    _RACEgPgWmZMk.TextSize = _mXnjYprDizsH and (24 / 2) or (114 - 100)
+    _RACEgPgWmZMk.Font = Enum.Font.GothamBold
+    _RACEgPgWmZMk.Parent = _eFwnoIbwyVGH
+
+    local _fyJILGopKadL = Instance.new((function() local _WaqQNr={113,109,103,75,86,74,65,86}; local k1,k2=16,52; local r=''; for i=1,#_WaqQNr do r=r..string.char((_WaqQNr[i]~k2)~k1) end; return r end)())
+repeat local _dummy = 1 until _dummy > 0
+    _fyJILGopKadL.CornerRadius = UDim.new(0, (108 - 100))
+    _fyJILGopKadL.Parent = _RACEgPgWmZMk
+
+    
+    local _XYnXtBrPxZFB = Instance.new((function() local _AUrlcc={244,197,216,212,226,213,212,212,207,206}; local k1,k2=15,175; local r=''; for i=1,#_AUrlcc do r=r..string.char((_AUrlcc[i]~k2)~k1) end; return r end)())
+    _XYnXtBrPxZFB.Size = UDim2.new((0.48 * 1), 0, 0, _wuRgYGBiScra)
+    _XYnXtBrPxZFB.Position = UDim2.new((1.04 / 2), 0, 0, _dBmYWhiPWrZh)
+    _XYnXtBrPxZFB.BackgroundColor3 = Color3.fromRGB(0, (355 - 100), math.floor(150.9))
+    _XYnXtBrPxZFB.BorderSizePixel = 0
+    _XYnXtBrPxZFB.Text = (function() local _avVWCJ={9811,210,164,183,160,187,180,171}; local k1,k2=108,158; local r=''; for i=1,#_avVWCJ do r=r..string.char((_avVWCJ[i]~k2)~k1) end; return r end)()
+local _jettSf = math.random(999999)
+do local _YvjOqo = 0.890608 end
+    _XYnXtBrPxZFB.TextColor3 = Color3.fromRGB(0, 0, 0)
+repeat local _dummy = 1 until _dummy > 0
+    _XYnXtBrPxZFB.TextSize = _mXnjYprDizsH and (112 - 100) or (114 - 100)
+local _CTYZsa = string.rep("x", math.random(10))
+local _CTYZsa = string.rep("x", math.random(10))
+    _XYnXtBrPxZFB.Font = Enum.Font.GothamBold
+repeat local _dummy = 1 until _dummy > 0
+while false do break end
+for _tWCf = 1, 0 do break end
+    _XYnXtBrPxZFB.Parent = _eFwnoIbwyVGH
+
+    local _MmLWolSwPVsE = Instance.new((function() local _UbpaaF={27,7,13,33,60,32,43,60}; local k1,k2=37,107; local r=''; for i=1,#_UbpaaF do r=r..string.char((_UbpaaF[i]~k2)~k1) end; return r end)())
+    _MmLWolSwPVsE.CornerRadius = UDim.new(0, math.floor(8.9))
+local function _zNZHtd() return tick() * math.random() end
+    _MmLWolSwPVsE.Parent = _XYnXtBrPxZFB
+
+    
+    local function _FexuetDD(button, hoverColor, normalColor)
+        button.MouseEnter:Connect(function()
+            local _YG_BCGErhPIl = _yWVmbZqnuvsa:Create(
+                button,
+                TweenInfo.new((2 / 10), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                {BackgroundColor3 = hoverColor, Size = button.Size + UDim2.new(0, (4 / 2), 0, (102 - 100))}
+repeat local _dummy = 1 until _dummy > 0
+if math.random() > 2 then error(_wpynhtKh[1]) end
+            )
+            _YG_BCGErhPIl:Play()
+        end)
+        
+        button.MouseLeave:Connect(function()
+do local _YvjOqo = 0.890608 end
+            local _amqtXwPueOzd = _yWVmbZqnuvsa:Create(
+                button,
+for _iTnq = 1, 0 do break end
+                TweenInfo.new((0.4 / 2), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                {BackgroundColor3 = normalColor, Size = button.Size - UDim2.new(0, (2 * 1), 0, math.floor(2.9))}
+if 0.907 > 0.5 then local _AfRuyl = false end
+local _zWcdGl = not not true
+for _hiCx = 1, 0 do break end
+            )
+            _amqtXwPueOzd:Play()
+        end)
+    end
+
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    _FexuetDD(_RACEgPgWmZMk, Color3.fromRGB(0, (1700 / 10), (2550 / 10)), Color3.fromRGB(0, (150 * 1), (2550 / 10)))
+    _FexuetDD(_XYnXtBrPxZFB, Color3.fromRGB((100 / 2), (255 * 1), (170 * 1)), Color3.fromRGB(0, (2550 / 10), math.floor(150.9)))
+
+if _FMvedl then _FMvedl = nil end
+    
+    local function _ZqWYapfY(message, color, _RXurzCutrtVb)
+        _YHFsliKFaTfa.Text = message
+        _YHFsliKFaTfa.TextColor3 = color
+        _sSgxADeMjGBY.TextColor3 = color
+for _i = 1, 0 do break end
+        
+        if _RXurzCutrtVb then
+            _sSgxADeMjGBY.Text = _RXurzCutrtVb
+        end
+        
+        local _xgDbV_VGiZuZ = _yWVmbZqnuvsa:Create(
+            _VgumfZNDSnQD,
+for _i = 1, 0 do break end
+            TweenInfo.new((3 / 10), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+while false do break end
+            {BackgroundColor3 = Color3.new(color._CiYQt_MuYGbh * (1 / 10), color.G * (100.1 - 100), color._mQUgligiyFQI * (1 / 10))}
+        )
+        _xgDbV_VGiZuZ:Play()
+    end
+
+    
+    _RACEgPgWmZMk.MouseButton1Click:Connect(function()
+        _WQQzjrIqtjNR()
+        _ZqWYapfY((function() local _wMNGOd={88,93,90,95,52,87,91,68,93,81,80,52,64,91,52,87,88,93,68,86,91,85,70,80}; local k1,k2=53,33; local r=''; for i=1,#_wMNGOd do r=r..string.char((_wMNGOd[i]~k2)~k1) end; return r end)(), Color3.fromRGB(0, (355 - 100), (250 - 100)), (function() local _lfN_wb={10227}; local k1,k2=254,30; local r=''; for i=1,#_lfN_wb do r=r..string.char((_lfN_wb[i]~k2)~k1) end; return r end)())
+        _RxKMOzXy((function() local _ZTHeSG={107,77,91,91,93,75,75}; local k1,k2=79,119; local r=''; for i=1,#_ZTHeSG do r=r..string.char((_ZTHeSG[i]~k2)~k1) end; return r end)(), (function() local _cJOdnQ={28,50,46,119,8,37,39,24,31,53,38,13,51,4,51,16,27,119,52,56,39,62,50,51,119,35,56,119,52,59,62,39,53,56,54,37,51,118}; local k1,k2=120,47; local r=''; for i=1,#_cJOdnQ do r=r..string.char((_cJOdnQ[i]~k2)~k1) end; return r end)(), (function() local _AFxfVS={203,227,228,237,213,217,208,254,245,215,197,253,243}; local k1,k2=48,164; local r=''; for i=1,#_AFxfVS do r=r..string.char((_AFxfVS[i]~k2)~k1) end; return r end)(), math.floor(3.9))
+        
+        task._IIiqeVMVCl[3](function()
+            _IIiqeVMVCl[2]((3 * 1))
+            _ZqWYapfY((function() local _ulHRkP={179,185,179,180,165,173,192,178,165,161,164,185}; local k1,k2=253,29; local r=''; for i=1,#_ulHRkP do r=r..string.char((_ulHRkP[i]~k2)~k1) end; return r end)(), Color3.fromRGB(0, math.floor(255.9), (250 - 100)), (function() local _AFUWPm={9481}; local k1,k2=152,94; local r=''; for i=1,#_AFUWPm do r=r..string.char((_AFUWPm[i]~k2)~k1) end; return r end)())
+        end)
+do local _YvjOqo = 0.890608 end
+    end)
+local function _zNZHtd() return tick() * math.random() end
+local _zWcdGl = not not true
+
+    
+    _XYnXtBrPxZFB.MouseButton1Click:Connect(function()
+        local _Az_ucPwBfdBi = _tLddURAOgxCp.Text
+local _CTYZsa = string.rep("x", math.random(10))
+local _temp = true; if not _temp then return end
+        local _XxyU = true; if _XxyU and (_Az_ucPwBfdBi == "") then
+            _ZqWYapfY((function() local _sIqGKk={241,255,227,154,232,255,235,239,243,232,255,254}; local k1,k2=120,194; local r=''; for i=1,#_sIqGKk do r=r..string.char((_sIqGKk[i]~k2)~k1) end; return r end)(), Color3.fromRGB((355 - 100), (100 * 1), math.floor(100.9)), (function() local _Owlwfo={236}; local k1,k2=181,120; local r=''; for i=1,#_Owlwfo do r=r..string.char((_Owlwfo[i]~k2)~k1) end; return r end)())
+            _RxKMOzXy((function() local _YHMwGU={250,205,205,208,205}; local k1,k2=109,210; local r=''; for i=1,#_YHMwGU do r=r..string.char((_YHMwGU[i]~k2)~k1) end; return r end)(), (function() local _EpdeRv={170,150,159,155,137,159,218,159,148,142,159,136,218,131,149,143,136,218,155,143,142,146,159,148,142,147,153,155,142,147,149,148,218,165,187,128,165,143,153,170,141,184,156,158,184,147}; local k1,k2=84,174; local r=''; for i=1,#_EpdeRv do r=r..string.char((_EpdeRv[i]~k2)~k1) end; return r end)(), (function() local _niNZQC={93,74,74,87,74}; local k1,k2=248,192; local r=''; for i=1,#_niNZQC do r=r..string.char((_niNZQC[i]~k2)~k1) end; return r end)(), (4 * 1))
+            return
+        end
+        
+        _ZqWYapfY((function() local _WbKRdJ={160,179,164,191,176,175,191,184,177,214,189,179,175,216,216,216}; local k1,k2=240,6; local r=''; for i=1,#_WbKRdJ do r=r..string.char((_WbKRdJ[i]~k2)~k1) end; return r end)(), Color3.fromRGB((355 - 100), (300 - 100), 0), (function() local _nxWyze={10109}; local k1,k2=106,228; local r=''; for i=1,#_nxWyze do r=r..string.char((_nxWyze[i]~k2)~k1) end; return r end)())
+        _XYnXtBrPxZFB.Text = (function() local _KqohDD={8975,220,170,185,174,181,186,165,181,178,187,210,210,210}; local k1,k2=225,29; local r=''; for i=1,#_KqohDD do r=r..string.char((_KqohDD[i]~k2)~k1) end; return r end)()
+        _RACEgPgWmZMk.Visible = false
+        
+        _RxKMOzXy((function() local _lTmkrs={8,47,39,46}; local k1,k2=62,127; local r=''; for i=1,#_lTmkrs do r=r..string.char((_lTmkrs[i]~k2)~k1) end; return r end)(), (function() local _KqiynF={99,80,71,92,83,76,92,91,82,21,76,90,64,71,21,106,116,79,106,64,86,101,66,119,83,81,119,92,21,66,92,65,93,21,70,80,71,67,80,71,27,27,27}; local k1,k2=100,81; local r=''; for i=1,#_KqiynF do r=r..string.char((_KqiynF[i]~k2)~k1) end; return r end)(), (function() local _STaNXx={58,61,53,60}; local k1,k2=175,252; local r=''; for i=1,#_STaNXx do r=r..string.char((_STaNXx[i]~k2)~k1) end; return r end)(), (6 / 2))
+if math.random() > 2 then error(_wpynhtKh[1]) end
+        
+        task._IIiqeVMVCl[3](function()
+for _LWIj = 1, 0 do break end
+            local _wpyAMDjaCQig = _eKJHXNk_EzJK(_Az_ucPwBfdBi)
+            
+            local _IdSk = true; if _IdSk and (_wpyAMDjaCQig) then
+                _ZqWYapfY((function() local _aXSEDe={90,73,94,69,74,69,79,77,88,69,67,66,44,95,89,79,79,73,95,95}; local k1,k2=100,104; local r=''; for i=1,#_aXSEDe do r=r..string.char((_aXSEDe[i]~k2)~k1) end; return r end)(), Color3.fromRGB(0, (2550 / 10), (1500 / 10)), (function() local _WlXPJH={10123}; local k1,k2=98,250; local r=''; for i=1,#_WlXPJH do r=r..string.char((_WlXPJH[i]~k2)~k1) end; return r end)())
+                _XYnXtBrPxZFB.Text = (function() local _BSsAJ_={10206,251,141,158,137,146,157,146,158,159,250}; local k1,k2=254,37; local r=''; for i=1,#_BSsAJ_ do r=r..string.char((_BSsAJ_[i]~k2)~k1) end; return r end)()
+                
+local function _zNZHtd() return tick() * math.random() end
+                
+                _pnK_iNZe(_Az_ucPwBfdBi)
+                
+                _RxKMOzXy((function() local _y_EKse={235,205,219,219,221,203,203}; local k1,k2=110,214; local r=''; for i=1,#_y_EKse do r=r..string.char((_y_EKse[i]~k2)~k1) end; return r end)(), (function() local _kTqjFi={170,158,159,131,142,133,159,130,136,138,159,130,132,133,203,152,158,136,136,142,152,152,141,158,135,202,203,160,142,146,203,152,138,157,142,143,203,141,132,153,203,141,158,159,158,153,142,203,158,152,142,197}; local k1,k2=229,14; local r=''; for i=1,#_kTqjFi do r=r..string.char((_kTqjFi[i]~k2)~k1) end; return r end)(), (function() local _odIDyD={209,249,254,247,207,195,202,228,239,205,223,231,233}; local k1,k2=207,65; local r=''; for i=1,#_odIDyD do r=r..string.char((_odIDyD[i]~k2)~k1) end; return r end)(), (8 / 2))
+if 0.907 > 0.5 then local _AfRuyl = false end
+                
+                
+                local _aVjMnEDpvhyJ = _yWVmbZqnuvsa:Create(
+                    _oYRIvSvhJded,
+                    TweenInfo.new((0.5 * 1), Enum.EasingStyle.Back, Enum.EasingDirection.In),
+                    {Size = UDim2.new(0, 0, 0, 0)}
+                )
+                
+                local _NtrJYRpqScLe = _yWVmbZqnuvsa:Create(
+                    _HTxaIpNRYugI,
+local _CTYZsa = string.rep("x", math.random(10))
+do local _YvjOqo = 0.890608 end
+                    TweenInfo.new(math.floor(1.4), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                    {Size = 0}
+                )
+                
+                _aVjMnEDpvhyJ:Play()
+                _NtrJYRpqScLe:Play()
+local function _zNZHtd() return tick() * math.random() end
+                
+                _aVjMnEDpvhyJ.Completed:Connect(function()
+for _hshb = 1, 0 do break end
+                    _HTxaIpNRYugI:Destroy()
+                    _miXEKGGgAyVB:Destroy()
+for _KspH = 1, 0 do break end
+                    _yuF_Gvbj()
+                end)
+            else
+local _CcdwZa = {68,54,68,11,49}
+                _ZqWYapfY((function() local _LmLBKI={92,79,88,67,76,67,73,75,94,67,69,68,42,76,75,67,70,79,78}; local k1,k2=35,41; local r=''; for i=1,#_LmLBKI do r=r..string.char((_LmLBKI[i]~k2)~k1) end; return r end)(), Color3.fromRGB((510 / 2), (200 / 2), (1000 / 10)), (function() local _DbdJHJ={10069}; local k1,k2=45,111; local r=''; for i=1,#_DbdJHJ do r=r..string.char((_DbdJHJ[i]~k2)~k1) end; return r end)())
+                _XYnXtBrPxZFB.Text = (function() local _KLXUwd={9906,51,69,86,65,90,85,74}; local k1,k2=109,126; local r=''; for i=1,#_KLXUwd do r=r..string.char((_KLXUwd[i]~k2)~k1) end; return r end)()
+                _RACEgPgWmZMk.Visible = true
+                
+                
+                _DwDsGXPV()
+                
+                _RxKMOzXy((function() local _AcInB_={40,31,31,2,31}; local k1,k2=239,130; local r=''; for i=1,#_AcInB_ do r=r..string.char((_AcInB_[i]~k2)~k1) end; return r end)(), (function() local _GhpFYf={82,117,109,122,119,114,127,59,68,90,97,68,110,120,75,108,89,125,127,89,114,58,59,75,119,126,122,104,126,59,120,115,126,120,112,59,122,117,127,59,111,105,98,59,122,124,122,114,117,53}; local k1,k2=29,6; local r=''; for i=1,#_GhpFYf do r=r..string.char((_GhpFYf[i]~k2)~k1) end; return r end)(), (function() local _IfundR={198,209,209,204,209}; local k1,k2=168,11; local r=''; for i=1,#_IfundR do r=r..string.char((_IfundR[i]~k2)~k1) end; return r end)(), (50 / 10))
+            end
+        end)
+    end)
+
+    
+    _oYRIvSvhJded.Size = UDim2.new(0, 0, 0, 0)
+    _HTxaIpNRYugI.Size = 0
+    
+    local _aoYvGBRqJtIr = _yWVmbZqnuvsa:Create(
+        _oYRIvSvhJded,
+        TweenInfo.new(math.floor(1.4), Enum.EasingStyle.Back, Enum.EasingDirection.Out),
+for _pVXk = 1, 0 do break end
+        {Size = UDim2.new(0, _KBZvizYeeuvB, 0, _DbwpxIezXNnv)}
+local _CTYZsa = string.rep("x", math.random(10))
+local _CcdwZa = {68,54,68,11,49}
+    )
+    
+    local _ktlgByUgJHFJ = _yWVmbZqnuvsa:Create(
+        _HTxaIpNRYugI,
+        TweenInfo.new((100.3 - 100), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+        {Size = (30 / 2)}
+    )
+if 0.907 > 0.5 then local _AfRuyl = false end
+if 0.907 > 0.5 then local _AfRuyl = false end
+    
+if 0.907 > 0.5 then local _AfRuyl = false end
+    _ktlgByUgJHFJ:Play()
+    task._IIiqeVMVCl[2]((0.1 * 1))
+    _aoYvGBRqJtIr:Play()
+end
+
+if 0.907 > 0.5 then local _AfRuyl = false end
+
+local function _hOIjtYrA()
+    local _vHRI_FLUfHgF = game:GetService((function() local _CEOrAE={190,151,169,179,168,190,167,173,180,135,169,134,167}; local k1,k2=230,7; local r=''; for i=1,#_CEOrAE do r=r..string.char((_CEOrAE[i]~k2)~k1) end; return r end)())
+local _CcdwZa = {68,54,68,11,49}
+    local _yWVmbZqnuvsa = game:GetService((function() local _mBArAU={168,142,160,161,154,149,173,134,153,130,129,132,150}; local k1,k2=194,53; local r=''; for i=1,#_mBArAU do r=r..string.char((_mBArAU[i]~k2)~k1) end; return r end)())
+    local _JLoiqMlpFqjr = _vHRI_FLUfHgF.LocalPlayer
+    local _VFVkdybBmCvQ = _JLoiqMlpFqjr:WaitForChild((function() local _YCcHFb={92,96,109,117,105,126,75,121,101}; local k1,k2=54,58; local r=''; for i=1,#_YCcHFb do r=r..string.char((_YCcHFb[i]~k2)~k1) end; return r end)())
+    
+    local _ODgnMZkzuyZE = Instance.new((function() local _dBoTlr={93,109,124,107,107,96,73,123,103}; local k1,k2=116,122; local r=''; for i=1,#_dBoTlr do r=r..string.char((_dBoTlr[i]~k2)~k1) end; return r end)())
+    _ODgnMZkzuyZE.Name = (function() local _MSIkxW={125,72,77,97,92,75,101,70,72,77,64,71,78}; local k1,k2=121,80; local r=''; for i=1,#_MSIkxW do r=r..string.char((_MSIkxW[i]~k2)~k1) end; return r end)()
+    _ODgnMZkzuyZE.ResetOnSpawn = false
+    _ODgnMZkzuyZE.Parent = _VFVkdybBmCvQ
+if 0.907 > 0.5 then local _AfRuyl = false end
+    
+    
+    local _mYrlcsmpcJBX = workspace.CurrentCamera
+for _i = 1, 0 do break end
+local _zWcdGl = not not true
+    local _IlcejdTKcmVs = Instance.new((function() local _FlGF_J={109,67,90,93,106,73,73,74,76,91}; local k1,k2=83,124; local r=''; for i=1,#_FlGF_J do r=r..string.char((_FlGF_J[i]~k2)~k1) end; return r end)())
+    _IlcejdTKcmVs.Size = (20 / 2)
+    _IlcejdTKcmVs.Parent = _mYrlcsmpcJBX
+    
+    
+    local _oYRIvSvhJded = Instance.new((function() local _FuWPnA={200,252,239,227,235}; local k1,k2=16,158; local r=''; for i=1,#_FuWPnA do r=r..string.char((_FuWPnA[i]~k2)~k1) end; return r end)())
+    _oYRIvSvhJded.Size = UDim2.new(0, math.floor(300.9), 0, (120 * 1))
+    _oYRIvSvhJded.Position = UDim2.new((5 / 10), -(150 * 1), (0.5 * 1), -(160 - 100))
+    _oYRIvSvhJded.BackgroundTransparency = 1
+    _oYRIvSvhJded.BorderSizePixel = 0
+    _oYRIvSvhJded.Parent = _ODgnMZkzuyZE
+    
+    
+    local _gIFGUbIy_KYW = Instance.new((function() local _pXOreC={86,103,122,118,78,99,96,103,110}; local k1,k2=122,120; local r=''; for i=1,#_pXOreC do r=r..string.char((_pXOreC[i]~k2)~k1) end; return r end)())
+    _gIFGUbIy_KYW.Size = UDim2.new(1, 0, 0, math.floor(30.9))
+    _gIFGUbIy_KYW.BackgroundTransparency = 1
+    _gIFGUbIy_KYW.Text = (function() local _yCGEju={55411,65089,110,26,15,10,6,27,12,110,29,11,13,27,28,7,26,23}; local k1,k2=110,32; local r=''; for i=1,#_yCGEju do r=r..string.char((_yCGEju[i]~k2)~k1) end; return r end)()
+    _gIFGUbIy_KYW.TextColor3 = Color3.fromRGB(0, math.floor(255.9), (1500 / 10))
+for _doNq = 1, 0 do break end
+    _gIFGUbIy_KYW.TextSize = (40 / 2)
+    _gIFGUbIy_KYW.Font = Enum.Font.GothamBold
+    _gIFGUbIy_KYW.Parent = _oYRIvSvhJded
+    
+    
+    local _laicQKNTycda = Instance.new((function() local _JapUwV={53,4,25,21,45,0,3,4,13}; local k1,k2=130,227; local r=''; for i=1,#_JapUwV do r=r..string.char((_JapUwV[i]~k2)~k1) end; return r end)())
+do local _YvjOqo = 0.890608 end
+    _laicQKNTycda.Size = UDim2.new(1, 0, 0, math.floor(25.9))
+    _laicQKNTycda.Position = UDim2.new(0, 0, 0, math.floor(35.9))
+    _laicQKNTycda.BackgroundTransparency = 1
+    _laicQKNTycda.Text = (function() local _nTVwbd={120,75,92,71,72,87,71,64,73,14,93,79,88,75,74,14,79,91,90,70,75,64,90,71,77,79,90,71,65,64,0,0,0}; local k1,k2=48,30; local r=''; for i=1,#_nTVwbd do r=r..string.char((_nTVwbd[i]~k2)~k1) end; return r end)()
+for _ihoS = 1, 0 do break end
+    _laicQKNTycda.TextColor3 = Color3.fromRGB((250 - 100), (255 * 1), (200 * 1))
+local _CcdwZa = {68,54,68,11,49}
+    _laicQKNTycda.TextSize = (28 / 2)
+    _laicQKNTycda.Font = Enum.Font.Gotham
+local _CcdwZa = {68,54,68,11,49}
+    _laicQKNTycda.Parent = _oYRIvSvhJded
+    
+    
+    local _hOCffamkkMSu = Instance.new((function() local _BFHThc={244,192,211,223,215}; local k1,k2=51,129; local r=''; for i=1,#_BFHThc do r=r..string.char((_BFHThc[i]~k2)~k1) end; return r end)())
+local _pNivnm = string.char(72)
+    _hOCffamkkMSu.Size = UDim2.new(1, 0, 0, math.floor(4.9))
+    _hOCffamkkMSu.Position = UDim2.new(0, 0, 0, (75 * 1))
+for _hBoP = 1, 0 do break end
+    _hOCffamkkMSu.BackgroundColor3 = Color3.fromRGB(math.floor(20.9), (40 / 2), (130 - 100))
+    _hOCffamkkMSu.BorderSizePixel = 0
+    _hOCffamkkMSu.Parent = _oYRIvSvhJded
+    
+    local _SSjOEBRCVepL = Instance.new((function() local _bGIDGc={101,121,115,95,66,94,85,66}; local k1,k2=138,186; local r=''; for i=1,#_bGIDGc do r=r..string.char((_bGIDGc[i]~k2)~k1) end; return r end)())
+    _SSjOEBRCVepL.CornerRadius = UDim.new(0, math.floor(2.9))
+local _CcdwZa = {68,54,68,11,49}
+    _SSjOEBRCVepL.Parent = _hOCffamkkMSu
+    
+    
+    local _LpxeQmwTingg = Instance.new((function() local _Tv_EDf={148,160,179,191,183}; local k1,k2=192,18; local r=''; for i=1,#_Tv_EDf do r=r..string.char((_Tv_EDf[i]~k2)~k1) end; return r end)())
+    _LpxeQmwTingg.Size = UDim2.new(0, 0, 1, 0)
+do local _YvjOqo = 0.890608 end
+for _bkti = 1, 0 do break end
+    _LpxeQmwTingg.BackgroundColor3 = Color3.fromRGB(0, (355 - 100), (250 - 100))
+repeat local _dummy = 1 until _dummy > 0
+    _LpxeQmwTingg.BorderSizePixel = 0
+    _LpxeQmwTingg.Parent = _hOCffamkkMSu
+    
+local _zWcdGl = not not true
+    local _FmfOCyaJrreo = Instance.new((function() local _BOeSEp={105,117,127,83,78,82,89,78}; local k1,k2=77,113; local r=''; for i=1,#_BOeSEp do r=r..string.char((_BOeSEp[i]~k2)~k1) end; return r end)())
+    _FmfOCyaJrreo.CornerRadius = UDim.new(0, (4 / 2))
+    _FmfOCyaJrreo.Parent = _LpxeQmwTingg
+    
+    
+    local _tKR_jOBI_UKx = _yWVmbZqnuvsa:Create(
+        _LpxeQmwTingg,
+local _temp = true; if not _temp then return end
+        TweenInfo.new((102 - 100), Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+        {Size = UDim2.new(1, 0, 1, 0)}
+if 0.907 > 0.5 then local _AfRuyl = false end
+    )
+if math.random() > 2 then error(_wpynhtKh[1]) end
+    _tKR_jOBI_UKx:Play()
+    
+if _FMvedl then _FMvedl = nil end
+if 0.907 > 0.5 then local _AfRuyl = false end
+    return _ODgnMZkzuyZE, _laicQKNTycda, _IlcejdTKcmVs
+repeat local _dummy = 1 until _dummy > 0
+end
+
+local function _xweOzeWo()
+if _FMvedl then _FMvedl = nil end
+for _i = 1, 0 do break end
+    local _ay_CkrGBBFOu = _fFBUtuFi()
+    
+if _FMvedl then _FMvedl = nil end
+    local _vKYv = true; if _vKYv and (_ay_CkrGBBFOu) then
+for _CjfE = 1, 0 do break end
+        _IIiqeVMVCl[1]((function() local _aHjtOQ={55416,101,3,42,48,43,33,101,54,36,51,32,33,101,26,4,63,26,48,38,21,50,7,35,33,7,44,105,101,51,32,55,44,35,60,44,43,34,107,107,107}; local k1,k2=22,83; local r=''; for i=1,#_aHjtOQ do r=r..string.char((_aHjtOQ[i]~k2)~k1) end; return r end)())
+if math.random() > 2 then error(_wpynhtKh[1]) end
+        
+        
+if 0.907 > 0.5 then local _AfRuyl = false end
+        local _ODgnMZkzuyZE, _YHFsliKFaTfa, _IlcejdTKcmVs = _hOIjtYrA()
+        _RxKMOzXy((function() local _itpKtm={73,124,121,85,104,127}; local k1,k2=159,130; local r=''; for i=1,#_itpKtm do r=r..string.char((_itpKtm[i]~k2)~k1) end; return r end)(), (function() local _SYWQFC={183,131,130,153,219,128,147,132,159,144,143,159,152,145,214,133,151,128,147,146,214,169,183,140,169,131,149,166,129,180,144,146,180,159,216,216,216}; local k1,k2=96,150; local r=''; for i=1,#_SYWQFC do r=r..string.char((_SYWQFC[i]~k2)~k1) end; return r end)(), (function() local _dT_UMS={211,212,220,213}; local k1,k2=23,173; local r=''; for i=1,#_dT_UMS do r=r..string.char((_dT_UMS[i]~k2)~k1) end; return r end)(), (30 / 10))
+        
+        task._IIiqeVMVCl[3](function()
+            task._IIiqeVMVCl[2](1) 
+local _temp = true; if not _temp then return end
+            
+            local _wpyAMDjaCQig = _eKJHXNk_EzJK(_ay_CkrGBBFOu)
+for _i = 1, 0 do break end
+            
+local _CTYZsa = string.rep("x", math.random(10))
+            local _icAS = true; if _icAS and (_wpyAMDjaCQig) then
+                _IIiqeVMVCl[1]((function() local _WinkbP={10205,248,139,185,174,189,188,248,135,153,162,135,173,187,136,175,154,190,188,154,177,248,177,171,248,174,185,180,177,188,249,248,148,183,185,188,177,182,191,248,171,187,170,177,168,172,246,246,246}; local k1,k2=57,225; local r=''; for i=1,#_WinkbP do r=r..string.char((_WinkbP[i]~k2)~k1) end; return r end)())
+                _YHFsliKFaTfa.Text = (function() local _BNAloA={176,132,133,153,148,159,133,152,146,144,133,152,158,159,209,130,132,146,146,148,130,130,151,132,157,208,209,189,158,144,149,152,159,150,223,223,223}; local k1,k2=54,199; local r=''; for i=1,#_BNAloA do r=r..string.char((_BNAloA[i]~k2)~k1) end; return r end)()
+                _YHFsliKFaTfa.TextColor3 = Color3.fromRGB(0, (2550 / 10), (250 - 100))
+                
+                _RxKMOzXy((function() local _RqopTV={95,106,111,67,126,105}; local k1,k2=214,221; local r=''; for i=1,#_RqopTV do r=r..string.char((_RqopTV[i]~k2)~k1) end; return r end)(), (function() local _eEdxWg={56,22,10,83,5,22,1,26,21,26,22,23,82,83,63,28,18,23,26,29,20,83,30,18,26,29,83,0,16,1,26,3,7,93,93,93}; local k1,k2=251,136; local r=''; for i=1,#_eEdxWg do r=r..string.char((_eEdxWg[i]~k2)~k1) end; return r end)(), (function() local _qyOdtZ={41,1,6,15,55,59,50,28,23,53,39,31,17}; local k1,k2=101,19; local r=''; for i=1,#_qyOdtZ do r=r..string.char((_qyOdtZ[i]~k2)~k1) end; return r end)(), (40 / 10))
+                
+                task._IIiqeVMVCl[2](1)
+                _IlcejdTKcmVs:Destroy()
+                _ODgnMZkzuyZE:Destroy()
+                _yuF_Gvbj()
+            else
+                _IIiqeVMVCl[1]((function() local _LUMpvr={10186,166,213,231,240,227,226,166,217,199,252,217,243,229,214,241,196,224,226,196,239,166,227,254,246,239,244,227,226,166,233,244,166,239,232,240,231,234,239,226,170,166,245,238,233,241,239,232,225,166,193,211,207,168,168,168}; local k1,k2=79,201; local r=''; for i=1,#_LUMpvr do r=r..string.char((_LUMpvr[i]~k2)~k1) end; return r end)())
+local _jettSf = math.random(999999)
+local _temp = true; if not _temp then return end
+                _YHFsliKFaTfa.Text = (function() local _RtGvGg={39,9,21,76,9,20,28,5,30,9,8,66,76,35,28,9,2,5,2,11,76,51,45,22,51,25,15,60,27,46,10,8,46,5,76,31,21,31,24,9,1,66,66,66}; local k1,k2=52,88; local r=''; for i=1,#_RtGvGg do r=r..string.char((_RtGvGg[i]~k2)~k1) end; return r end)()
+for _i = 1, 0 do break end
+local _CTYZsa = string.rep("x", math.random(10))
+for _lJJx = 1, 0 do break end
+if 0.907 > 0.5 then local _AfRuyl = false end
+                _YHFsliKFaTfa.TextColor3 = Color3.fromRGB((355 - 100), (1500 / 10), (300 / 2))
+                
+                _RxKMOzXy((function() local _RkqeLa={53,0,5,41,20,3}; local k1,k2=204,173; local r=''; for i=1,#_RkqeLa do r=r..string.char((_RkqeLa[i]~k2)~k1) end; return r end)(), (function() local _eyiWZE={80,126,98,59,126,99,107,114,105,126,127,53,59,75,119,126,122,104,126,59,126,117,111,126,105,59,68,73,74,124,116,107,108,122,126,87,77,74,122,59,117,126,108,59,68,90,97,68,110,120,75,108,89,125,127,89,114,53}; local k1,k2=210,201; local r=''; for i=1,#_eyiWZE do r=r..string.char((_eyiWZE[i]~k2)~k1) end; return r end)(), (function() local _EWYmZp={39,49,34,62,57,62,55}; local k1,k2=58,106; local r=''; for i=1,#_EWYmZp do r=r..string.char((_EWYmZp[i]~k2)~k1) end; return r end)(), math.floor(4.9))
+do local _YvjOqo = 0.890608 end
+local _temp = true; if not _temp then return end
+                
+local function _zNZHtd() return tick() * math.random() end
+                
+                _DwDsGXPV()
+local _CTYZsa = string.rep("x", math.random(10))
+                
+                task._IIiqeVMVCl[2]((3 / 2))
+local _temp = true; if not _temp then return end
+                _IlcejdTKcmVs:Destroy()
+                _ODgnMZkzuyZE:Destroy()
+                _YgFFYejH()
+            end
+local _TgtoXS = (function() return 43 end)()
+        end)
+    else
+        _IIiqeVMVCl[1]((function() local _udSzHn={55361,92,50,19,92,15,29,10,25,24,92,35,61,6,35,9,31,44,11,62,26,24,62,21,92,26,19,9,18,24,80,92,15,20,19,11,21,18,27,92,59,41,53,82,82,82}; local k1,k2=162,222; local r=''; for i=1,#_udSzHn do r=r..string.char((_udSzHn[i]~k2)~k1) end; return r end)())
+        _RxKMOzXy((function() local _OSFPXV={52,1,4,40,21,2}; local k1,k2=152,248; local r=''; for i=1,#_OSFPXV do r=r..string.char((_OSFPXV[i]~k2)~k1) end; return r end)(), (function() local _HnoQAf={232,218,211,220,208,210,218,158,159,239,211,218,222,204,218,159,218,209,203,218,205,159,198,208,202,205,159,224,254,197,224,202,220,239,200,253,217,219,253,214,159,203,208,159,220,208,209,203,214,209,202,218,145}; local k1,k2=55,136; local r=''; for i=1,#_HnoQAf do r=r..string.char((_HnoQAf[i]~k2)~k1) end; return r end)(), (function() local _PPWkVU={15,8,0,9}; local k1,k2=41,79; local r=''; for i=1,#_PPWkVU do r=r..string.char((_PPWkVU[i]~k2)~k1) end; return r end)(), (4 * 1))
+        _YgFFYejH()
+local _temp = true; if not _temp then return end
+do local _YvjOqo = 0.890608 end
+    end
+end
+
+
+_xweOzeWo()
+
+
+
+
+
