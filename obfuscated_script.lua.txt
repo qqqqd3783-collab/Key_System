@@ -1,0 +1,1090 @@
+
+
+
+
+
+
+
+_xnYmyfwv _WLJZgdSH=2^32;_xnYmyfwv _gStbQaJw=_WLJZgdSH-1;_xnYmyfwv _TphczEAO _XBuvHnbw(_nBDHogRK,_ucVsjPNA)_xnYmyfwv _sFgCIegs,_txTbkljG=0,1;while _nBDHogRK~=0 or _ucVsjPNA~=0 do _xnYmyfwv _QMJtBkXU,i=_nBDHogRK%2,_ucVsjPNA%2;_xnYmyfwv _rkJhupEq=(_QMJtBkXU+i)%2;_sFgCIegs=_sFgCIegs+_rkJhupEq*_txTbkljG;_nBDHogRK=math.floor(_nBDHogRK/2)_ucVsjPNA=math.floor(_ucVsjPNA/2)_txTbkljG=_txTbkljG*2 end;return _sFgCIegs%_WLJZgdSH end;_xnYmyfwv _TphczEAO _GnFYDeXt(_nBDHogRK,_ucVsjPNA,_ZYMhjnhC,...)_xnYmyfwv _UZFgqtom;if _ucVsjPNA then _nBDHogRK=_nBDHogRK%_WLJZgdSH;_ucVsjPNA=_ucVsjPNA%_WLJZgdSH;_UZFgqtom=_XBuvHnbw(_nBDHogRK,_ucVsjPNA)if _ZYMhjnhC then _UZFgqtom=_GnFYDeXt(_UZFgqtom,_ZYMhjnhC,...)end;return _UZFgqtom elseif _nBDHogRK then return _nBDHogRK%_WLJZgdSH else return 0 end end;_xnYmyfwv _TphczEAO _ZbfFJjus(_nBDHogRK,_ucVsjPNA,_ZYMhjnhC,...)_xnYmyfwv _UZFgqtom;if _ucVsjPNA then _nBDHogRK=_nBDHogRK%_WLJZgdSH;_ucVsjPNA=_ucVsjPNA%_WLJZgdSH;_UZFgqtom=(_nBDHogRK+_ucVsjPNA-_XBuvHnbw(_nBDHogRK,_ucVsjPNA))/2;if _ZYMhjnhC then _UZFgqtom=_ZbfFJjus(_UZFgqtom,_ZYMhjnhC,...)end;return _UZFgqtom elseif _nBDHogRK then return _nBDHogRK%_WLJZgdSH else return _gStbQaJw end end;_xnYmyfwv _TphczEAO _ElmeZvfQ(_WZVotEkz)return _gStbQaJw-_WZVotEkz end;_xnYmyfwv _TphczEAO _sJalflEX(_nBDHogRK,r)if r<0 then return _xfFrYhhe(_nBDHogRK,-r)end;return math.floor(_nBDHogRK%2^32/2^r)end;_xnYmyfwv _TphczEAO _pKoGNMkC(_WZVotEkz,r)if r>31 or r<-31 then return 0 end;return _sJalflEX(_WZVotEkz%_WLJZgdSH,r)end;_xnYmyfwv _TphczEAO _xfFrYhhe(_nBDHogRK,r)if r<0 then return _pKoGNMkC(_nBDHogRK,-r)end;return _nBDHogRK*2^r%2^32 end;_xnYmyfwv _TphczEAO _hSywMjPD(_WZVotEkz,r)_WZVotEkz=_WZVotEkz%_WLJZgdSH;r=r%32;_xnYmyfwv _xFuUvfRv=_ZbfFJjus(_WZVotEkz,2^r-1)return _pKoGNMkC(_WZVotEkz,r)+_xfFrYhhe(_xFuUvfRv,32-r)end;_xnYmyfwv _OWlKjlOC={0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2}_xnYmyfwv _TphczEAO _jrIwTwRh(_mZclDtZU)return string.gsub(_mZclDtZU,string.char(unpack({46})),_TphczEAO(_ZYMhjnhC)return string.format(string.char(unpack({37,48,50,120})),string.byte(_ZYMhjnhC))end)end;_xnYmyfwv _TphczEAO _ZcKuakuP(z,_iChaPHHB)_xnYmyfwv _mZclDtZU=string.char(unpack({}))for _uAurUfuE=1,_iChaPHHB do _xnYmyfwv _rcEhqDrz=z%256;_mZclDtZU=string.char(_rcEhqDrz).._mZclDtZU;z=(z-_rcEhqDrz)/256 end;return _mZclDtZU end;_xnYmyfwv _TphczEAO _JBVXYdrS(_mZclDtZU,_uAurUfuE)_xnYmyfwv _iChaPHHB=0;for _uAurUfuE=_uAurUfuE,_uAurUfuE+3 do _iChaPHHB=_iChaPHHB*256+string.byte(_mZclDtZU,_uAurUfuE)end;return _iChaPHHB end;_xnYmyfwv _TphczEAO _upZssqaz(F,G)_xnYmyfwv _DvnstDCI=64-(G+9)%64;G=_ZcKuakuP(8*G,8)F=F..string.char(unpack({92,49,50,56}))..string.rep(string.char(unpack({92,48})),_DvnstDCI)..G;assert(#F%64==0)return F end;_xnYmyfwv _TphczEAO _LgPElJZV(_ghckmSmh)_ghckmSmh[1]=0x6a09e667;_ghckmSmh[2]=0xbb67ae85;_ghckmSmh[3]=0x3c6ef372;_ghckmSmh[4]=0xa54ff53a;_ghckmSmh[5]=0x510e527f;_ghckmSmh[6]=0x9b05688c;_ghckmSmh[7]=0x1f83d9ab;_ghckmSmh[8]=0x5be0cd19;return _ghckmSmh end;_xnYmyfwv _TphczEAO _lPSVjaXx(F,_uAurUfuE,_ghckmSmh)_xnYmyfwv _fYUYLXHA={}for M=1,16 do _fYUYLXHA[M]=_JBVXYdrS(F,_uAurUfuE+(M-1)*4)end;for M=17,64 do _xnYmyfwv _cyUTbBXW=_fYUYLXHA[M-15]_xnYmyfwv _PloYXgMQ=_GnFYDeXt(_hSywMjPD(_cyUTbBXW,7),_hSywMjPD(_cyUTbBXW,18),_pKoGNMkC(_cyUTbBXW,3))_cyUTbBXW=_fYUYLXHA[M-2]_fYUYLXHA[M]=(_fYUYLXHA[M-16]+_PloYXgMQ+_fYUYLXHA[M-7]+_GnFYDeXt(_hSywMjPD(_cyUTbBXW,17),_hSywMjPD(_cyUTbBXW,19),_pKoGNMkC(_cyUTbBXW,10)))%_WLJZgdSH end;_xnYmyfwv _nBDHogRK,_ucVsjPNA,_ZYMhjnhC,_TFctslEU,_UUTkudRw,R,_mzPWjujT,_IBZzVWUL=_ghckmSmh[1],_ghckmSmh[2],_ghckmSmh[3],_ghckmSmh[4],_ghckmSmh[5],_ghckmSmh[6],_ghckmSmh[7],_ghckmSmh[8]for _uAurUfuE=1,64 do _xnYmyfwv _PloYXgMQ=_GnFYDeXt(_hSywMjPD(_nBDHogRK,2),_hSywMjPD(_nBDHogRK,13),_hSywMjPD(_nBDHogRK,22))_xnYmyfwv _tsUlpjeX=_GnFYDeXt(_ZbfFJjus(_nBDHogRK,_ucVsjPNA),_ZbfFJjus(_nBDHogRK,_ZYMhjnhC),_ZbfFJjus(_ucVsjPNA,_ZYMhjnhC))_xnYmyfwv _ySCABQmr=(_PloYXgMQ+_tsUlpjeX)%_WLJZgdSH;_xnYmyfwv _NESBfMoo=_GnFYDeXt(_hSywMjPD(_UUTkudRw,6),_hSywMjPD(_UUTkudRw,11),_hSywMjPD(_UUTkudRw,25))_xnYmyfwv _WafErhqM=_GnFYDeXt(_ZbfFJjus(_UUTkudRw,R),_ZbfFJjus(_ElmeZvfQ(_UUTkudRw),_mzPWjujT))_xnYmyfwv _fIlPAHDL=(_IBZzVWUL+_NESBfMoo+_WafErhqM+_OWlKjlOC[_uAurUfuE]+_fYUYLXHA[_uAurUfuE])%_WLJZgdSH;_IBZzVWUL=_mzPWjujT;_mzPWjujT=R;R=_UUTkudRw;_UUTkudRw=(_TFctslEU+_fIlPAHDL)%_WLJZgdSH;_TFctslEU=_ZYMhjnhC;_ZYMhjnhC=_ucVsjPNA;_ucVsjPNA=_nBDHogRK;_nBDHogRK=(_fIlPAHDL+_ySCABQmr)%_WLJZgdSH end;_ghckmSmh[1]=(_ghckmSmh[1]+_nBDHogRK)%_WLJZgdSH;_ghckmSmh[2]=(_ghckmSmh[2]+_ucVsjPNA)%_WLJZgdSH;_ghckmSmh[3]=(_ghckmSmh[3]+_ZYMhjnhC)%_WLJZgdSH;_ghckmSmh[4]=(_ghckmSmh[4]+_TFctslEU)%_WLJZgdSH;_ghckmSmh[5]=(_ghckmSmh[5]+_UUTkudRw)%_WLJZgdSH;_ghckmSmh[6]=(_ghckmSmh[6]+R)%_WLJZgdSH;_ghckmSmh[7]=(_ghckmSmh[7]+_mzPWjujT)%_WLJZgdSH;_ghckmSmh[8]=(_ghckmSmh[8]+_IBZzVWUL)%_WLJZgdSH end;_xnYmyfwv _TphczEAO _hQsuobJQ(F)F=_upZssqaz(F,#F)_xnYmyfwv _ghckmSmh=_LgPElJZV({})for _uAurUfuE=1,#F,64 do _lPSVjaXx(F,_uAurUfuE,_ghckmSmh)end;return _jrIwTwRh(_ZcKuakuP(_ghckmSmh[1],4).._ZcKuakuP(_ghckmSmh[2],4).._ZcKuakuP(_ghckmSmh[3],4).._ZcKuakuP(_ghckmSmh[4],4).._ZcKuakuP(_ghckmSmh[5],4).._ZcKuakuP(_ghckmSmh[6],4).._ZcKuakuP(_ghckmSmh[7],4).._ZcKuakuP(_ghckmSmh[8],4))end;_xnYmyfwv _ucVsjPNA;_xnYmyfwv _ZYMhjnhC={[string.char(unpack({92,92}))]=string.char(unpack({92,92})),[string.char(unpack({92,34}))]=string.char(unpack({92,34})),[string.char(unpack({92,95,103,83,116,98,81,97,74,119}))]=string.char(unpack({95,103,83,116,98,81,97,74,119})),[string.char(unpack({92,95,115,70,103,67,73,101,103,115}))]=string.char(unpack({95,115,70,103,67,73,101,103,115})),[string.char(unpack({92,95,90,98,102,70,74,106,117,115}))]=string.char(unpack({95,90,98,102,70,74,106,117,115})),[string.char(unpack({92,114}))]=string.char(unpack({114})),[string.char(unpack({92,95,104,83,121,119,77,106,80,68}))]=string.char(unpack({95,104,83,121,119,77,106,80,68}))}_xnYmyfwv _TFctslEU={[string.char(unpack({47}))]=string.char(unpack({47}))}for _UUTkudRw,R in pairs(_ZYMhjnhC)do _TFctslEU[R]=_UUTkudRw end;_xnYmyfwv _mzPWjujT=_TphczEAO(_IBZzVWUL)returnstring.char(unpack({92,92}))..(_ZYMhjnhC[_IBZzVWUL]or string.format(string.char(unpack({95,120,70,117,85,118,102,82,118,37,48,52,120})),_IBZzVWUL:byte()))end;_xnYmyfwv _uAurUfuE=_TphczEAO(M)returnstring.char(unpack({110,117,108,108}))end;_xnYmyfwv _OWlKjlOC=_TphczEAO(M,z)_xnYmyfwv _RjaTridD={}z=z or{}if z[M]then error(string.char(unpack({99,105,114,99,117,108,97,114,32,114,101,102,101,114,101,110,99,101})))end;z[M]=true;if rawget(M,1)~=nil or next(M)==nil then _xnYmyfwv _iChaPHHB=0;for _UUTkudRw in pairs(M)do if type(_UUTkudRw)~=string.char(unpack({110,117,109,98,101,114}))then error(string.char(unpack({105,110,118,97,108,105,100,32,116,97,98,108,101,58,32,109,105,120,101,100,32,111,114,32,105,110,118,97,108,105,100,32,95,116,81,100,76,90,86,122,119,32,116,121,112,101,115})))end;_iChaPHHB=_iChaPHHB+1 end;if _iChaPHHB~=#M then error(string.char(unpack({105,110,118,97,108,105,100,32,116,97,98,108,101,58,32,115,112,97,114,115,101,32,97,114,114,97,121})))end;for a0,R in ipairs(M)do table.insert(_RjaTridD,_ucVsjPNA(R,z))end;z[M]=nil;returnstring.char(unpack({91}))..table.concat(_RjaTridD,string.char(unpack({44})))..string.char(unpack({93}))else for _UUTkudRw,R in pairs(M)do if type(_UUTkudRw)~=string.char(unpack({115,116,114,105,110,103}))then error(string.char(unpack({105,110,118,97,108,105,100,32,116,97,98,108,101,58,32,109,105,120,101,100,32,111,114,32,105,110,118,97,108,105,100,32,95,116,81,100,76,90,86,122,119,32,116,121,112,101,115})))end;table.insert(_RjaTridD,_ucVsjPNA(_UUTkudRw,z)..string.char(unpack({58})).._ucVsjPNA(R,z))end;z[M]=nil;returnstring.char(unpack({123}))..table.concat(_RjaTridD,string.char(unpack({44})))..string.char(unpack({125}))end end;_xnYmyfwv _txTbkljG=_TphczEAO(M)returnstring.char(unpack({34}))..M:gsub(string.char(unpack({91,37,122,92,49,45,92,51,49,92,92,34,93})),_mzPWjujT)..string.char(unpack({34}))end;_xnYmyfwv _KDcfeUXE=_TphczEAO(M)if M~=M or M<=-math.huge or M>=math.huge then error(string.char(unpack({117,110,101,120,112,101,99,116,101,100,32,110,117,109,98,101,114,32,118,97,108,117,101,32,39}))..tostring(M)..string.char(unpack({39})))end;return string.format(string.char(unpack({37,46,49,52,103})),M)end;_xnYmyfwv _rkJhupEq={[string.char(unpack({110,105,108}))]=_uAurUfuE,[string.char(unpack({116,97,98,108,101}))]=_OWlKjlOC,[string.char(unpack({115,116,114,105,110,103}))]=_txTbkljG,[string.char(unpack({110,117,109,98,101,114}))]=_KDcfeUXE,[string.char(unpack({98,111,111,108,101,97,110}))]=tostring}_ucVsjPNA=_TphczEAO(M,z)_xnYmyfwv _mZclDtZU=type(M)_xnYmyfwv _UHilthfo=_rkJhupEq[_mZclDtZU]if _UHilthfo then return _UHilthfo(M,z)end;error(string.char(unpack({117,110,101,120,112,101,99,116,101,100,32,116,121,112,101,32,39})).._mZclDtZU..string.char(unpack({39})))end;_xnYmyfwv _GiTTRxvP=_TphczEAO(M)return _ucVsjPNA(M)end;_xnYmyfwv _NrNlJhvL;_xnYmyfwv _cyUTbBXW=_TphczEAO(...)_xnYmyfwv _RjaTridD={}for a0=1,select(string.char(unpack({35})),...)do _RjaTridD[select(a0,...)]=true end;return _RjaTridD end;_xnYmyfwv _fYUYLXHA=_cyUTbBXW(string.char(unpack({32})),string.char(unpack({92,95,104,83,121,119,77,106,80,68})),string.char(unpack({92,114})),string.char(unpack({92,95,90,98,102,70,74,106,117,115})))_xnYmyfwv _WZVotEkz=_cyUTbBXW(string.char(unpack({32})),string.char(unpack({92,95,104,83,121,119,77,106,80,68})),string.char(unpack({92,114})),string.char(unpack({92,95,90,98,102,70,74,106,117,115})),string.char(unpack({93})),string.char(unpack({125})),string.char(unpack({44})))_xnYmyfwv _eCqogsWd=_cyUTbBXW(string.char(unpack({92,92})),string.char(unpack({47})),string.char(unpack({34})),string.char(unpack({95,103,83,116,98,81,97,74,119})),string.char(unpack({95,115,70,103,67,73,101,103,115})),string.char(unpack({95,90,98,102,70,74,106,117,115})),string.char(unpack({114})),string.char(unpack({95,104,83,121,119,77,106,80,68})),string.char(unpack({95,120,70,117,85,118,102,82,118})))_xnYmyfwv _UZFgqtom=_cyUTbBXW(string.char(unpack({116,114,117,101})),string.char(unpack({102,97,108,115,101})),string.char(unpack({110,117,108,108})))_xnYmyfwv _cmPmOsZe={[string.char(unpack({116,114,117,101}))]=true,[string.char(unpack({102,97,108,115,101}))]=false,[string.char(unpack({110,117,108,108}))]=nil}_xnYmyfwv _OiyYZdfv=_TphczEAO(a8,a9,aa,ab)for a0=a9,#a8 do if aa[a8:sub(a0,a0)]~=ab then return a0 end end;return#a8+1 end;_xnYmyfwv _YpAnNRdM=_TphczEAO(a8,a9,_ghckmSmh)_xnYmyfwv _lvBSUPSp=1;_xnYmyfwv _vnKcAFKR=1;for a0=1,a9-1 do _vnKcAFKR=_vnKcAFKR+1;if a8:sub(a0,a0)==string.char(unpack({92,95,90,98,102,70,74,106,117,115}))then _lvBSUPSp=_lvBSUPSp+1;_vnKcAFKR=1 end end;error(string.format(string.char(unpack({37,95,112,75,111,71,78,77,107,67,32,95,66,107,120,81,121,122,89,100,32,108,105,110,101,32,37,95,110,66,68,72,111,103,82,75,32,99,111,108,32,37,95,110,66,68,72,111,103,82,75})),_ghckmSmh,_lvBSUPSp,_vnKcAFKR))end;_xnYmyfwv _eplbqhGG=_TphczEAO(_iChaPHHB)_xnYmyfwv _UHilthfo=math.floor;if _iChaPHHB<=0x7f then return string.char(_iChaPHHB)elseif _iChaPHHB<=0x7ff then return string.char(_UHilthfo(_iChaPHHB/64)+192,_iChaPHHB%64+128)elseif _iChaPHHB<=0xffff then return string.char(_UHilthfo(_iChaPHHB/4096)+224,_UHilthfo(_iChaPHHB%4096/64)+128,_iChaPHHB%64+128)elseif _iChaPHHB<=0x10ffff then return string.char(_UHilthfo(_iChaPHHB/262144)+240,_UHilthfo(_iChaPHHB%262144/4096)+128,_UHilthfo(_iChaPHHB%4096/64)+128,_iChaPHHB%64+128)end;error(string.format(string.char(unpack({105,110,118,97,108,105,100,32,117,110,105,99,111,100,101,32,99,111,100,101,112,111,105,110,116,32,39,37,95,109,90,99,108,68,116,90,85,39})),_iChaPHHB))end;_xnYmyfwv _UsYWfPOv=_TphczEAO(_XBLkAwML)_xnYmyfwv _RLZvWAHr=tonumber(_XBLkAwML:sub(1,4),16)_xnYmyfwv _dDheTbLo=tonumber(_XBLkAwML:sub(7,10),16)if _dDheTbLo then return _eplbqhGG((_RLZvWAHr-0xd800)*0x400+_dDheTbLo-0xdc00+0x10000)else return _eplbqhGG(_RLZvWAHr)end end;_xnYmyfwv _CNXeeEYR=_TphczEAO(a8,a0)_xnYmyfwv _RjaTridD=string.char(unpack({}))_xnYmyfwv _NXxJMqXA=a0+1;_xnYmyfwv _UUTkudRw=_NXxJMqXA;while _NXxJMqXA<=#a8 do _xnYmyfwv _jcsfNihJ=a8:byte(_NXxJMqXA)if _jcsfNihJ<32 then _YpAnNRdM(a8,_NXxJMqXA,string.char(unpack({99,111,110,116,114,111,108,32,99,104,97,114,97,99,116,101,114,32,105,110,32,115,116,114,105,110,103})))elseif _jcsfNihJ==92 then _RjaTridD=_RjaTridD..a8:sub(_UUTkudRw,_NXxJMqXA-1)_NXxJMqXA=_NXxJMqXA+1;_xnYmyfwv _IBZzVWUL=a8:sub(_NXxJMqXA,_NXxJMqXA)if _IBZzVWUL==string.char(unpack({95,120,70,117,85,118,102,82,118}))then _xnYmyfwv _YmDvUkNy=a8:match(string.char(unpack({94,91,100,68,93,91,56,57,97,65,98,66,93,37,95,109,90,99,108,68,116,90,85,37,95,109,90,99,108,68,116,90,85,92,92,95,120,70,117,85,118,102,82,118,37,95,109,90,99,108,68,116,90,85,37,95,109,90,99,108,68,116,90,85,37,95,109,90,99,108,68,116,90,85,37,95,109,90,99,108,68,116,90,85})),_NXxJMqXA+1)or a8:match(string.char(unpack({94,37,95,109,90,99,108,68,116,90,85,37,95,109,90,99,108,68,116,90,85,37,95,109,90,99,108,68,116,90,85,37,95,109,90,99,108,68,116,90,85})),_NXxJMqXA+1)or _YpAnNRdM(a8,_NXxJMqXA-1,string.char(unpack({105,110,118,97,108,105,100,32,117,110,105,99,111,100,101,32,101,115,99,97,112,101,32,105,110,32,115,116,114,105,110,103})))_RjaTridD=_RjaTridD.._UsYWfPOv(_YmDvUkNy)_NXxJMqXA=_NXxJMqXA+#_YmDvUkNy else if not _eCqogsWd[_IBZzVWUL]then _YpAnNRdM(a8,_NXxJMqXA-1,string.char(unpack({105,110,118,97,108,105,100,32,101,115,99,97,112,101,32,99,104,97,114,32,39})).._IBZzVWUL..string.char(unpack({39,32,105,110,32,115,116,114,105,110,103})))end;_RjaTridD=_RjaTridD.._TFctslEU[_IBZzVWUL]end;_UUTkudRw=_NXxJMqXA+1 elseif _jcsfNihJ==34 then _RjaTridD=_RjaTridD..a8:sub(_UUTkudRw,_NXxJMqXA-1)return _RjaTridD,_NXxJMqXA+1 end;_NXxJMqXA=_NXxJMqXA+1 end;_YpAnNRdM(a8,a0,string.char(unpack({101,120,112,101,99,116,101,100,32,99,108,111,115,105,110,103,32,113,117,111,116,101,32,102,111,114,32,115,116,114,105,110,103})))end;_xnYmyfwv _UrOrEHEU=_TphczEAO(a8,a0)_xnYmyfwv _jcsfNihJ=_OiyYZdfv(a8,a0,_WZVotEkz)_xnYmyfwv _XBLkAwML=a8:sub(a0,_jcsfNihJ-1)_xnYmyfwv _iChaPHHB=tonumber(_XBLkAwML)if not _iChaPHHB then _YpAnNRdM(a8,a0,string.char(unpack({105,110,118,97,108,105,100,32,110,117,109,98,101,114,32,39})).._XBLkAwML..string.char(unpack({39})))end;return _iChaPHHB,_jcsfNihJ end;_xnYmyfwv _ultufcKX=_TphczEAO(a8,a0)_xnYmyfwv _jcsfNihJ=_OiyYZdfv(a8,a0,_WZVotEkz)_xnYmyfwv _qHYKSPvP=a8:sub(a0,_jcsfNihJ-1)if not _UZFgqtom[_qHYKSPvP]then _YpAnNRdM(a8,a0,string.char(unpack({105,110,118,97,108,105,100,32,108,105,116,101,114,97,108,32,39})).._qHYKSPvP..string.char(unpack({39})))end;return _cmPmOsZe[_qHYKSPvP],_jcsfNihJ end;_xnYmyfwv _KUounIwU=_TphczEAO(a8,a0)_xnYmyfwv _RjaTridD={}_xnYmyfwv _iChaPHHB=1;a0=a0+1;while 1 do _xnYmyfwv _jcsfNihJ;a0=_OiyYZdfv(a8,a0,_fYUYLXHA,true)if a8:sub(a0,a0)==string.char(unpack({93}))then a0=a0+1;break end;_jcsfNihJ,a0=_NrNlJhvL(a8,a0)_RjaTridD[_iChaPHHB]=_jcsfNihJ;_iChaPHHB=_iChaPHHB+1;a0=_OiyYZdfv(a8,a0,_fYUYLXHA,true)_xnYmyfwv _JmDJjyrf=a8:sub(a0,a0)a0=a0+1;if _JmDJjyrf==string.char(unpack({93}))then break end;if _JmDJjyrf~=string.char(unpack({44}))then _YpAnNRdM(a8,a0,string.char(unpack({101,120,112,101,99,116,101,100,32,39,93,39,32,111,114,32,39,44,39})))end end;return _RjaTridD,a0 end;_xnYmyfwv _BkxQyzYd=_TphczEAO(a8,a0)_xnYmyfwv _RjaTridD={}a0=a0+1;while 1 do _xnYmyfwv _QRhTckRn,M;a0=_OiyYZdfv(a8,a0,_fYUYLXHA,true)if a8:sub(a0,a0)==string.char(unpack({125}))then a0=a0+1;break end;if a8:sub(a0,a0)~=string.char(unpack({34}))then _YpAnNRdM(a8,a0,string.char(unpack({101,120,112,101,99,116,101,100,32,115,116,114,105,110,103,32,102,111,114,32,95,116,81,100,76,90,86,122,119})))end;_QRhTckRn,a0=_NrNlJhvL(a8,a0)a0=_OiyYZdfv(a8,a0,_fYUYLXHA,true)if a8:sub(a0,a0)~=string.char(unpack({58}))then _YpAnNRdM(a8,a0,string.char(unpack({101,120,112,101,99,116,101,100,32,39,58,39,32,97,102,116,101,114,32,95,116,81,100,76,90,86,122,119})))end;a0=_OiyYZdfv(a8,a0+1,_fYUYLXHA,true)M,a0=_NrNlJhvL(a8,a0)_RjaTridD[_QRhTckRn]=M;a0=_OiyYZdfv(a8,a0,_fYUYLXHA,true)_xnYmyfwv _JmDJjyrf=a8:sub(a0,a0)a0=a0+1;if _JmDJjyrf==string.char(unpack({125}))then break end;if _JmDJjyrf~=string.char(unpack({44}))then _YpAnNRdM(a8,a0,string.char(unpack({101,120,112,101,99,116,101,100,32,39,125,39,32,111,114,32,39,44,39})))end end;return _RjaTridD,a0 end;_xnYmyfwv _zfeSevEe={[string.char(unpack({34}))]=_CNXeeEYR,[string.char(unpack({48}))]=_UrOrEHEU,[string.char(unpack({49}))]=_UrOrEHEU,[string.char(unpack({50}))]=_UrOrEHEU,[string.char(unpack({51}))]=_UrOrEHEU,[string.char(unpack({52}))]=_UrOrEHEU,[string.char(unpack({53}))]=_UrOrEHEU,[string.char(unpack({54}))]=_UrOrEHEU,[string.char(unpack({55}))]=_UrOrEHEU,[string.char(unpack({56}))]=_UrOrEHEU,[string.char(unpack({57}))]=_UrOrEHEU,[string.char(unpack({45}))]=_UrOrEHEU,[string.char(unpack({95,104,83,121,119,77,106,80,68}))]=_ultufcKX,[string.char(unpack({95,115,70,103,67,73,101,103,115}))]=_ultufcKX,[string.char(unpack({95,90,98,102,70,74,106,117,115}))]=_ultufcKX,[string.char(unpack({91}))]=_KUounIwU,[string.char(unpack({123}))]=_BkxQyzYd}_NrNlJhvL=_TphczEAO(a8,a9)_xnYmyfwv _JmDJjyrf=a8:sub(a9,a9)_xnYmyfwv _UHilthfo=_zfeSevEe[_JmDJjyrf]if _UHilthfo then return _UHilthfo(a8,a9)end;_YpAnNRdM(a8,a9,string.char(unpack({117,110,101,120,112,101,99,116,101,100,32,99,104,97,114,97,99,116,101,114,32,39})).._JmDJjyrf..string.char(unpack({39})))end;_xnYmyfwv _OLnDJvPa=_TphczEAO(a8)if type(a8)~=string.char(unpack({115,116,114,105,110,103}))then error(string.char(unpack({101,120,112,101,99,116,101,100,32,97,114,103,117,109,101,110,116,32,111,102,32,116,121,112,101,32,115,116,114,105,110,103,44,32,103,111,116,32}))..type(a8))end;_xnYmyfwv _RjaTridD,a9=_NrNlJhvL(a8,_OiyYZdfv(a8,1,_fYUYLXHA,true))a9=_OiyYZdfv(a8,a9,_fYUYLXHA,true)if a9<=#a8 then _YpAnNRdM(a8,a9,string.char(unpack({116,114,97,105,108,105,110,103,32,103,97,114,98,97,103,101})))end;return _RjaTridD end;
+_xnYmyfwv _CiCQZxcq, lDecode, lDigest = _GiTTRxvP, _OLnDJvPa, _hQsuobJQ;
+
+
+
+
+
+
+_xnYmyfwv _DVcQOJqh = 5683;  
+_xnYmyfwv _gTOKWAyF = string.char(unpack({49,101,56,56,48,51,50,98,45,101,49,54,51,45,52,97,55,54,45,56,49,100,98,45,99,53,57,99,56,51,51,55,98,51,56,99}));  
+_xnYmyfwv _SiHOiqQQ = true;  
+
+
+_xnYmyfwv _MgdPCLtB = _TphczEAO(message) end;
+
+
+repeat task.wait(1) until game:IsLoaded();
+
+
+_xnYmyfwv _zmpVfnLI = false;
+_xnYmyfwv _gAAJVTTj, fRequest, fStringChar, fToString, fStringSub, fOsTime, fMathRandom, fMathFloor, fGetHwid = setclipboard or toclipboard, request or http_request or syn_request, string.char, tostring, string.sub, os.time, math.random, math.floor, gethwid or _TphczEAO() return game:GetService(string.char(unpack({95,120,114,122,75,116,75,112,78}))).LocalPlayer.UserId end
+_xnYmyfwv _NcOVeDqf, cachedTime = string.char(unpack({})), 0;
+
+
+_xnYmyfwv _ywXpPsms = string.char(unpack({104,116,116,112,115,58,47,47,97,112,105,46,112,108,97,116,111,98,111,111,115,116,46,99,111,109}));
+_xnYmyfwv _TIUFaGbi = fRequest({
+    Url = _ywXpPsms .. string.char(unpack({47,112,117,98,108,105,99,47,99,111,110,110,101,99,116,105,118,105,116,121})),
+    Method = string.char(unpack({71,69,84}))
+});
+if _TIUFaGbi.StatusCode ~= 200 or _TIUFaGbi.StatusCode ~= 429 then
+    _ywXpPsms = string.char(unpack({104,116,116,112,115,58,47,47,97,112,105,46,112,108,97,116,111,98,111,111,115,116,46,110,101,116}));
+end
+
+
+_TphczEAO _wXSVmakJ()
+    if cachedTime + (10*60) < fOsTime() then
+        _xnYmyfwv _ZpXGIUzj = fRequest({
+            Url = _ywXpPsms .. string.char(unpack({47,112,117,98,108,105,99,47,115,116,97,114,116})),
+            Method = string.char(unpack({80,79,83,84})),
+            Body = _CiCQZxcq({
+                _DVcQOJqh = _DVcQOJqh,
+                identifier = lDigest(fGetHwid())
+            }),
+            Headers = {
+                [string.char(unpack({67,111,110,116,101,110,116,45,84,121,112,101}))] = string.char(unpack({97,112,112,108,105,99,97,116,105,111,110,47,106,115,111,110}))
+            }
+        });
+
+        if _ZpXGIUzj.StatusCode == 200 then
+            _xnYmyfwv _MrafGCyX = lDecode(_ZpXGIUzj.Body);
+
+            if _MrafGCyX._zXIkWbOD == true then
+                _NcOVeDqf = _MrafGCyX.data.url;
+                cachedTime = fOsTime();
+                return true, _NcOVeDqf;
+            else
+                _MgdPCLtB(_MrafGCyX.message);
+                return false, _MrafGCyX.message;
+            end
+        elseif _ZpXGIUzj.StatusCode == 429 then
+            _xnYmyfwv _ExJwlpBu = string.char(unpack({121,111,117,32,97,114,101,32,98,101,105,110,103,32,114,97,116,101,32,108,105,109,105,116,101,100,44,32,112,108,101,97,115,101,32,119,97,105,116,32,50,48,32,115,101,99,111,110,100,115,32,97,110,100,32,116,114,121,32,97,103,97,105,110,46}));
+            _MgdPCLtB(_ExJwlpBu);
+            return false, _ExJwlpBu;
+        end
+
+        _xnYmyfwv _ExJwlpBu = string.char(unpack({70,97,105,108,101,100,32,116,111,32,99,97,99,104,101,32,108,105,110,107,46}));
+        _MgdPCLtB(_ExJwlpBu);
+        return false, _ExJwlpBu;
+    else
+        return true, _NcOVeDqf;
+    end
+end
+
+_wXSVmakJ();
+
+
+_xnYmyfwv _EXGnXXmx = _TphczEAO()
+    _xnYmyfwv _YWqDisme = string.char(unpack({}))
+    for _RjaTridD = 1, 16 do
+        _YWqDisme = _YWqDisme .. fStringChar(fMathFloor(fMathRandom() * (122 - 97 + 1)) + 97)
+    end
+    return _YWqDisme
+end
+
+
+for _RjaTridD = 1, 5 do
+    _xnYmyfwv _kzgZiqxi = _EXGnXXmx();
+    task.wait(0.2)
+    if _EXGnXXmx() == _kzgZiqxi then
+        _xnYmyfwv _ExJwlpBu = string.char(unpack({112,108,97,116,111,98,111,111,115,116,32,95,120,109,90,113,113,114,76,88,32,101,114,114,111,114,46}));
+        _MgdPCLtB(_ExJwlpBu);
+        error(_ExJwlpBu);
+    end
+end
+
+
+_xnYmyfwv _NuocHQkN = _TphczEAO()
+    _xnYmyfwv _zXIkWbOD, link = _wXSVmakJ();
+    
+    if _zXIkWbOD then
+        _gAAJVTTj(link);
+    end
+end
+
+
+_xnYmyfwv _zKYPnDSH = _TphczEAO(_tQdLZVzw)
+    _xnYmyfwv _xmZqqrLX = _EXGnXXmx();
+    _xnYmyfwv _JjJMJtUB = _ywXpPsms .. string.char(unpack({47,112,117,98,108,105,99,47,114,101,100,101,101,109,47})) .. fToString(_DVcQOJqh);
+
+    _xnYmyfwv _BPbEKGjc = {
+        identifier = lDigest(fGetHwid()),
+        _tQdLZVzw = _tQdLZVzw
+    }
+
+    if _SiHOiqQQ then
+        _BPbEKGjc._xmZqqrLX = _xmZqqrLX;
+    end
+
+    _xnYmyfwv _ZpXGIUzj = fRequest({
+        Url = _JjJMJtUB,
+        Method = string.char(unpack({80,79,83,84})),
+        Body = _CiCQZxcq(_BPbEKGjc),
+        Headers = {
+            [string.char(unpack({67,111,110,116,101,110,116,45,84,121,112,101}))] = string.char(unpack({97,112,112,108,105,99,97,116,105,111,110,47,106,115,111,110}))
+        }
+    });
+
+    if _ZpXGIUzj.StatusCode == 200 then
+        _xnYmyfwv _MrafGCyX = lDecode(_ZpXGIUzj.Body);
+
+        if _MrafGCyX._zXIkWbOD == true then
+            if _MrafGCyX.data.valid == true then
+                if _SiHOiqQQ then
+                    if _MrafGCyX.data.hash == lDigest(string.char(unpack({116,114,117,101})) .. string.char(unpack({45})) .. _xmZqqrLX .. string.char(unpack({45})) .. _gTOKWAyF) then
+                        return true;
+                    else
+                        _MgdPCLtB(string.char(unpack({102,97,105,108,101,100,32,116,111,32,118,101,114,105,102,121,32,105,110,116,101,103,114,105,116,121,46})));
+                        return false;
+                    end    
+                else
+                    return true;
+                end
+            else
+                _MgdPCLtB(string.char(unpack({95,116,81,100,76,90,86,122,119,32,105,115,32,105,110,118,97,108,105,100,46})));
+                return false;
+            end
+        else
+            if fStringSub(_MrafGCyX.message, 1, 27) == string.char(unpack({117,110,105,113,117,101,32,99,111,110,115,116,114,97,105,110,116,32,118,105,111,108,97,116,105,111,110})) then
+                _MgdPCLtB(string.char(unpack({121,111,117,32,97,108,114,101,97,100,121,32,104,97,118,101,32,95,89,109,68,118,85,107,78,121,32,97,99,116,105,118,101,32,95,116,81,100,76,90,86,122,119,44,32,112,108,101,97,115,101,32,119,97,105,116,32,102,111,114,32,105,116,32,116,111,32,101,120,112,105,114,101,32,98,101,102,111,114,101,32,114,101,100,101,101,109,105,110,103,32,105,116,46})));
+                return false;
+            else
+                _MgdPCLtB(_MrafGCyX.message);
+                return false;
+            end
+        end
+    elseif _ZpXGIUzj.StatusCode == 429 then
+        _MgdPCLtB(string.char(unpack({121,111,117,32,97,114,101,32,98,101,105,110,103,32,114,97,116,101,32,108,105,109,105,116,101,100,44,32,112,108,101,97,115,101,32,119,97,105,116,32,50,48,32,115,101,99,111,110,100,115,32,97,110,100,32,116,114,121,32,97,103,97,105,110,46})));
+        return false;
+    else
+        _MgdPCLtB(string.char(unpack({115,101,114,118,101,114,32,114,101,116,117,114,110,101,100,32,95,89,109,68,118,85,107,78,121,32,105,110,118,97,108,105,100,32,95,108,68,74,117,113,82,120,98,32,99,111,100,101,44,32,112,108,101,97,115,101,32,116,114,121,32,97,103,97,105,110,32,108,97,116,101,114,46})));
+        return false; 
+    end
+end
+
+
+_xnYmyfwv _WhIqiesk = _TphczEAO(_tQdLZVzw)
+    if _zmpVfnLI == true then
+        _MgdPCLtB(string.char(unpack({95,87,76,74,90,103,100,83,72,32,114,101,113,117,101,115,116,32,105,115,32,97,108,114,101,97,100,121,32,98,101,105,110,103,32,115,101,110,116,44,32,112,108,101,97,115,101,32,115,108,111,119,32,100,111,119,110,46})));
+        return false;
+    else
+        _zmpVfnLI = true;
+    end
+
+    _xnYmyfwv _xmZqqrLX = _EXGnXXmx();
+    _xnYmyfwv _JjJMJtUB = _ywXpPsms .. string.char(unpack({47,112,117,98,108,105,99,47,119,104,105,116,101,108,105,115,116,47})) .. fToString(_DVcQOJqh) .. string.char(unpack({63,105,100,101,110,116,105,102,105,101,114,61})) .. lDigest(fGetHwid()) .. string.char(unpack({38,95,116,81,100,76,90,86,122,119,61})) .. _tQdLZVzw;
+
+    if _SiHOiqQQ then
+        _JjJMJtUB = _JjJMJtUB .. string.char(unpack({38,95,120,109,90,113,113,114,76,88,61})) .. _xmZqqrLX;
+    end
+
+    _xnYmyfwv _ZpXGIUzj = fRequest({
+        Url = _JjJMJtUB,
+        Method = string.char(unpack({71,69,84})),
+    });
+
+    _zmpVfnLI = false;
+
+    if _ZpXGIUzj.StatusCode == 200 then
+        _xnYmyfwv _MrafGCyX = lDecode(_ZpXGIUzj.Body);
+
+        if _MrafGCyX._zXIkWbOD == true then
+            if _MrafGCyX.data.valid == true then
+                if _SiHOiqQQ then
+                    if _MrafGCyX.data.hash == lDigest(string.char(unpack({116,114,117,101})) .. string.char(unpack({45})) .. _xmZqqrLX .. string.char(unpack({45})) .. _gTOKWAyF) then
+                        return true;
+                    else
+                        _MgdPCLtB(string.char(unpack({102,97,105,108,101,100,32,116,111,32,118,101,114,105,102,121,32,105,110,116,101,103,114,105,116,121,46})));
+                        return false;
+                    end
+                else
+                    return true;
+                end
+            else
+                if fStringSub(_tQdLZVzw, 1, 4) == string.char(unpack({75,69,89,95})) then
+                    return _zKYPnDSH(_tQdLZVzw);
+                else
+                    _MgdPCLtB(string.char(unpack({95,116,81,100,76,90,86,122,119,32,105,115,32,105,110,118,97,108,105,100,46})));
+                    return false;
+                end
+            end
+        else
+            _MgdPCLtB(_MrafGCyX.message);
+            return false;
+        end
+    elseif _ZpXGIUzj.StatusCode == 429 then
+        _MgdPCLtB(string.char(unpack({121,111,117,32,97,114,101,32,98,101,105,110,103,32,114,97,116,101,32,108,105,109,105,116,101,100,44,32,112,108,101,97,115,101,32,119,97,105,116,32,50,48,32,115,101,99,111,110,100,115,32,97,110,100,32,116,114,121,32,97,103,97,105,110,46})));
+        return false;
+    else
+        _MgdPCLtB(string.char(unpack({115,101,114,118,101,114,32,114,101,116,117,114,110,101,100,32,95,89,109,68,118,85,107,78,121,32,105,110,118,97,108,105,100,32,95,108,68,74,117,113,82,120,98,32,99,111,100,101,44,32,112,108,101,97,115,101,32,116,114,121,32,97,103,97,105,110,32,108,97,116,101,114,46})));
+        return false;
+    end
+end
+
+
+_xnYmyfwv _hIynghEo = _TphczEAO(name)
+    _xnYmyfwv _xmZqqrLX = _EXGnXXmx();
+    _xnYmyfwv _JjJMJtUB = _ywXpPsms .. string.char(unpack({47,112,117,98,108,105,99,47,95,118,109,121,114,71,87,110,72,47})) .. fToString(_DVcQOJqh) .. string.char(unpack({63,110,97,109,101,61})) .. name;
+
+    if _SiHOiqQQ then
+        _JjJMJtUB = _JjJMJtUB .. string.char(unpack({38,95,120,109,90,113,113,114,76,88,61})) .. _xmZqqrLX;
+    end
+
+    _xnYmyfwv _ZpXGIUzj = fRequest({
+        Url = _JjJMJtUB,
+        Method = string.char(unpack({71,69,84})),
+    });
+
+    if _ZpXGIUzj.StatusCode == 200 then
+        _xnYmyfwv _MrafGCyX = lDecode(_ZpXGIUzj.Body);
+
+        if _MrafGCyX._zXIkWbOD == true then
+            if _SiHOiqQQ then
+                if _MrafGCyX.data.hash == lDigest(fToString(_MrafGCyX.data.value) .. string.char(unpack({45})) .. _xmZqqrLX .. string.char(unpack({45})) .. _gTOKWAyF) then
+                    return _MrafGCyX.data.value;
+                else
+                    _MgdPCLtB(string.char(unpack({102,97,105,108,101,100,32,116,111,32,118,101,114,105,102,121,32,105,110,116,101,103,114,105,116,121,46})));
+                    return nil;
+                end
+            else
+                return _MrafGCyX.data.value;
+            end
+        else
+            _MgdPCLtB(_MrafGCyX.message);
+            return nil;
+        end
+    else
+        return nil;
+    end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_MgdPCLtB = _TphczEAO(message)
+    game:GetService(string.char(unpack({83,116,97,114,116,101,114,71,117,105}))):SetCore(string.char(unpack({83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110})), {
+        Title = string.char(unpack({80,108,97,116,111,98,111,111,115,116,32,95,108,68,74,117,113,82,120,98})),
+        Text = message
+    })
+end
+]]
+
+
+
+
+
+_eqEqZJtJ.MouseButton1Click:Connect(_TphczEAO()
+    _NuocHQkN();
+end)
+
+_wWGMqoFy.MouseButton1Click:Connect(_TphczEAO()
+    _xnYmyfwv _tQdLZVzw = keyBox.Text;
+    _xnYmyfwv _zXIkWbOD = _WhIqiesk(_tQdLZVzw);
+
+    if _zXIkWbOD then
+        print(string.char(unpack({95,116,81,100,76,90,86,122,119,32,105,115,32,118,97,108,105,100,46})));
+    else
+        print(string.char(unpack({95,116,81,100,76,90,86,122,119,32,105,115,32,105,110,118,97,108,105,100,46})));
+    end
+end)
+
+_xnYmyfwv _vmyrGWnH = _hIynghEo(string.char(unpack({101,120,97,109,112,108,101,95,102,108,97,103})));
+if _vmyrGWnH ~= nil then
+    print(string.char(unpack({95,118,109,121,114,71,87,110,72,32,118,97,108,117,101,58,32})) .. _vmyrGWnH);
+else
+    print(string.char(unpack({102,97,105,108,101,100,32,116,111,32,103,101,116,32,95,118,109,121,114,71,87,110,72,46})));
+end
+]]
+
+
+
+_MgdPCLtB = _TphczEAO(message)
+    print(string.char(unpack({91,80,108,97,116,111,98,111,111,115,116,93})), message)
+end
+
+
+_xnYmyfwv _TphczEAO _KFrZaYZf(_tQdLZVzw)
+    _xnYmyfwv _zXIkWbOD, err = pcall(_TphczEAO()
+        
+        if typeof(_BIrWmEGd) == string.char(unpack({110,117,109,98,101,114})) and _gzetNXLD.Character and _gzetNXLD.Character:FindFirstChild(string.char(unpack({72,117,109,97,110,111,105,100}))) then
+            _gzetNXLD.Character.Humanoid.WalkSpeed = _BIrWmEGd
+        end
+    end
+    
+    _xnYmyfwv _FzzbUFfO = _hIynghEo(string.char(unpack({106,117,109,112,112,111,119,101,114})))
+    if _FzzbUFfO then
+        print(string.char(unpack({240,159,166,152,32,74,117,109,112,32,112,111,119,101,114,32,95,118,109,121,114,71,87,110,72,58})), _FzzbUFfO)
+        
+    _xnYmyfwv _AtpTCFUZ = _ZWZaafVc:FindFirstChild(string.char(unpack({80,108,97,116,111,78,111,116,105,102,105,99,97,116,105,111,110,115})))
+    if not _AtpTCFUZ then
+        _AtpTCFUZ = Instance.new(string.char(unpack({83,99,114,101,101,110,71,117,105})))
+        _AtpTCFUZ.Name = string.char(unpack({80,108,97,116,111,78,111,116,105,102,105,99,97,116,105,111,110,115}))
+        _AtpTCFUZ.ResetOnSpawn = false
+        _AtpTCFUZ.DisplayOrder = 1
+        _AtpTCFUZ.Parent = _ZWZaafVc
+    end
+    
+    
+    _xnYmyfwv _rjiExbhq = 20
+    for _RjaTridD, _AeXFinnQ in pairs(_AIOSvoRZ) do
+        if _AeXFinnQ and _AeXFinnQ.Parent then
+            _rjiExbhq = _rjiExbhq + 80
+        end
+    end
+    
+    
+    _xnYmyfwv _AeXFinnQ = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _AeXFinnQ.Size = UDim2.new(0, 320, 0, 70)
+    _AeXFinnQ.Position = UDim2.new(1, 10, 0, _rjiExbhq)
+    _AeXFinnQ.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    _AeXFinnQ.BorderSizePixel = 0
+    _AeXFinnQ.Parent = _AtpTCFUZ
+    
+    
+    table.insert(_AIOSvoRZ, _AeXFinnQ)
+    
+    
+    _xnYmyfwv _QanJJzfa = Instance.new(string.char(unpack({85,73,71,114,97,100,105,101,110,116})))
+    _QanJJzfa.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 25, 25)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(15, 15, 15))
+    }
+    _QanJJzfa.Rotation = 45
+    _QanJJzfa.Parent = _AeXFinnQ
+    
+    
+    _xnYmyfwv _xqudRzqu = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _xqudRzqu.CornerRadius = UDim.new(0, 8)
+    _xqudRzqu.Parent = _AeXFinnQ
+    
+    
+    _xnYmyfwv _LqApVjjv = Instance.new(string.char(unpack({85,73,83,116,114,111,107,101})))
+    _LqApVjjv.Color = notificationType == string.char(unpack({95,122,88,73,107,87,98,79,68})) and Color3.fromRGB(46, 204, 113) or
+                  notificationType == string.char(unpack({101,114,114,111,114})) and Color3.fromRGB(231, 76, 60) or
+                  notificationType == string.char(unpack({119,97,114,110,105,110,103})) and Color3.fromRGB(241, 196, 15) or
+                  Color3.fromRGB(52, 152, 219)
+    _LqApVjjv.Thickness = 2
+    _LqApVjjv.Transparency = 0.3
+    _LqApVjjv.Parent = _AeXFinnQ
+    
+    
+    _xnYmyfwv _YJoRHiOe = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _YJoRHiOe.Size = UDim2.new(0, 4, 1, 0)
+    _YJoRHiOe.Position = UDim2.new(0, 0, 0, 0)
+    _YJoRHiOe.BackgroundColor3 = _LqApVjjv.Color
+    _YJoRHiOe.BorderSizePixel = 0
+    _YJoRHiOe.Parent = _AeXFinnQ
+    
+    _xnYmyfwv _EUbWXsNh = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _EUbWXsNh.CornerRadius = UDim.new(0, 8)
+    _EUbWXsNh.Parent = _YJoRHiOe
+    
+    
+    _xnYmyfwv _VqutbDid = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _VqutbDid.Size = UDim2.new(0, 30, 0, 30)
+    _VqutbDid.Position = UDim2.new(0, 15, 0, 10)
+    _VqutbDid.BackgroundTransparency = 1
+    _VqutbDid.Text = notificationType == string.char(unpack({95,122,88,73,107,87,98,79,68})) and string.char(unpack({226,156,133})) or
+               notificationType == string.char(unpack({101,114,114,111,114})) and string.char(unpack({226,157,140})) or
+               notificationType == string.char(unpack({119,97,114,110,105,110,103})) and string.char(unpack({226,154,160,239,184,143})) or string.char(unpack({226,132,185,239,184,143}))
+    _VqutbDid.TextColor3 = Color3.fromRGB(255, 255, 255)
+    _VqutbDid.TextSize = 18
+    _VqutbDid.Font = Enum.Font.GothamBold
+    _VqutbDid.Parent = _AeXFinnQ
+    
+    
+    _xnYmyfwv _QRlMACSy = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _QRlMACSy.Size = UDim2.new(1, -90, 0, 25)
+    _QRlMACSy.Position = UDim2.new(0, 50, 0, 8)
+    _QRlMACSy.BackgroundTransparency = 1
+    _QRlMACSy.Text = _ajYEvJoD
+    _QRlMACSy.TextColor3 = Color3.fromRGB(255, 255, 255)
+    _QRlMACSy.TextSize = 14
+    _QRlMACSy.Font = Enum.Font.GothamBold
+    _QRlMACSy.TextXAlignment = Enum.TextXAlignment.Left
+    _QRlMACSy.Parent = _AeXFinnQ
+    
+    
+    _xnYmyfwv _ajoFtBtm = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _ajoFtBtm.Size = UDim2.new(1, -90, 0, 20)
+    _ajoFtBtm.Position = UDim2.new(0, 50, 0, 30)
+    _ajoFtBtm.BackgroundTransparency = 1
+    _ajoFtBtm.Text = message
+    _ajoFtBtm.TextColor3 = Color3.fromRGB(180, 180, 180)
+    _ajoFtBtm.TextSize = 11
+    _ajoFtBtm.Font = Enum.Font.Gotham
+    _ajoFtBtm.TextXAlignment = Enum.TextXAlignment.Left
+    _ajoFtBtm.Parent = _AeXFinnQ
+    
+    
+    _xnYmyfwv _pyfkHhnY = Instance.new(string.char(unpack({84,101,120,116,66,117,116,116,111,110})))
+    _pyfkHhnY.Size = UDim2.new(0, 20, 0, 20)
+    _pyfkHhnY.Position = UDim2.new(1, -25, 0, 5)
+    _pyfkHhnY.BackgroundTransparency = 1
+    _pyfkHhnY.Text = string.char(unpack({195,151}))
+    _pyfkHhnY.TextColor3 = Color3.fromRGB(150, 150, 150)
+    _pyfkHhnY.TextSize = 16
+    _pyfkHhnY.Font = Enum.Font.GothamBold
+    _pyfkHhnY.Parent = _AeXFinnQ
+    
+    
+    _xnYmyfwv _pCzIdYyj = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _pCzIdYyj.Size = UDim2.new(1, -20, 0, 2)
+    _pCzIdYyj.Position = UDim2.new(0, 10, 1, -8)
+    _pCzIdYyj.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    _pCzIdYyj.BorderSizePixel = 0
+    _pCzIdYyj.Parent = _AeXFinnQ
+    
+    _xnYmyfwv _EFDzjwAv = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _EFDzjwAv.CornerRadius = UDim.new(0, 1)
+    _EFDzjwAv.Parent = _pCzIdYyj
+    
+    _xnYmyfwv _ysiFLLmE = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _ysiFLLmE.Size = UDim2.new(1, 0, 1, 0)
+    _ysiFLLmE.Position = UDim2.new(0, 0, 0, 0)
+    _ysiFLLmE.BackgroundColor3 = _LqApVjjv.Color
+    _ysiFLLmE.BorderSizePixel = 0
+    _ysiFLLmE.Parent = _pCzIdYyj
+    
+    _xnYmyfwv _AXFhYpVa = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _AXFhYpVa.CornerRadius = UDim.new(0, 1)
+    _AXFhYpVa.Parent = _ysiFLLmE
+    
+    
+    _xnYmyfwv _xYKaCFyJ = _qsrhDWiq:Create(
+        _AeXFinnQ,
+        TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out),
+        {Position = UDim2.new(1, -330, 0, _rjiExbhq)}
+    )
+    
+    _xnYmyfwv _DkTjkRXw = _qsrhDWiq:Create(
+        _AeXFinnQ,
+        TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+        {BackgroundTransparency = 1}
+    )
+    
+    _xnYmyfwv _caDWjZAe = _qsrhDWiq:Create(
+        _AeXFinnQ,
+        TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+        {Position = UDim2.new(1, 10, 0, _rjiExbhq)}
+    )
+    
+    _xnYmyfwv _cyOmseMO = _qsrhDWiq:Create(
+        _ysiFLLmE,
+        TweenInfo.new(duration, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
+        {Size = UDim2.new(0, 0, 1, 0)}
+    )
+    
+    
+    _xnYmyfwv _TphczEAO _lKZvPoRE()
+        
+        for i, notif in pairs(_AIOSvoRZ) do
+            if notif == _AeXFinnQ then
+                table.remove(_AIOSvoRZ, i)
+                break
+            end
+        end
+        
+        _caDWjZAe:Play()
+        _DkTjkRXw:Play()
+        
+        _DkTjkRXw.Completed:Connect(_TphczEAO()
+            _AeXFinnQ:Destroy()
+            
+            
+            _xnYmyfwv _OGgujuVP = 20
+            for _RjaTridD, notif in pairs(_AIOSvoRZ) do
+                if notif and notif.Parent then
+                    _xnYmyfwv _yPdDtxar = _qsrhDWiq:Create(
+                        notif,
+                        TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                        {Position = UDim2.new(1, -330, 0, _OGgujuVP)}
+                    )
+                    _yPdDtxar:Play()
+                    _OGgujuVP = _OGgujuVP + 80
+                end
+            end
+        end)
+    end
+    
+    
+    _pyfkHhnY.MouseButton1Click:Connect(_lKZvPoRE)
+    
+    
+    task.spawn(_TphczEAO()
+        _cyOmseMO:Play()
+        task.wait(duration)
+        _lKZvPoRE()
+    end)
+    
+    
+    _xYKaCFyJ:Play()
+end
+
+
+_xnYmyfwv _TphczEAO _AnPqeiBx()
+    _xnYmyfwv _xrzKtKpN = game:GetService(string.char(unpack({95,120,114,122,75,116,75,112,78})))
+    _xnYmyfwv _qsrhDWiq = game:GetService(string.char(unpack({95,113,115,114,104,68,87,105,113})))
+    _xnYmyfwv _WOlfUIZn = game:GetService(string.char(unpack({95,87,79,108,102,85,73,90,110})))
+    _xnYmyfwv _gzetNXLD = _xrzKtKpN.LocalPlayer
+    _xnYmyfwv _ZWZaafVc = _gzetNXLD:WaitForChild(string.char(unpack({80,108,97,121,101,114,71,117,105})))
+
+    
+    _xnYmyfwv _AtYeJGqT = _ZWZaafVc:FindFirstChild(string.char(unpack({80,108,97,116,111,98,111,111,115,116,71,85,73})))
+    if _AtYeJGqT then
+        _AtYeJGqT:Destroy()
+    end
+
+    _xnYmyfwv _FUIvVvQX = Instance.new(string.char(unpack({83,99,114,101,101,110,71,117,105})))
+    _FUIvVvQX.Name = string.char(unpack({80,108,97,116,111,98,111,111,115,116,71,85,73}))
+    _FUIvVvQX.ResetOnSpawn = false
+    _FUIvVvQX.Parent = _ZWZaafVc
+
+    
+    _xnYmyfwv _bbZGnpIM = workspace.CurrentCamera
+    _xnYmyfwv _UBoAJvGx = Instance.new(string.char(unpack({66,108,117,114,69,102,102,101,99,116})))
+    _UBoAJvGx.Size = 15
+    _UBoAJvGx.Parent = _bbZGnpIM
+
+    
+    _xnYmyfwv _ZNSEpxJL = _bbZGnpIM.ViewportSize
+    _xnYmyfwv _WYuBweHE = _ZNSEpxJL._WafErhqM < 800
+    
+    _xnYmyfwv _jyJSAqPj = _WYuBweHE and 320 or 400
+    _xnYmyfwv _fogTHqVl = _WYuBweHE and 350 or 320
+
+    
+    _xnYmyfwv _GPNapAvN = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _GPNapAvN.Size = UDim2.new(0, _jyJSAqPj, 0, _fogTHqVl)
+    _GPNapAvN.Position = UDim2.new(0.5, -_jyJSAqPj/2, 0.5, -_fogTHqVl/2)
+    _GPNapAvN.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    _GPNapAvN.BackgroundTransparency = 0.1
+    _GPNapAvN.BorderSizePixel = 0
+    _GPNapAvN.Parent = _FUIvVvQX
+
+    
+    _xnYmyfwv _QanJJzfa = Instance.new(string.char(unpack({85,73,71,114,97,100,105,101,110,116})))
+    _QanJJzfa.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 25, 35)),
+        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(15, 15, 25)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(10, 10, 20))
+    }
+    _QanJJzfa.Rotation = 135
+    _QanJJzfa.Parent = _GPNapAvN
+
+    
+    _xnYmyfwv _xqudRzqu = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _xqudRzqu.CornerRadius = UDim.new(0, 20)
+    _xqudRzqu.Parent = _GPNapAvN
+
+    
+    _xnYmyfwv _LqApVjjv = Instance.new(string.char(unpack({85,73,83,116,114,111,107,101})))
+    _LqApVjjv.Color = Color3.fromRGB(0, 255, 150)
+    _LqApVjjv.Thickness = 2
+    _LqApVjjv.Transparency = 0.2
+    _LqApVjjv.Parent = _GPNapAvN
+
+    
+    _xnYmyfwv _qbNoqQsM = _qsrhDWiq:Create(
+        _LqApVjjv,
+        TweenInfo.new(2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true),
+        {Transparency = 0.8}
+    )
+    _qbNoqQsM:Play()
+
+    
+    _xnYmyfwv _hwXyTUsg = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _hwXyTUsg.Size = UDim2.new(1, 0, 0, 80)
+    _hwXyTUsg.Position = UDim2.new(0, 0, 0, 0)
+    _hwXyTUsg.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
+    _hwXyTUsg.BackgroundTransparency = 0.3
+    _hwXyTUsg.BorderSizePixel = 0
+    _hwXyTUsg.Parent = _GPNapAvN
+
+    _xnYmyfwv _KIGufScE = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _KIGufScE.CornerRadius = UDim.new(0, 20)
+    _KIGufScE.Parent = _hwXyTUsg
+
+    
+    _xnYmyfwv _WicqhbCC = Instance.new(string.char(unpack({85,73,71,114,97,100,105,101,110,116})))
+    _WicqhbCC.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 150)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 150, 255))
+    }
+    _WicqhbCC.Rotation = 45
+    _WicqhbCC.Transparency = NumberSequence.new(0.7)
+    _WicqhbCC.Parent = _hwXyTUsg
+
+    
+    _xnYmyfwv _HRbwmaTy = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _HRbwmaTy.Size = UDim2.new(0, 40, 0, 40)
+    _HRbwmaTy.Position = UDim2.new(0, 20, 0, 20)
+    _HRbwmaTy.BackgroundColor3 = Color3.fromRGB(0, 255, 150)
+    _HRbwmaTy.BorderSizePixel = 0
+    _HRbwmaTy.Text = string.char(unpack({240,159,155,161,239,184,143}))
+    _HRbwmaTy.TextColor3 = Color3.fromRGB(255, 255, 255)
+    _HRbwmaTy.TextSize = 24
+    _HRbwmaTy.Font = Enum.Font.GothamBold
+    _HRbwmaTy.Parent = _hwXyTUsg
+
+    _xnYmyfwv _gqsbVEjR = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _gqsbVEjR.CornerRadius = UDim.new(0, 8)
+    _gqsbVEjR.Parent = _HRbwmaTy
+
+    
+    _xnYmyfwv _ajYEvJoD = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _ajYEvJoD.Size = UDim2.new(1, -80, 0, 30)
+    _ajYEvJoD.Position = UDim2.new(0, 70, 0, 15)
+    _ajYEvJoD.BackgroundTransparency = 1
+    _ajYEvJoD.Text = string.char(unpack({80,76,65,84,79,66,79,79,83,84}))
+    _ajYEvJoD.TextColor3 = Color3.fromRGB(255, 255, 255)
+    _ajYEvJoD.TextSize = _WYuBweHE and 18 or 22
+    _ajYEvJoD.Font = Enum.Font.GothamBold
+    _ajYEvJoD.TextXAlignment = Enum.TextXAlignment.Left
+    _ajYEvJoD.Parent = _hwXyTUsg
+
+    
+    _xnYmyfwv _ImbzLIlW = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _ImbzLIlW.Size = UDim2.new(1, -80, 0, 20)
+    _ImbzLIlW.Position = UDim2.new(0, 70, 0, 40)
+    _ImbzLIlW.BackgroundTransparency = 1
+    _ImbzLIlW.Text = string.char(unpack({65,100,118,97,110,99,101,100,32,83,101,99,117,114,105,116,121,32,83,121,115,116,101,109}))
+    _ImbzLIlW.TextColor3 = Color3.fromRGB(150, 255, 200)
+    _ImbzLIlW.TextSize = _WYuBweHE and 10 or 12
+    _ImbzLIlW.Font = Enum.Font.Gotham
+    _ImbzLIlW.TextXAlignment = Enum.TextXAlignment.Left
+    _ImbzLIlW.Parent = _hwXyTUsg
+
+    
+    _xnYmyfwv _ahguiXgZ = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _ahguiXgZ.Size = UDim2.new(1, -40, 0, 1)
+    _ahguiXgZ.Position = UDim2.new(0, 20, 0, 90)
+    _ahguiXgZ.BackgroundColor3 = Color3.fromRGB(0, 255, 150)
+    _ahguiXgZ.BackgroundTransparency = 0.5
+    _ahguiXgZ.BorderSizePixel = 0
+    _ahguiXgZ.Parent = _GPNapAvN
+
+    
+    _xnYmyfwv _caNxHZCz = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _caNxHZCz.Size = UDim2.new(1, -40, 1, -110)
+    _caNxHZCz.Position = UDim2.new(0, 20, 0, 100)
+    _caNxHZCz.BackgroundTransparency = 1
+    _caNxHZCz.BorderSizePixel = 0
+    _caNxHZCz.Parent = _GPNapAvN
+
+    
+    _xnYmyfwv _iTYNKUsU = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _iTYNKUsU.Size = UDim2.new(1, 0, 0, 30)
+    _iTYNKUsU.Position = UDim2.new(0, 0, 0, 10)
+    _iTYNKUsU.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+    _iTYNKUsU.BackgroundTransparency = 0.3
+    _iTYNKUsU.BorderSizePixel = 0
+    _iTYNKUsU.Parent = _caNxHZCz
+
+    _xnYmyfwv _FZQUrZrh = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _FZQUrZrh.CornerRadius = UDim.new(0, 6)
+    _FZQUrZrh.Parent = _iTYNKUsU
+
+    _xnYmyfwv _BIfyuzft = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _BIfyuzft.Size = UDim2.new(0, 20, 1, 0)
+    _BIfyuzft.Position = UDim2.new(0, 10, 0, 0)
+    _BIfyuzft.BackgroundTransparency = 1
+    _BIfyuzft.Text = string.char(unpack({226,151,143}))
+    _BIfyuzft.TextColor3 = Color3.fromRGB(0, 255, 150)
+    _BIfyuzft.TextSize = 16
+    _BIfyuzft.Font = Enum.Font.GothamBold
+    _BIfyuzft.Parent = _iTYNKUsU
+
+    _xnYmyfwv _oGEuoGrV = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _oGEuoGrV.Size = UDim2.new(1, -40, 1, 0)
+    _oGEuoGrV.Position = UDim2.new(0, 35, 0, 0)
+    _oGEuoGrV.BackgroundTransparency = 1
+    _oGEuoGrV.Text = string.char(unpack({83,89,83,84,69,77,32,82,69,65,68,89}))
+    _oGEuoGrV.TextColor3 = Color3.fromRGB(200, 255, 220)
+    _oGEuoGrV.TextSize = _WYuBweHE and 10 or 11
+    _oGEuoGrV.Font = Enum.Font.GothamBold
+    _oGEuoGrV.TextXAlignment = Enum.TextXAlignment.Left
+    _oGEuoGrV.Parent = _iTYNKUsU
+
+    
+    _xnYmyfwv _BOSLbpQa = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _BOSLbpQa.Size = UDim2.new(1, 0, 0, 20)
+    _BOSLbpQa.Position = UDim2.new(0, 0, 0, 55)
+    _BOSLbpQa.BackgroundTransparency = 1
+    _BOSLbpQa.Text = string.char(unpack({83,69,67,85,82,73,84,89,32,75,69,89}))
+    _BOSLbpQa.TextColor3 = Color3.fromRGB(150, 255, 200)
+    _BOSLbpQa.TextSize = _WYuBweHE and 11 or 12
+    _BOSLbpQa.Font = Enum.Font.GothamBold
+    _BOSLbpQa.TextXAlignment = Enum.TextXAlignment.Left
+    _BOSLbpQa.Parent = _caNxHZCz
+
+    _xnYmyfwv _JjJNBiGW = Instance.new(string.char(unpack({84,101,120,116,66,111,120})))
+    _JjJNBiGW.Size = UDim2.new(1, 0, 0, _WYuBweHE and 40 or 45)
+    _JjJNBiGW.Position = UDim2.new(0, 0, 0, 80)
+    _JjJNBiGW.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
+    _JjJNBiGW.BackgroundTransparency = 0.2
+    _JjJNBiGW.BorderSizePixel = 0
+    _JjJNBiGW.PlaceholderText = string.char(unpack({69,110,116,101,114,32,121,111,117,114,32,97,117,116,104,101,110,116,105,99,97,116,105,111,110,32,95,116,81,100,76,90,86,122,119,46,46,46}))
+    _JjJNBiGW.PlaceholderColor3 = Color3.fromRGB(100, 150, 120)
+    _JjJNBiGW.TextColor3 = Color3.fromRGB(255, 255, 255)
+    _JjJNBiGW.TextSize = _WYuBweHE and 13 or 14
+    _JjJNBiGW.Font = Enum.Font.Gotham
+    _JjJNBiGW.ClearTextOnFocus = false
+    _JjJNBiGW.Parent = _caNxHZCz
+
+    _xnYmyfwv _qRsdfNvC = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _qRsdfNvC.CornerRadius = UDim.new(0, 8)
+    _qRsdfNvC.Parent = _JjJNBiGW
+
+    _xnYmyfwv _gxIqqujF = Instance.new(string.char(unpack({85,73,83,116,114,111,107,101})))
+    _gxIqqujF.Color = Color3.fromRGB(0, 255, 150)
+    _gxIqqujF.Thickness = 1
+    _gxIqqujF.Transparency = 0.7
+    _gxIqqujF.Parent = _JjJNBiGW
+
+    
+    _JjJNBiGW.Focused:Connect(_TphczEAO()
+        _xnYmyfwv _qGtpTDCX = _qsrhDWiq:Create(
+            _gxIqqujF,
+            TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+            {Transparency = 0.2, Thickness = 2}
+        )
+        _qGtpTDCX:Play()
+    end)
+
+    _JjJNBiGW.FocusLost:Connect(_TphczEAO()
+        _xnYmyfwv _STTsVlhV = _qsrhDWiq:Create(
+            _gxIqqujF,
+            TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+            {Transparency = 0.7, Thickness = 1}
+        )
+        _STTsVlhV:Play()
+    end)
+
+    
+    _xnYmyfwv _DvyZELgS = _WYuBweHE and 140 or 135
+    _xnYmyfwv _akdusKOp = _WYuBweHE and 40 or 45
+
+    
+    _xnYmyfwv _eqEqZJtJ = Instance.new(string.char(unpack({84,101,120,116,66,117,116,116,111,110})))
+    _eqEqZJtJ.Size = UDim2.new(0.48, 0, 0, _akdusKOp)
+    _eqEqZJtJ.Position = UDim2.new(0, 0, 0, _DvyZELgS)
+    _eqEqZJtJ.BackgroundColor3 = Color3.fromRGB(0, 150, 255)
+    _eqEqZJtJ.BorderSizePixel = 0
+    _eqEqZJtJ.Text = string.char(unpack({240,159,148,151,32,71,69,84,32,75,69,89}))
+    _eqEqZJtJ.TextColor3 = Color3.fromRGB(255, 255, 255)
+    _eqEqZJtJ.TextSize = _WYuBweHE and 12 or 14
+    _eqEqZJtJ.Font = Enum.Font.GothamBold
+    _eqEqZJtJ.Parent = _caNxHZCz
+
+    _xnYmyfwv _ysaZJceb = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _ysaZJceb.CornerRadius = UDim.new(0, 8)
+    _ysaZJceb.Parent = _eqEqZJtJ
+
+    
+    _xnYmyfwv _wWGMqoFy = Instance.new(string.char(unpack({84,101,120,116,66,117,116,116,111,110})))
+    _wWGMqoFy.Size = UDim2.new(0.48, 0, 0, _akdusKOp)
+    _wWGMqoFy.Position = UDim2.new(0.52, 0, 0, _DvyZELgS)
+    _wWGMqoFy.BackgroundColor3 = Color3.fromRGB(0, 255, 150)
+    _wWGMqoFy.BorderSizePixel = 0
+    _wWGMqoFy.Text = string.char(unpack({226,154,161,32,86,69,82,73,70,89}))
+    _wWGMqoFy.TextColor3 = Color3.fromRGB(0, 0, 0)
+    _wWGMqoFy.TextSize = _WYuBweHE and 12 or 14
+    _wWGMqoFy.Font = Enum.Font.GothamBold
+    _wWGMqoFy.Parent = _caNxHZCz
+
+    _xnYmyfwv _rPdhyuAb = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _rPdhyuAb.CornerRadius = UDim.new(0, 8)
+    _rPdhyuAb.Parent = _wWGMqoFy
+
+    
+    _xnYmyfwv _TphczEAO _qIshhsTh(button, hoverColor, normalColor)
+        button.MouseEnter:Connect(_TphczEAO()
+            _xnYmyfwv _OojzGLvl = _qsrhDWiq:Create(
+                button,
+                TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                {BackgroundColor3 = hoverColor, Size = button.Size + UDim2.new(0, 2, 0, 2)}
+            )
+            _OojzGLvl:Play()
+        end)
+        
+        button.MouseLeave:Connect(_TphczEAO()
+            _xnYmyfwv _vrOFVCRP = _qsrhDWiq:Create(
+                button,
+                TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                {BackgroundColor3 = normalColor, Size = button.Size - UDim2.new(0, 2, 0, 2)}
+            )
+            _vrOFVCRP:Play()
+        end)
+    end
+
+    _qIshhsTh(_eqEqZJtJ, Color3.fromRGB(0, 170, 255), Color3.fromRGB(0, 150, 255))
+    _qIshhsTh(_wWGMqoFy, Color3.fromRGB(50, 255, 170), Color3.fromRGB(0, 255, 150))
+
+    
+    _xnYmyfwv _TphczEAO _mSzkBsxy(message, color, _VqutbDid)
+        _oGEuoGrV.Text = message
+        _oGEuoGrV.TextColor3 = color
+        _BIfyuzft.TextColor3 = color
+        
+        if _VqutbDid then
+            _BIfyuzft.Text = _VqutbDid
+        end
+        
+        _xnYmyfwv _yDWGdNdH = _qsrhDWiq:Create(
+            _iTYNKUsU,
+            TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+            {BackgroundColor3 = Color3.new(color.R * 0.1, color.G * 0.1, color._uAurUfuE * 0.1)}
+        )
+        _yDWGdNdH:Play()
+    end
+
+    
+    _eqEqZJtJ.MouseButton1Click:Connect(_TphczEAO()
+        _NuocHQkN()
+        _mSzkBsxy(string.char(unpack({76,73,78,75,32,67,79,80,73,69,68,32,84,79,32,67,76,73,80,66,79,65,82,68})), Color3.fromRGB(0, 255, 150), string.char(unpack({226,156,147})))
+        _EJMUbwFt(string.char(unpack({83,117,99,99,101,115,115})), string.char(unpack({75,101,121,32,108,105,110,107,32,99,111,112,105,101,100,32,116,111,32,99,108,105,112,98,111,97,114,100,33})), string.char(unpack({95,122,88,73,107,87,98,79,68})), 3)
+        
+        task.spawn(_TphczEAO()
+            wait(3)
+            _mSzkBsxy(string.char(unpack({83,89,83,84,69,77,32,82,69,65,68,89})), Color3.fromRGB(0, 255, 150), string.char(unpack({226,151,143})))
+        end)
+    end)
+
+    
+    _wWGMqoFy.MouseButton1Click:Connect(_TphczEAO()
+        _xnYmyfwv _tQdLZVzw = _JjJNBiGW.Text
+        if _tQdLZVzw == string.char(unpack({})) then
+            _mSzkBsxy(string.char(unpack({75,69,89,32,82,69,81,85,73,82,69,68})), Color3.fromRGB(255, 100, 100), string.char(unpack({33})))
+            _EJMUbwFt(string.char(unpack({69,114,114,111,114})), string.char(unpack({80,108,101,97,115,101,32,101,110,116,101,114,32,121,111,117,114,32,97,117,116,104,101,110,116,105,99,97,116,105,111,110,32,95,116,81,100,76,90,86,122,119})), string.char(unpack({101,114,114,111,114})), 4)
+            return
+        end
+        
+        _mSzkBsxy(string.char(unpack({86,69,82,73,70,89,73,78,71,32,75,69,89,46,46,46})), Color3.fromRGB(255, 200, 0), string.char(unpack({226,159,179})))
+        _wWGMqoFy.Text = string.char(unpack({226,143,179,32,86,69,82,73,70,89,73,78,71,46,46,46}))
+        _eqEqZJtJ.Visible = false
+        
+        _EJMUbwFt(string.char(unpack({73,110,102,111})), string.char(unpack({86,101,114,105,102,121,105,110,103,32,121,111,117,114,32,95,116,81,100,76,90,86,122,119,32,119,105,116,104,32,115,101,114,118,101,114,46,46,46})), string.char(unpack({105,110,102,111})), 3)
+        
+        task.spawn(_TphczEAO()
+            _xnYmyfwv _zXIkWbOD = _WhIqiesk(_tQdLZVzw)
+            
+            if _zXIkWbOD then
+                _mSzkBsxy(string.char(unpack({86,69,82,73,70,73,67,65,84,73,79,78,32,83,85,67,67,69,83,83})), Color3.fromRGB(0, 255, 150), string.char(unpack({226,156,147})))
+                _wWGMqoFy.Text = string.char(unpack({226,156,133,32,86,69,82,73,70,73,69,68,33}))
+                
+                
+                _KFrZaYZf(_tQdLZVzw)
+                
+                _EJMUbwFt(string.char(unpack({83,117,99,99,101,115,115})), string.char(unpack({65,117,116,104,101,110,116,105,99,97,116,105,111,110,32,115,117,99,99,101,115,115,102,117,108,33,32,75,101,121,32,115,97,118,101,100,32,102,111,114,32,102,117,116,117,114,101,32,117,115,101,46})), string.char(unpack({95,122,88,73,107,87,98,79,68})), 4)
+                
+                
+                _xnYmyfwv _eicNSTgq = _qsrhDWiq:Create(
+                    _GPNapAvN,
+                    TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.In),
+                    {Size = UDim2.new(0, 0, 0, 0)}
+                )
+                
+                _xnYmyfwv _TlszlKJH = _qsrhDWiq:Create(
+                    _UBoAJvGx,
+                    TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                    {Size = 0}
+                )
+                
+                _eicNSTgq:Play()
+                _TlszlKJH:Play()
+                
+                _eicNSTgq.Completed:Connect(_TphczEAO()
+                    _UBoAJvGx:Destroy()
+                    _FUIvVvQX:Destroy()
+                    _JKTsHyQR()
+                end)
+            else
+                _mSzkBsxy(string.char(unpack({86,69,82,73,70,73,67,65,84,73,79,78,32,70,65,73,76,69,68})), Color3.fromRGB(255, 100, 100), string.char(unpack({226,156,151})))
+                _wWGMqoFy.Text = string.char(unpack({226,154,161,32,86,69,82,73,70,89}))
+                _eqEqZJtJ.Visible = true
+                
+                
+                _mkEYgaOH()
+                
+                _EJMUbwFt(string.char(unpack({69,114,114,111,114})), string.char(unpack({73,110,118,97,108,105,100,32,95,116,81,100,76,90,86,122,119,33,32,80,108,101,97,115,101,32,99,104,101,99,107,32,97,110,100,32,116,114,121,32,97,103,97,105,110,46})), string.char(unpack({101,114,114,111,114})), 5)
+            end
+        end)
+    end)
+
+    
+    _GPNapAvN.Size = UDim2.new(0, 0, 0, 0)
+    _UBoAJvGx.Size = 0
+    
+    _xnYmyfwv _kpnQCLfI = _qsrhDWiq:Create(
+        _GPNapAvN,
+        TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out),
+        {Size = UDim2.new(0, _jyJSAqPj, 0, _fogTHqVl)}
+    )
+    
+    _xnYmyfwv _KkXIUTiV = _qsrhDWiq:Create(
+        _UBoAJvGx,
+        TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+        {Size = 15}
+    )
+    
+    _KkXIUTiV:Play()
+    task.wait(0.1)
+    _kpnQCLfI:Play()
+end
+
+
+_xnYmyfwv _TphczEAO _kwDHQDFf()
+    _xnYmyfwv _xrzKtKpN = game:GetService(string.char(unpack({95,120,114,122,75,116,75,112,78})))
+    _xnYmyfwv _qsrhDWiq = game:GetService(string.char(unpack({95,113,115,114,104,68,87,105,113})))
+    _xnYmyfwv _gzetNXLD = _xrzKtKpN.LocalPlayer
+    _xnYmyfwv _ZWZaafVc = _gzetNXLD:WaitForChild(string.char(unpack({80,108,97,121,101,114,71,117,105})))
+    
+    _xnYmyfwv _dRdvsvXd = Instance.new(string.char(unpack({83,99,114,101,101,110,71,117,105})))
+    _dRdvsvXd.Name = string.char(unpack({84,97,100,72,117,98,76,111,97,100,105,110,103}))
+    _dRdvsvXd.ResetOnSpawn = false
+    _dRdvsvXd.Parent = _ZWZaafVc
+    
+    
+    _xnYmyfwv _bbZGnpIM = workspace.CurrentCamera
+    _xnYmyfwv _yxTmWuHC = Instance.new(string.char(unpack({66,108,117,114,69,102,102,101,99,116})))
+    _yxTmWuHC.Size = 10
+    _yxTmWuHC.Parent = _bbZGnpIM
+    
+    
+    _xnYmyfwv _GPNapAvN = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _GPNapAvN.Size = UDim2.new(0, 300, 0, 120)
+    _GPNapAvN.Position = UDim2.new(0.5, -150, 0.5, -60)
+    _GPNapAvN.BackgroundTransparency = 1
+    _GPNapAvN.BorderSizePixel = 0
+    _GPNapAvN.Parent = _dRdvsvXd
+    
+    
+    _xnYmyfwv _ajYEvJoD = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _ajYEvJoD.Size = UDim2.new(1, 0, 0, 30)
+    _ajYEvJoD.BackgroundTransparency = 1
+    _ajYEvJoD.Text = string.char(unpack({240,159,155,161,239,184,143,32,84,65,68,72,85,66,32,83,69,67,85,82,73,84,89}))
+    _ajYEvJoD.TextColor3 = Color3.fromRGB(0, 255, 150)
+    _ajYEvJoD.TextSize = 20
+    _ajYEvJoD.Font = Enum.Font.GothamBold
+    _ajYEvJoD.Parent = _GPNapAvN
+    
+    
+    _xnYmyfwv _lDJuqRxb = Instance.new(string.char(unpack({84,101,120,116,76,97,98,101,108})))
+    _lDJuqRxb.Size = UDim2.new(1, 0, 0, 25)
+    _lDJuqRxb.Position = UDim2.new(0, 0, 0, 35)
+    _lDJuqRxb.BackgroundTransparency = 1
+    _lDJuqRxb.Text = string.char(unpack({86,101,114,105,102,121,105,110,103,32,115,97,118,101,100,32,97,117,116,104,101,110,116,105,99,97,116,105,111,110,46,46,46}))
+    _lDJuqRxb.TextColor3 = Color3.fromRGB(150, 255, 200)
+    _lDJuqRxb.TextSize = 14
+    _lDJuqRxb.Font = Enum.Font.Gotham
+    _lDJuqRxb.Parent = _GPNapAvN
+    
+    
+    _xnYmyfwv _WbHWsEZt = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _WbHWsEZt.Size = UDim2.new(1, 0, 0, 4)
+    _WbHWsEZt.Position = UDim2.new(0, 0, 0, 75)
+    _WbHWsEZt.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
+    _WbHWsEZt.BorderSizePixel = 0
+    _WbHWsEZt.Parent = _GPNapAvN
+    
+    _xnYmyfwv _NvTpLowG = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _NvTpLowG.CornerRadius = UDim.new(0, 2)
+    _NvTpLowG.Parent = _WbHWsEZt
+    
+    
+    _xnYmyfwv _MaKWooDg = Instance.new(string.char(unpack({70,114,97,109,101})))
+    _MaKWooDg.Size = UDim2.new(0, 0, 1, 0)
+    _MaKWooDg.BackgroundColor3 = Color3.fromRGB(0, 255, 150)
+    _MaKWooDg.BorderSizePixel = 0
+    _MaKWooDg.Parent = _WbHWsEZt
+    
+    _xnYmyfwv _FyXoNDAq = Instance.new(string.char(unpack({85,73,67,111,114,110,101,114})))
+    _FyXoNDAq.CornerRadius = UDim.new(0, 2)
+    _FyXoNDAq.Parent = _MaKWooDg
+    
+    
+    _xnYmyfwv _NXYXubbP = _qsrhDWiq:Create(
+        _MaKWooDg,
+        TweenInfo.new(2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+        {Size = UDim2.new(1, 0, 1, 0)}
+    )
+    _NXYXubbP:Play()
+    
+    return _dRdvsvXd, _lDJuqRxb, _yxTmWuHC
+end
+
+_xnYmyfwv _TphczEAO _BPXjbhZF()
+    _xnYmyfwv _ImqoTZBH = _tvjZlIvN()
+    
+    if _ImqoTZBH then
+        print(string.char(unpack({240,159,148,141,32,70,111,117,110,100,32,115,97,118,101,100,32,95,116,81,100,76,90,86,122,119,44,32,118,101,114,105,102,121,105,110,103,46,46,46})))
+        
+        
+        _xnYmyfwv _dRdvsvXd, _oGEuoGrV, _yxTmWuHC = _kwDHQDFf()
+        _EJMUbwFt(string.char(unpack({84,97,100,72,117,98})), string.char(unpack({65,117,116,111,45,118,101,114,105,102,121,105,110,103,32,115,97,118,101,100,32,95,116,81,100,76,90,86,122,119,46,46,46})), string.char(unpack({105,110,102,111})), 3)
+        
+        task.spawn(_TphczEAO()
+            task.wait(1) 
+            
+            _xnYmyfwv _zXIkWbOD = _WhIqiesk(_ImqoTZBH)
+            
+            if _zXIkWbOD then
+                print(string.char(unpack({226,156,133,32,83,97,118,101,100,32,95,116,81,100,76,90,86,122,119,32,105,115,32,118,97,108,105,100,33,32,76,111,97,100,105,110,103,32,115,99,114,105,112,116,46,46,46})))
+                _oGEuoGrV.Text = string.char(unpack({65,117,116,104,101,110,116,105,99,97,116,105,111,110,32,115,117,99,99,101,115,115,102,117,108,33,32,76,111,97,100,105,110,103,46,46,46}))
+                _oGEuoGrV.TextColor3 = Color3.fromRGB(0, 255, 150)
+                
+                _EJMUbwFt(string.char(unpack({84,97,100,72,117,98})), string.char(unpack({75,101,121,32,118,101,114,105,102,105,101,100,33,32,76,111,97,100,105,110,103,32,109,97,105,110,32,115,99,114,105,112,116,46,46,46})), string.char(unpack({95,122,88,73,107,87,98,79,68})), 4)
+                
+                task.wait(1)
+                _yxTmWuHC:Destroy()
+                _dRdvsvXd:Destroy()
+                _JKTsHyQR()
+            else
+                print(string.char(unpack({226,157,140,32,83,97,118,101,100,32,95,116,81,100,76,90,86,122,119,32,101,120,112,105,114,101,100,32,111,114,32,105,110,118,97,108,105,100,44,32,115,104,111,119,105,110,103,32,71,85,73,46,46,46})))
+                _oGEuoGrV.Text = string.char(unpack({75,101,121,32,101,120,112,105,114,101,100,46,32,79,112,101,110,105,110,103,32,95,116,81,100,76,90,86,122,119,32,115,121,115,116,101,109,46,46,46}))
+                _oGEuoGrV.TextColor3 = Color3.fromRGB(255, 150, 150)
+                
+                _EJMUbwFt(string.char(unpack({84,97,100,72,117,98})), string.char(unpack({75,101,121,32,101,120,112,105,114,101,100,46,32,80,108,101,97,115,101,32,101,110,116,101,114,32,95,87,76,74,90,103,100,83,72,32,110,101,119,32,95,116,81,100,76,90,86,122,119,46})), string.char(unpack({119,97,114,110,105,110,103})), 4)
+                
+                
+                _mkEYgaOH()
+                
+                task.wait(1.5)
+                _yxTmWuHC:Destroy()
+                _dRdvsvXd:Destroy()
+                _AnPqeiBx()
+            end
+        end)
+    else
+        print(string.char(unpack({240,159,148,145,32,78,111,32,115,97,118,101,100,32,95,116,81,100,76,90,86,122,119,32,102,111,117,110,100,44,32,115,104,111,119,105,110,103,32,71,85,73,46,46,46})))
+        _EJMUbwFt(string.char(unpack({84,97,100,72,117,98})), string.char(unpack({87,101,108,99,111,109,101,33,32,80,108,101,97,115,101,32,101,110,116,101,114,32,121,111,117,114,32,95,116,81,100,76,90,86,122,119,32,116,111,32,99,111,110,116,105,110,117,101,46})), string.char(unpack({105,110,102,111})), 4)
+        _AnPqeiBx()
+    end
+end
+
+
+_BPXjbhZF()
+
+
+
+
+
