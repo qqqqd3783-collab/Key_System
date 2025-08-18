@@ -358,46 +358,55 @@ local function deleteSavedKey()
     end
 end
 
+local function loadExternalScript()
+    if EXTERNAL_SCRIPT_URL == nil or EXTERNAL_SCRIPT_URL == "" then
+        print("⚠️ No external script URL configured!")
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Configuration Notice",
+            Text = "No external script URL set. Please configure EXTERNAL_SCRIPT_URL.",
+            Duration = 6
+        })
+        return
+    end
+    
+    print("🔄 Loading external script from: " .. EXTERNAL_SCRIPT_URL)
+    
+    local success, result = pcall(function()
+        local scriptContent = game:HttpGet(EXTERNAL_SCRIPT_URL)
+        return loadstring(scriptContent)()
+    end)
+    
+    if success then
+        print("✅ External script loaded successfully!")
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Script Loader",
+            Text = "External script loaded successfully!",
+            Duration = 4
+        })
+    else
+        print("❌ Failed to load external script:", result)
+        -- Fallback - show error message
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Script Loader Error",
+            Text = "Failed to load external script. Check URL.",
+            Duration = 5
+        })
+    end
+end
+
 -- Your main script logic here
 local function mainScript()
     print("✅ Authentication successful! Running main script...")
     
-    -- Add your script functionality here
     local Players = game:GetService("Players")
     local player = Players.LocalPlayer
     
     print("🎮 Welcome, " .. player.Name .. "!")
     
-    -- Example: Get flags from Platoboost
-    local walkSpeedFlag = getFlag("walkspeed")
-    if walkSpeedFlag then
-        print("🚀 Walk speed flag:", walkSpeedFlag)
-        -- Apply walk speed if it's a number
-        if typeof(walkSpeedFlag) == "number" and player.Character and player.Character:FindFirstChild("Humanoid") then
-            player.Character.Humanoid.WalkSpeed = walkSpeedFlag
-        end
-    end
+    -- Load the external script
+    loadExternalScript()
     
-    local jumpPowerFlag = getFlag("jumppower")
-    if jumpPowerFlag then
-        print("🦘 Jump power flag:", jumpPowerFlag)
-        -- Apply jump power if it's a number
-        if typeof(jumpPowerFlag) == "number" and player.Character and player.Character:FindFirstChild("Humanoid") then
-            player.Character.Humanoid.JumpPower = jumpPowerFlag
-        end
-    end
-    
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zennakub123456789/Script-more-/refs/heads/main/TAS"))()
-
-    -- Example features you can add:
-    -- - ESP (Extra Sensory Perception)
-    -- - Auto-aim
-    -- - Speed hacks
-    -- - Fly scripts
-    -- - Teleportation
-    -- - Auto-farming
-    
-    print("🔥 Main script loaded successfully!")
+    print("🔥 Main script completed!")
 end
 
 -- Notification system
